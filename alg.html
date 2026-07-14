@@ -259,6 +259,33 @@
 	
 	<table class="w-full mb-4" >
 	  <caption class="text-2xl font-extrabold">
+		線形変換
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>T</td>
+		  <td>T: V \to W</td>
+		  <td>線形変換（Linear Transformation）<br />
+		  ベクトル空間 V から W への写像で、和とスカラー倍を保つもの<br />
+		  T(u + v) = T(u) + T(v)<br />
+		  T(av) = aT(v)<br />
+		  行列による乗算は線形変換の代表的な例<br />
+		  </td>
+		  <td>
+		  <img src="img17/equation_linear_transformation.png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
 		ベクトルの計算
 	  </caption>
 	  <tbody >
@@ -276,6 +303,18 @@
 		  新しいベクトルを作る操作<br />
 		  </td>
 		  <td><img src="img17/equation - 2025-02-22T202741.646.png"/ class="py-4 px-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>∑aᵢvᵢ</td>
+		  <td>\sum_{i} a_i v_i</td>
+		  <td>線形結合（Linear Combination）<br />
+		  複数のベクトルにスカラー（数）を掛けて、それらを足し合わせて作るベクトル<br />
+		  スカラー倍とベクトル加法の組み合わせ<br />
+		  係数を変えることで、張られる空間のさまざまなベクトルを表せる<br />
+		  </td>
+		  <td>
+		  <img src="img17/equation_linear_combination.png"/ class="py-4 px-4">
+		  </td>
 		</tr>
 	　</tbody>
 	</table>
@@ -315,6 +354,7 @@
 		  <td>\times</td>
 		  <td>行列の積（Matrix Multiplication）<br />
 		  複数の線形変換（Linear Transformation）を連続して行う操作<br />
+		  行 × 列の内積（ドット積）を並べたもの<br />
 		  線形変換の合成を表す<br />
 		  </td>
 		  <td><img src="img17/equation (9).png"/ class="py-4 pr-4"></td>
@@ -326,8 +366,9 @@
   <td>
     アダマール積<br />
     ハダマール積<br />
-    Hadamard Product<br />
-    行列の要素ごとの積<br />
+	Hadamard Product<br />
+    要素積<br />
+	行列の要素ごとの積<br />
     同じ形の行列同士で，各要素を掛け合わせて得られる行列<br />
     行列積（×,\times,Matrix Multiplication）とは別物<br />
     線形変換の合成ではない<br />
