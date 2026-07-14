@@ -55,6 +55,7 @@
 			AはBを2次形式で上回る<br>
 			行列の2次形式は行列がベクトルに与える作用をそのベクトルとの内積で測ったもの<br>
 			行列の2次形式は行列の性質をベクトルの二乗量として表すもの<br>
+			ベクトル内積は要素同士を掛け合わせて足してスカラー値を表す操作<br>
 			A サクシード B<br>
 			A−Bは正定値(Positive Definite)<br>
 			正定値は負にならない性質<br>
@@ -74,6 +75,7 @@
 			AはBを2次形式で上回るまたは等しい<br>
 			行列の2次形式は行列がベクトルに与える作用をそのベクトルとの内積で測ったもの<br>
 			行列の2次形式は行列の性質をベクトルの二乗量として表すもの<br>
+			ベクトル内積は要素同士を掛け合わせて足してスカラー値を表す操作<br>
 			A サクシードオアイコール B<br>
 			A スセック B<br>
 			A−Bは半正定値(Positive SemiDefinite, PSD)<br>
@@ -85,34 +87,6 @@
 		</tr>
 		<!-- 追加ここまで -->
 	　</tbody>
-	</table>
-	
-	<table class="w-full mb-4" >
-	  <caption class="text-2xl font-extrabold">
-		直積
-	  </caption>
-	  <tbody >
-		<tr>
-		  <td width="10%">記号</td>
-		  <td width="20%">LaTex</td>
-		  <td width="40%">意味</td>
-		  <td width="30%">例</td>
-		</tr>
-	    <tr class="border-collapse border border-slate-400">
-		  <td>×</td>
-		  <td>\times</td>
-		  <td>直積（direct product）<br />
-		  デカルト積（Cartesian Product）<br />
-		  2つの集合から、それぞれの要素を組み合わせて作る新しい集合<br />
-		  順序対 (a, b) 全体の集合<br />
-		  集合 A と集合 B の要素をすべてペアにしたもの<br />
-		  ベクトル空間の直積にも使われる<br />
-		  </td>
-		  <td>
-		  <img src="img17/equation_cartesian.png"/ class="py-4 pr-4">
-		  </td>
-		</tr>
-	  </tbody>
 	</table>
 	
 	<table class="w-full mb-4" >
@@ -182,6 +156,8 @@
 		  <td>空間 ( H ) <br />
 		  ヒルベルト空間 ( H ) <br />
 		  バナッハ空間の内ノルムが内積によって定義される空間<br />
+		  ノルムはベクトルや関数（写像）の長さ・大きさ<br />
+		  ベクトル内積は要素同士を掛け合わせて足してスカラー値を表す操作<br>
 		  バナッハ空間はベクトルのノルムを持つ空間で完備性を持つ空間<br />
 		  完備性はコーシー列が収束する場所が必ずある性質<br />
 		  コーシー列は列の後半の項同士が互いに非常に近くなる性質を持つ数列<br />
@@ -240,6 +216,8 @@
 		  写像Aと写像Bの合成写像<br />
 		  AとBの合成写像<br />
 		  写像は関数と同義<br />
+		  合成は積（乗算, Matrix Multiplication）と対応する構造<br />
+		  行列の積（乗算, Matrix Multiplication）は複数の線形変換の事
 		  </td>
 		  <td><img src="img17/equation (36).png"/ class="py-4 px-4"></td>
 		</tr>
@@ -251,6 +229,8 @@
 		  関数Aと関数Bの合成関数<br />
 		  AとBの合成関数<br />
 		  関数は写像と同義<br />
+		  合成は積（乗算, Matrix Multiplication）と対応する構造<br />
+		  行列の積（乗算, Matrix Multiplication）は複数の線形変換の事
 		  </td>
 		  <td><img src="img17/equation (36).png"/ class="py-4 px-4"></td>
 		</tr>
@@ -333,8 +313,9 @@
 		<tr class="border-collapse border border-slate-400">
 		  <td>・</td>
 		  <td>\cdot</td>
-		  <td>ベクトルの内積（Dot Product of Vectors）<br />
+		  <td>ベクトルの内積<br />
 		  ベクトルのドット積<br />
+		  Dot Product of Vectors<br />
 		  ベクトルの要素同士を掛け合わせてその和を取る操作<br />
 		  ベクトルのスカラー値（1つの数値）を表す<br />
 		  </td>
@@ -358,6 +339,9 @@
 		  複数の線形変換（Linear Transformation）を連続して行う操作<br />
 		  行 × 列の内積（ドット積）を並べたもの<br />
 		  線形変換の合成を表す<br />
+		  デカルト積（Cartesian Product）とは無関係<br />
+		  直積（direct product）とは無関係<br />
+		  直積は2つの行列を組み合わせて、新しい大きな行列を生成する操作<br />
 		  </td>
 		  <td><img src="img17/equation (9).png"/ class="py-4 pr-4"></td>
 		</tr>
@@ -388,9 +372,10 @@
 		<tr class="border-collapse border border-slate-400">
 		  <td>⊗</td>
 		  <td>\otimes</td>
-		  <td>行列のテンソル積（Tensor Product）<br />
+		  <td>行列の直積（Direct Product）<br />
 		  行列のクロネッカー積（Kronecker Product）<br />
-		  行列の直積（Direct Product）<br />
+		  行列のテンソル積（Tensor Product）<br />
+		  行列のデカルト積（Cartesian Product）<br />
 	      2つの行列を組み合わせて、新しい大きな行列を生成する操作<br />
 		  
 		  </td>
