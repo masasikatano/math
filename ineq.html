@@ -1,0 +1,2450 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/cf9d868425.js" crossorigin="anonymous"></script>
+  <title>≤ // 不等式論 - 不等式論で使用する記号と分布の一覧</title>
+</head>
+<body>
+	<h1 class="text-center mb-8 mt-2 text-2xl font-extrabold">≤ // 不等式論 <span class="text-xs font-extrabold underline"><a href="./index.html">計算機科学で使用する記号の一覧</a></span></h1>
+	
+	
+<table class="w-full mb-4">
+  <caption class="text-lg font-semibold">
+	確率・統計の不等式<br />
+  </caption>
+  <tbody>
+    <tr>
+      <td width="20%">表記</td>
+      <td width="40%">意味</td>
+      <td width="40%">例</td>
+    </tr>
+    
+	<!-- マルコフの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (4).png" alt="P(X \geq a) \leq \frac{\mathbb{E}[X]}{a}"/>
+      </td>
+      <td class="py-4 pr-4">
+マルコフの不等式<br />
+Markov's inequality<br />
+Markov inequality<br />
+
+マルコフ界<br />
+マルコフ上界<br />
+マルコフ限界<br />
+Markov bound<br />
+
+集中不等式の最も単純なもの<br />
+E[X]はXの期待値<br />
+E[X]はXがとりうる値の平均的な値<br />
+非負確率変数がa以上となる確率の上限を示す不等式<br />
+期待値しか分からなくても大きな値の確率を安全側で上から抑える不等式<br />
+最悪の場合に備えた不等式<br />
+
+チェビシェフ不等式を1次モーメント(平均)で一般化した不等式<br />
+		
+アンドレイ・マルコフの不等式<br />
+Andrey Markov inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (2).png" />
+        <img src="img20/equation (5).png" alt="P(X \geq 6) \leq \frac{3}{6} = 0.5"/><br />
+      </td>
+    </tr>
+	
+	<!-- モーメント不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (10).png" alt="\mathbb{E}[|X|^p]^{1/p} \leq \mathbb{E}[|X|^q]^{1/q} \ (p \leq q)"/>
+      </td>
+      <td class="py-4 pr-4">
+        モーメント不等式<br />
+        Moment inequality<br />
+        p次・q次モーメントの大小関係を表す不等式<br />
+        1次と2次モーメントの関係を表す不等式<br />
+		モーメントは確率変数の平均的な性質や分布の形を特徴づける値の事<br />
+		1次モーメントは平均<br />
+		2次モーメントは分散<br />
+		3次モーメントは歪度<br />
+		3次モーメントは左右非対称性<br />
+		4次モーメントは尖度<br />
+		4次モーメントはとがり具合<br />	
+		マルコフ不等式を高次のモーメントで一般化した不等式<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (5).png" />
+        <img src="img20/equation (11).png" alt="\mathbb{E}[|X|] \leq \sqrt{\mathbb{E}[X^2]}"/><br />
+      </td>
+    </tr>
+	
+	<!-- チェビシェフの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (3).png" alt="P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}"/>
+      </td>
+      <td class="py-4 pr-4">
+チェビシェフの不等式<br />
+Chebyshev's inequality<br />
+Chebyshev inequality<br />
+
+チェビシェフ界<br />
+チェビシェフ上界<br />
+チェビシェフ限界<br />
+Chebyshev bound<br />	
+
+確率変数が平均からkσ以上離れる確率の上限を示す不等式<br />
+右辺は、平均からの距離が kσ以上である確率の上限を示す<br />
+σは標準偏差を示す<br />
+μは母集団の平均値を示す<br />
+どんな分布に適用可能な不等式<br />
+どのような分布でも、確率変数が平均から大きく離れる確率には上限があるのを示す不等式<br >
+
+マルコフ不等式を絶対値の2乗で特殊化した不等式<br />
+
+パフヌティ・チェビシェフの不等式<br />
+Pafnuty Chebyshev inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (1).png" />
+        <img src="img20/equation (2).png" alt="P(|X - \mu| \geq 2\sigma) \leq 0.25"/><br />
+      </td>
+    </tr>
+	
+	<!-- カンテリの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (50).png" alt="P(X-\mu \geq t) \leq \frac{\sigma^2}{\sigma^2 + t^2}"/>
+      </td>
+      <td class="py-4 pr-4">
+カンテリの不等式<br />
+Cantelli's inequality<br />
+Cantelli inequality<br />
+
+カンテリ界<br />
+カンテリ上界<br />
+カンテリ限界<br />
+Cantelli bound<br />	
+
+片側型のチェビシェフ不等式<br />
+左型のチェビシェフ不等式<br />
+右型のチェビシェフ不等式<br />
+片側の偏差の上限評価を行う不等式<br />
+
+チェビシェフ不等式を片側確率で一般化した不等式<br />
+
+フランチェスコ・カンテリの不等式<br />
+Francesco Cantelli inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (53).png" />
+        <img src="img20/equation (50).png" alt="P(X-\mu \geq t) \leq \frac{\sigma^2}{\sigma^2 + t^2}"/>
+      </td>
+    </tr>
+	
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation (68).png" alt="P\left(\sum_{i=1}^n X_i = 0\right) \leq \exp\left(-\mu + \Delta/2\right)"/>
+	  </td>
+	  <td class="py-4 pr-4">
+ヤンソンの不等式<br />
+ヤンソン不等式<br />
+ヤンソン型不等式<br />
+ヤンソン型の不等式<br />
+Janson's inequality<br />
+Janson inequality<br />
+
+相関を持つ多数の事象の合計が、期待値より大きく下振れする確率を指数的に上から抑える不等式<br />
+相関を持つ多数の事象の合計が、全体の合計が小さくなりすぎる確率を指数的に上から抑える不等式<br />
+相関は共分散<br />
+相関は確率変数が同時に1になる確率<br />
+
+依存確率変数の上限を与える不等式<br />
+部分集合の交差がある場合の確率の上限を与える不等式<br />
+μは各事象が起きる期待値合計<br />
+Δは事象間の依存度合いを表すパラメータ<br />
+
+チェビシェフ不等式を相関を持つ場合で一般化した不等式<br />
+チェビシェフ不等式をそれぞれの確率変数が独立でない場合で一般化した不等式<br />
+
+スヴェンテ・ヤンソンの不等式<br />
+Svante Janson inequality<br />
+	  </td>
+	  <td>
+		<img src="img20/ダウンロード (66).png" alt="P(\text{no triangle in } G(n,p)) \leq \exp(-\mu + \Delta/2)"/><br />
+	    <img src="img20/equation (68).png" alt="P(\text{no triangle in } G(n,p)) \leq \exp(-\mu + \Delta/2)"/><br />
+      </td>
+	</tr>
+
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation (99).png" alt="\mathbb{E}[fg] \geq \mathbb{E}[f]\,\mathbb{E}[g]"/>
+	  </td>
+	  <td class="py-4 pr-4">
+		FKG不等式<br />
+		Fortuin–Kasteleyn–Ginibre inequality<br />
+		連関不等式<br />
+		Association inequality<br />
+		確率変数の間の連関があるときに成立する確率的な不等式<br />
+		確率変数の間の関連性があるときに成立する確率的な不等式<br />
+		確率変数の間のAssociationがあるときに成立する確率的な不等式<br />
+		
+		確率空間上の2つの増加関数が同時に成立する確率が、それぞれの確率の積以上になる事を示す不等式<br />
+		確率空間上の2つの増加集合が同時に成立する確率が、それぞれの確率の積以上になる事を示す不等式<br />
+		
+		単調増加関数f, gと連関を持つ確率変数に対して成り立つ不等式。<br />
+		正比例は正の連関<br />
+		
+		独立性よりも弱い条件で期待値の積を下から抑える不等式<br />
+		確率論・統計力学などで重要な不等式<br />
+		モノトンな関数f, gおよび連関を持つ確率変数X上で成り立つ不等式<br />
+		モノトンは単調性<br />
+		モノトンは単調増加関数<br />
+		モノトンは単調減少関数<br />
+		
+		確率変数の集合が連関を持つ場合に有効な不等式<br />
+		確率変数の集合が関連性を持つ場合に有効な不等式<br />
+		確率変数の集合がAssociationを持つ場合に有効な不等式<br />
+		
+		チェビシェフ不等式を増加関数上で一般化した不等式<br />
+		チェビシェフ不等式を正の連関を持つ確率空間上で一般化した不等式<br />
+		チェビシェフ不等式を正比例を持つ確率空間上で一般化した不等式<br />
+		
+		キース・フォルタンとピーター・カステレインとジャン・ジニブレの不等式<br />
+		Kees Fortuin & Pieter Kasteleyn & Jean Ginibre inequality<br />
+		
+	  </td>
+	  <td class="py-4 pr-4">
+	    <img src="img20/ダウンロード (84).png" />
+        <img src="img20/equation (98).png" alt="\mathbb{E}[f(X)g(X)] \geq \mathbb{E}[f(X)]\mathbb{E}[g(X)]"/><br />
+      </td>
+	</tr>
+
+	
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation (67).png" alt="\mathrm{Cov}(f(X), g(X)) \geq 0"/>
+	  </td>
+	  <td class="py-4 pr-4">
+		ハリスの不等式<br />
+		Harris's inequality<br />
+		Harris inequality<br />
+		連関不等式<br />
+		Association inequality<br />
+		確率変数の間の連関があるときに成立する確率的な不等式<br />
+		確率変数の間の関連性があるときに成立する確率的な不等式<br />
+		確率変数の間のAssociationがあるときに成立する確率的な不等式<br />
+		
+		独立な部分集合上で定義された増加関数f, gに対し、Cov(f(X), g(X)) ≥ 0が成り立つことを示す不等式<br />
+		正の連関・正の相関が保たれることを保証する不等式<br />
+		確率変数の集合が連関を持つ場合に有効な不等式<br />
+		確率変数の集合が関連性を持つ場合に有効な不等式<br />
+		確率変数の集合がAssociationを持つ場合に有効な不等式<br />
+		
+		確率変数の独立性を正の連関で一般化した不等式<br />
+		
+		セオドア・ハリスの不等式<br />
+		Theodore Harris inequality<br />
+	  </td>
+	  <td>
+		<img src="img20/ダウンロード (65).png" alt="\mathrm{Cov}(X_i, X_j) \geq 0"/><br />
+	    <img src="img20/equation (67).png" alt="\mathrm{Cov}(X_i, X_j) \geq 0"/><br />
+      </td>
+	  
+	  <!-- Efron-Steinの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (8).png" alt="\mathrm{Var}(Z) \leq \frac{1}{2} \sum_{i=1}^n \mathbb{E}[(Z-Z_{(i)})^2]"/>
+      </td>
+      <td class="py-4 pr-4">
+	    エフロン・スタイン不等式<br />
+		エフロン・スタインの不等式<br />
+        エフロン・シュタイン不等式<br />
+	    エフロン・シュタインの不等式<br />
+	    Efron–Stein inequality<br />
+		複数の独立な確率変数の関数の分散が、各変数を1つだけ変えたときの変動の合計で上から抑えられることを示す不等式<br />
+        複数の関数の分散の上限を示す不等式<br />
+		Varは分散を示す<br />
+        ジャックナイフ推定に使用される不等式<br />
+		ジャックナイフ推定は各観測値を1つずつ抜いて推定を繰り返すことで、推定量のバイアスや分散を評価・補正する再標本法<br />
+        有界差分を評価する不等式<br />
+		分散の定義を条件付き独立で一般化した不等式<br />
+		条件付き独立はX ⊥ Y | Z<br />
+		条件付き独立はZが与えられたときに、XとYは無関係になることを表す<br />
+		
+		
+		ブラッドリー・エフロンとチャールズ・スタインの不等式<br />
+        ブラッドリー・エフロンとチャールズ・シュタインの不等式<br />
+        Bradley Efron & Charles Stein inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (4).png" />
+        <img src="img20/equation (9).png" alt="\mathrm{Var}(Z) \leq \frac{1}{2} \sum_{i=1}^n \mathbb{E}[(Z-Z_{(i)})^2]"/><br />
+      </td>
+    </tr>
+	
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation (69).png" alt="\mathrm{Var}(X) \leq \frac{(b-a)^2}{4}"/>
+	  </td>
+	  <td class="py-4 pr-4">
+	    ポポヴィッチの分散不等式<br />
+		ポポヴィッチ分散不等式<br />
+		ポポヴィチュの分散不等式<br />
+		ポポヴィチュ分散不等式<br />
+		ポポヴィチウの分散不等式<br />
+		ポポヴィチウ分散不等式<br />
+		Popoviciu's inequality on variances<br />
+		Popoviciu inequality on variances<br />
+		ある実数値のデータが最小値aと最大値bの間に収まっている時、そのデータの分散は最大(b/a)^2/4になる事を示す不等式<br />
+		有界確率変数X(a < X < b)の分散の最大値を示す不等式<br />
+		分散の上限評価として使われる不等式<br />
+		aは最小値<br />
+		bは最大値<br />
+		Xは取りうる値<br />
+		分散はデータのばらつきを示す統計量の指標<br />
+		
+		分散の定義を区間上の分布で一般化した不等式<br />
+		分散の定義を具体的な区間幅で特殊化した不等式<br />
+		
+		ティベリウ・ポポヴィッチ分散不等式<br />
+		ティベリウ・ポポポヴィチュの分散不等式<br />
+		ティベリウ・ポポビチウの分散不等式<br />
+		Tiberiu Popoviciu inequality on variances<br />
+	  </td>
+	  <td>
+		<img src="img20/ダウンロード (67).png" alt="\mathrm{Var}(X) \leq 1"/>
+		<img src="img20/equation (70).png" alt="\mathrm{Var}(X) \leq 1"/><br />
+      </td>
+	</tr>
+	
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation - 2025-07-04T002146.709.png" alt="\mathrm{Var}(X+Y) \leq \mathrm{Var}(X) + \mathrm{Var}(Y) + 2|\mathrm{Cov}(X,Y)|"/>
+	  </td>
+	  <td class="py-4 pr-4">
+		分散の和の不等式<br />
+		Inequality for sum of variances<br />
+		2つの確率変数の和の分散を、それぞれの分散と共分散で上から抑える不等式。<br />
+		2つの確率変数が独立ならVar(X+Y)=Var(X)+Var(Y)<br />
+		分散の定義を一般の依存構造にも拡張して一般化した不等式<br />
+	  	分散の定義を高次元ベクトルにも拡張して一般化した不等式<br />
+	  	和の分散公式を一般の依存構造にも拡張して一般化した不等式<br />
+	  	和の分散公式を高次元ベクトルにも拡張して一般化した不等式<br />
+	  </td>
+	  <td class="py-4 pr-4">
+		<img src="img20/ダウンロード (87).png" alt=""/><br />
+	    <img src="img20/equation - 2025-07-04T002126.569.png" alt="\mathrm{Var}(X+Y) \leq \mathrm{Var}(X) + \mathrm{Var}(Y) + 2|\mathrm{Cov}(X,Y)|"/><br />
+	  </td>
+	</tr>
+    
+    <!-- クラメール・ラオの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+		<img src="img20/equation (1).png" alt="$\mathrm{Var}(\bar{X}) \geq \frac{1}{n\sigma^2}$"/>
+	  </td>
+      <td class="py-4 pr-4">
+クラメール・ラオの不等式<br />
+Cramér–Rao inequality<br />
+
+クラメール・ラオ界<br />
+クラメール・ラオ限界<br />
+クラメール・ラオ下限<br />
+Cramér–Rao bound<br />
+
+推定量の分散の下限を示す不等式<br />
+パラメータ推定の精度限界を示す不等式<br />
+正規分布の平均推定を行う不等式<br />
+不偏推定量の分散下界を情報量行列で一般化した不等式<br />
+Varは分散を示す<br />
+θは真のパラメータ値<br />
+θは1つに決まっている値<br />
+θは現実には未知だが、理論上は固定<br />
+ハットθはパラメータθの不偏推定量<br />
+ハットθは母数θの推定値<br />
+ハットθは特定の統計的量<br />
+不偏推定量は母集団のパラメータを平均的に当てる推定量<br />
+I(θ)はFisher情報量を示す<br />
+Fisher情報量は未知パラメータの推定精度の理論的な限界を決める情報の量<br />
+Fisher情報量はあるパラメータについてどれだけの情報がデータに含まれているかを測定するための指標<br />
+		
+ハラルド・クラメールとカリャンプディ・ラオの不等式<br />
+Harald Cramér & Calyampudi Rao inequality<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード.png"/>
+        <img src="img20/equation (57).png" alt="\mathrm{Var}(\hat{\theta}) \geq \frac{1}{I(\theta)}"/><br />
+	  </td>
+    </tr>
+	
+
+    <!-- オラクル不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (12).png" alt="R(\hat{\theta}) \leq C \inf_{\theta} R(\theta) + \Delta_n"/>
+      </td>
+      <td class="py-4 pr-4">
+        オラクル不等式<br />
+        Oracle inequality<br />
+        モデル選択や学習理論のリスク上限を示す不等式<br />
+		過剰リスクに関する非漸近的な上限を示す不等式<br />
+        真の最良モデルとの差を評価する不等式<br />
+		汎化誤差の評価する不等式<br />
+		オラクルは理想的な性能<br />
+		Rはリスク関数<br />
+		RはRisk Function<br />
+		R()はリスク関数<br />
+		R()はモデルの性能を定量化したもの<br />
+		θはパラメータ<br />
+		infを達成するθはオラクル<br />
+		ハットθは推定量<br />
+		ハットθは推定値<br />
+		ハットθは推定されたパラメータ値<br />
+		ハットθはデータから得た推定量<br />
+		R(ハットθ)は平均的な誤差<br />
+		R(ハットθ)は期待値としての損失<br />
+		R(ハットθ)はデータ平均損失<br />
+		R(ハットθ)は推定量θの元でのリスク<br />
+		R(ハットθ)はモデルのリスク<br />
+		Cは定数倍<br />
+		Cは通常1以上<br />
+		Δは誤差<br />
+		
+		クラメール・ラオの不等式を統計モデル・学習理論で一般化した不等式<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (6).png" />
+        <img src="img20/equation (13).png" alt="R(\hat{\theta}) \leq C \inf_{\theta} R(\theta) + \Delta_n"/><br />
+      </td>
+    </tr>
+
+    <!-- PAC-Bayes不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (14).png" alt="\mathbb{E}_{Q}[L(h)] \leq \mathbb{E}_{Q}[\hat{L}(h)] + \sqrt{\frac{KL(Q||P)+\log\frac{2\sqrt{n}}{\delta}}{2(n-1)}}"/>
+      </td>
+      <td class="py-4 pr-4">
+	PAC-Bayes不等式<br />
+	PAC-Bayes inequality<br />
+
+	PAC-Bayes界<br />
+	PAC-Bayes境界<br />
+	PAC-Bayes上界<br />
+	PAC-Bayes限界<br />
+	PAC-Bayes bound<br />	
+
+	PACはProbably Approximately Correct<br />	
+
+	ベイズ事前・事後分布のKLダイバージェンスに基づく汎化誤差の上限を示す不等式<br />
+	汎化誤差の上限を与える不等式<br />
+	未知データでの誤差の上限を与える不等式<br />
+	分類器の汎化誤差評価を行う不等式<br />
+	Qは事後分布<br />
+	Qは学習後の仮説分布<br />
+	Pは事前分布<br /
+	Pは学習前の仮説分布br /
+	E[]は期待値<br />
+	E[L(h)]はL(h)がとりうる値の平均的な値<br />
+	E_Q[L(h)]はQで選んだhの期待損失<br />
+	Lは損失関数の期待値<br />
+	Lは期待損失<br />
+	Lは期待損失関数<br />
+	Lは損失関数<br />
+	LはLoss function<br />
+	ハットLはサンプル上の平均損失<br />
+	E_Q[ハットL(h)]はQで選んだhのサンプル上の期待損失<br />
+	hはモデル<br />
+	hは関数<br />
+	hは入力の関数<br />
+	hは仮説空間に属する仮説<br />
+	hはモデルクラスに属する仮説<br />
+	hは仮説<br />
+	KL(Q||P)は分布QからPのカルバックライブラー情報量<br />
+	KL(Q||P)は分布QからPの相対エントロピー<br />
+	nは訓練データ数<br />
+	δは失敗確率<br />
+	δは信頼度<br />
+
+	
+PAC-Bayes境界を近似推論の手続きとして実装したのが変分ベイズ推論<br />
+PAC-Bayes境界を近似推論する手続きに落とし込んだのが変分ベイズ推論<br />
+PAC-Bayes境界を近似的に最適化する方法が変分ベイズ推論<br />
+
+変分ベイズ推論を理論保証の視点で見直したのがPAC-Bayes境界<br />
+変分ベイズ推論を学習理論的に評価したのが PAC-Bayes境界<br />
+変分ベイズ推論の方が先<br />
+
+PAC-Bayes境界をKLダイバージェンスによって下から解釈したものが変分下限（ELBO）<br />
+
+	PAC-Bayes不等式は、ベイズ汎化誤差バウンドを学習アルゴリズム一般で一般化した不等式<br />
+	PAC-Bayes不等式は、ベイズリスク境界を事後分布・事前分布の特定選択で特殊化した不等式<br />
+	ベイズリスク境界はベイズ推定におけるリスク(平均損失、誤差)をどれだけ小さくできるかについての理論的な下限を与える式<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (7).png" />
+	<img src="img20/equation (15).png" alt="\mathbb{E}_{Q}[L(h)] \leq \mathbb{E}_{Q}[\hat{L}(h)] + \sqrt{\frac{KL(Q||P)+\log\frac{2\sqrt{n}}{\delta}}{2(n-1)}}"/><br />
+      </td>
+	</tr>
+	
+	<!-- ELBO -->
+      <tr class="border-collapse border border-slate-400 align-top">
+        <td class="pr-4 py-4">
+          <!-- 画像は差し替え前提のプレースホルダ。altにLaTeXを置く -->
+          <img src="img20/equation_elbo2.png" alt="\mathrm{ELBO}=\mathbb{E}_{q(z|x)}[\log p_\theta(x|z)]-\mathrm{KL}(q(z|x)\|p(z))" />
+        </td>
+        <td class="py-4 pr-4 text-sm sm:text-base">
+          変分下限（ELBO）<br />
+         Evidence Lower BOund<br />
+          変分下界 (Variational lower bound)<br />
+          生成モデルや変分推論で使う確率の計算を簡単にするための近似式<br />
+          生成モデルや変分推論で使う下界の不等式<br />
+          観測データxの確率 log pθ(x) を下から押さえる不等式<br />
+          観測データxの確率 log pθ(x) を下界を作る不等式<br />
+          ログ周辺尤度の下界：log pθ(x) を下から抑える不等式<br />
+          
+         ELBO最大化≡q(z|x)をpθ(z|x)に近づける<br />
+         ELBO を大きくする ≒ 近似分布 q(z∣x) を真の事後分布 pθ(z∣x) に近づける<br />
+         ELBO最大化≡事後KL最小化<br />
+         ELBO を大きくする ≒ 近似事後分布 q(z∣x) と真の事後分布 pθ(z∣x) のKL を小さくする<br />
+          下界（lower bound）なので数値が大きいほど尤度下界が引き上がる<br />
+          下界（lower bound）なので数値が大きいほど尤度の見積もりが改善される<br />
+
+変分下限（ELBO）を最大化する手続きが変分ベイズ推論<br />
+変分下限（ELBO）を上から評価したものがPAC-Bayes境界<br />
+変分ベイズ推論はベイズ事後分布をKLダイバージェンスを最小化した近似分布で表す手法<br />
+          
+          変分下限（ELBO）は、Jensenの不等式 を 変分推論 で一般化した不等式<br />
+	 変分下限（ELBO）は、PAC-Bayes不等式 を ベイズ推論 に特殊化した不等式<br />
+        </td>
+        <td class="py-4 pr-4">
+          <img src="img20/output_elbo.png" alt=""/><br />
+          <img src="img20/equation_elbo.png" alt="\log p_\theta(x) \ge \mathbb{E}_{q_\phi(z|x)}[\log p_\theta(x,z) - \log q_\phi(z|x)]" />
+        
+        </td>
+      </tr>
+	
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation (71).png" alt="\mathbb{E}[\max_{1\leq i\leq n} |X_i|] \leq C \sqrt{\log n} \max_{1\leq i\leq n} (\mathbb{E}|X_i|^2)^{1/2}"/>
+	  </td>
+	  <td class="py-4 pr-4">
+ネミロフスキーの不等式<br />
+ネミロフスキー不等式<br />
+Nemirovski's inequality<br />
+Nemirovski inequality<br />
+
+ネミロフスキー界<br />
+ネミロフスキー上界<br />
+ネミロフスキー限界<br />
+Nemirovski bound<br />	
+
+独立な確率変数列X_iについて最大値の期待値を評価する集中不等式<br />
+最大値の平均が√log nスケールで上から抑えられることを示す不等式<br />
+Cは定数<br />
+Cは2か3<br />
+高次元確率論で応用される集中不等式<br />
+
+分散の和の不等式を高次元のノルム空間上で一般化した不等式<br />		
+分散の和の不等式を一般の凸集合上で一般化した不等式<br />
+
+ポアンカレの不等式を線形関数の場合に限定して特殊化した不等式<br />
+ポアンカレの不等式を特定のノルムの場合に限定して特殊化した不等式<br />
+
+Khintchine inequality を 特定のノルムや次元 で特殊化した不等式<br />
+
+アルカディ・ネミロフスキーの不等式<br />
+Arkadi Nemirovski inequality<br />
+	  </td>
+	  <td>
+		<img src="img20/ダウンロード (68).png" alt="\mathbb{E}[\max_{i=1}^n |X_i|] \leq C \sqrt{\log n} \sigma"/>
+		<img src="img20/equation (72).png" alt="\mathbb{E}[\max_{i=1}^n |X_i|] \leq C \sqrt{\log n} \sigma"/>
+	  </td>
+	</tr>
+
+
+
+  </tbody>
+</table>
+
+<table class="w-full mb-4">
+  <caption class="text-lg font-semibold">
+    情報理論の不等式<br />
+  </caption>
+  <tbody>
+    <tr>
+      <td width="20%">表記</td>
+      <td width="40%">意味</td>
+      <td width="40%">例</td>
+    </tr>
+    
+    <!-- クラフトの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (16).png" alt="\sum_{i=1}^n 2^{-l_i} \leq 1"/>
+      </td>
+      <td class="py-4 pr-4">
+        クラフトの不等式<br />
+		Kraft inequality<br />
+        Kraft's inequality<br />
+		プレフィックス符号について、効率的な符号化が可能かどうかを判定するために使われる不等式<br />
+        プレフィックス符号長l_iに対する符号可能条件。<br />
+        任意のプレフィックス符号で成立する不等式<br />
+		プレフィックス符号はどの符号語も、他の先頭部分にならないように設計された符号<br />
+		2進法の場合、符号語長がAが2, Bが2, Cが1なら1となる<br />
+		
+		プレフィックス符号の存在定理を符号長全体に対して一般化した不等式<br />
+		
+        レオ・クラフトの不等式<br />
+        Leo Kraft inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (8).png" />
+        <img src="img20/equation (17).png" alt="2^{-2} + 2^{-2} + 2^{-1} = 1"/>
+      </td>
+    </tr>
+
+    <!-- 情報不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equsssssssssssation.png" alt="H(X|Y) \leq H(X)"/>
+      </td>
+      <td class="py-4 pr-4">
+        情報不等式<br />
+        Information inequality<br />
+		シャノンの基本不等式<br />
+        Shannon's basic inequality<br />
+		Shannon basic inequality<br />
+        シャノンの不等式<br />
+        Shannon's inequality<br />
+		Shannon inequality<br />
+        相互情報量I(X;Y)は常に非負となる不等式<br />
+        自己情報量は負にならない不等式<br />
+		エントロピーは負にならない不等式<br />
+        XとYが独立ならI(X;Y)=0となる不等式<br />
+		条件付きエントロピーH(X|Y)は周辺エントロピーのH(X)以下となる不等式<br />
+        知識を得るほど不確実性は減少する不等式<br />
+		
+		エントロピーと平均符号長の関係を一般の確率分布に対して一般化した不等式<br />
+		
+        クロード・シャノンの不等式<br />
+        Claude Shannon inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (9).png" />
+        <img src="img20/equation (18).png" alt="H(X|X)=0 \leq H(X)"/>
+      </td>
+    </tr>
+
+    <!-- Zhang-Yeung不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (19).png" alt="I(A;B) \leq I(A;B|C) + I(A;C|B) + I(B;C|A)"/>
+      </td>
+      <td class="py-4 pr-4">
+	    チェン・ヨンの不等式<br />
+        Zhang–Yeung inequality<br />
+        非シャノン型の情報不等式<br />
+		Non-Shannon-type inequality<br />
+        情報量の新たな不等式。<br />
+		3変数の情報関係<br />
+		Aを知る事により得られるBの情報量よりも「Cを知っているときのAとBの情報量」や「Bを知っているときのAとCの情報量」、「Aを知っているときのBとCの情報量」の合計のほうが大きいか同じ<br />
+		AとBで得られる情報量はCを介して得られる情報の合計よりも多くはならない事を示す不等式<br />
+        シャノン型不等式では捉えられない関係を表現の不等式<br />
+		
+		シャノンの基本不等式を特定の条件で特殊化した不等式<br />
+		チャン・チェンとレイモンド・ヨンの不等式<br />
+        Zhang Zhen & Raymond Yeung inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (11).png" />
+        <img src="img20/equation (19).png" alt="I(A;B) \leq I(A;B|C) + I(A;C|B) + I(B;C|A)"/>
+      </td>
+    </tr>
+
+    <!-- ファノの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (6).png" alt="H(P_e) + P_e \log(|\mathcal{A}|-1) \geq H(X|Y)"/>
+      </td>
+      <td class="py-4 pr-4">
+        ファノの不等式<br />
+        Fano's inequality<br />
+        Fano inequality<br />
+        誤り確率と条件エントロピーの関係を示す不等式<br />
+        2値変数の場合で用いられる不等式<br />
+		多値変数の場合でも用いられる不等式<br />
+		あるデータXを観測Yから推定する不等式<br />
+		あるデータXを観測Yから復元する不等式<br />
+		条件付きエントロピーが高いと誤り確率も高い事を示す不等式<br />
+		条件付きエントロピーが小さいと誤り確率も小さい事を示す不等式<br />
+		誤り確率が高いと条件付きエントロピーは高い事を示す不等式<br />
+		誤り確率がゼロなら条件付きエントロピーは小さい事を示す不等式<br />
+		P_eは誤り確率<br />
+		H()は2値エントロピー関数<br />
+		2値エントロピー関数は0と1の2値データの平均情報量を表す関数<br />
+		AはXのとりうる値の種類<br />
+		AはXが6面サイコロなら6<br />
+        情報理論や推定論で用いられる不等式<br />
+		
+		エントロピーと誤り確率の関係を任意の識別問題で一般化した不等式<br />
+		
+		ロバート・ファノの不等式<br />
+		ロベルト・ファノの不等式<br />
+        Robert Fano inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (3).png" />
+        <img src="img20/equation (7).png" alt="H(P_e) + P_e \log(|\mathcal{A}|-1) \geq H(X|Y)"/><br />
+      </td>
+    </tr>
+	
+	<!-- Hanの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (73).png" alt="H(X_1, ..., X_n) \leq \sum_{i=1}^n H(X_i | X_{1}, ..., X_{i-1})"/>
+      </td>
+      <td class="py-4 pr-4">
+        ハンの不等式<br />
+        Han's inequality<br />
+        Han inequality<br />
+		多変数の結合エントロピーの下界を示す不等式<br />
+		多変数の結合エントロピーの上界を示す不等式<br />
+		複数の確率変数の結合エントロピーが、条件付きエントロピーの和以下になることを示す不等式<br />
+        情報理論、符号理論、確率論において重要な役割を持つ<br />
+        確率変数の独立性や従属性に関する研究で応用される<br />
+		
+		エントロピーの強サブ加法性を一般の情報源に対して一般化した不等式<br />
+		エントロピーの強サブアディティブ性を一般の情報源に対して一般化した不等式<br />
+		エントロピーのストロングサブアディティビティを一般の情報源に対して一般化した不等式<br />
+		ストロングサブアディティビティはSSA<br />
+		ストロングサブアディティビティはH(X, Y, Z) + H(Y) ≤ H(X, Y) + H(Y, Z)<br />
+		ストロングサブアディティビティはH(X, Z | Y) ≤ H(X | Y) + H(Z | Y)<br />
+		サブアディティビティはsubadditivity<br />
+		サブアディティビティは確率を別々に評価した重みの合計が、その全体の重みよりも小さくなる性質<br />
+		サブアディティビティはH(X, Y) ≤ H(X) + H(Y)<br />
+		ハン・テスンの不等式<br />
+		韓 太舜の不等式<br />
+        Te Sun Han inequality<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (69).png" alt="H(X,Y,Z) \leq H(X) + H(Y|X) + H(Z|X,Y)"/>
+        <img src="img20/equation (74).png" alt="H(X,Y,Z) \leq H(X) + H(Y|X) + H(Z|X,Y)"/>
+      </td>
+    </tr>
+
+    <!-- ベルの不等式（CHSH 形式） -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (101).png" alt="|\,\mathbb{E}[A_0B_0]+\mathbb{E}[A_0B_1]+\mathbb{E}[A_1B_0]-\mathbb{E}[A_1B_1]\,| \le 2"/>
+      </td>
+      <td class="py-4 pr-4">
+        ベルの不等式<br />
+       Bell's inequality<br />
+       CHSH不等式<br />
+       Clauser–Horne–Shimony–Holt inequalit<br />
+        ツィレルソンの上界<br />
+       Tsirelson bound<br />
+        
+        <br />
+        局所実在論が許す古典相関の上限が2、量子力学の上限が2√2の上限を示す不等式<br />
+        量子非局所性・デバイス非依存型暗号・乱数生成の基盤となる不等式<br />
+        <br />
+        ジョン・ベルの不等式<br />
+        John S. Bell inequality<br />
+        
+        クロード・クロージャー、マイケル・ホーン、アブナー・シモニー、リチャード・ホルトの不等式<br />
+        John Clauser & Michael Horne & Abner Shimony & Richard Holt inequality<br />
+        
+        ボリス・ツィレルソンの上界<br />
+       Boris Tsirelson bound<br />
+        
+      </td>
+      <td>
+        <img src="img20/ダウンロード (88)_.png" alt="古典境界2と量子境界2√2の比較図"/>
+        <img src="img20/equation (102).png" alt="|\,E_{00}+E_{01}+E_{10}-E_{11}\,| \le 2 \quad(\text{LHV}); \ \le 2\sqrt{2} \quad(\text{Quantum})"/><br />
+      </td>
+    </tr>
+
+
+    <!-- Pinskerの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (75).png" alt="\|P-Q\|_{TV} \leq \sqrt{\frac{1}{2} D_{KL}(P\|Q)}"/>
+      </td>
+      <td class="py-4 pr-4">
+ピンスカーの不等式<br />
+Pinsker's inequality<br />
+Pinsker inequality<br />
+
+ピンスカー界<br />
+ピンスカー限界<br />
+Pinsker bound<br />	
+
+KLダイバージェンスが小さいとき、全変動距離も小さいことを保証する不等式<br />
+全変動距離はTV距離<br />
+全変動距離はTotal Variation Distance<br />
+全変動距離は2つの分布の違いの合計<br />
+全変動距離は(|A_i - B_i|)/2<br />
+情報理論・統計学・機械学習などで分布間の近さを評価する際に用いられる<br />
+
+KLダイバージェンスが小さい場合の変動距離上界を特定の分布対や小さい領域で特殊化した不等式<br />
+
+マルク・ピンスカーの不等式<br />
+Mark Pinsker inequality<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (70).png" alt="KL(P\|Q)=0.02のとき、TV(P,Q) ≤ sqrt(0.01) = 0.1"/>
+        <img src="img20/equation (79).png" alt="KL(P\|Q)=0.02のとき、TV(P,Q) ≤ sqrt(0.01) = 0.1"/>
+      </td>
+    </tr>
+
+    <!-- Birgéの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (76).png" alt="H(P) - H(Q) \leq D_{KL}(P\|Q) + \log e \cdot TV(P, Q)"/>
+      </td>
+      <td class="py-4 pr-4">
+	    ビルジェの不等式<br />
+        Birgé's inequality<br />
+        Birgé inequality<br />
+		2つの確率分布PとQの全変動距離が小さい時、それぞれのエントロピーの違いも大きくならない事を保証する不等式<br />
+		全変動距離はTV距離<br />
+        全変動距離はTotal Variation Distance<br />
+		全変動距離は2つの分布の違いの合計<br />
+		全変動距離は(|A_i - B_i|)/2<br />
+        二つの確率分布PとQのエントロピー差とKLダイバージェンス、全変動距離の関係を示す不等式<br />
+        確率分布が近いほどエントロピーの差も小さいことを定量化する不等式<br />
+		エントロピーの安定性や推定誤差の上限評価に利用される不等式<br />
+		
+		ピンスカーの不等式をエントロピー差に拡張した場合で特殊化した不等式<br />
+		
+        リュシアン・ビルジェの不等式<br />
+        Lucien Birgéの不等式<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (71).png" alt="PとQが十分近いとき、H(P) ≈ H(Q)"/>
+        <img src="img20/equation (77).png" alt="\|P - Q\|_1 \leq \varepsilon \implies |H(P) - H(Q)| \leq C\, \varepsilon \log \frac{n}{\varepsilon}"/>
+      </td>
+    </tr>
+
+    <!-- エントロピー不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (80).png" alt="H(X) \leq \log(|\mathcal{X}|)"/>
+      </td>
+      <td class="py-4 pr-4">
+        エントロピー不等式<br />
+        Entropy inequality<br />
+        確率変数Xのエントロピーは、その取りうる値の個数の対数以下であることを示す不等式<br />
+		Xが6面サイコロならH(X) ≤ log(6)であることを示す不等式<br />
+		
+		確率分布のエントロピーの上限評価を有限集合上の分布全体に対して一般化した不等式<br />
+		
+      </td>
+      <td>
+        <img src="img20/ダウンロード (72).png" alt=""/>
+        <img src="img20/equation (81).png" alt="H(X) \leq \log 6"/>
+      </td>
+    </tr>
+
+    <!-- パワーエントロピー不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (82).png" alt="h(X) \leq \frac{1}{2} \log(2 \pi e \sigma^2)"/>
+      </td>
+      <td class="py-4 pr-4">
+        パワーエントロピー不等式<br />
+        Power entropy inequality<br />
+		エントロピーのパワー不等式<br />
+		Entropy Power Inequality<br />
+		EPI<br />
+        連続確率変数Xの微分エントロピーは、その分散で決まる上限を超えないことを示す不等式<br />
+		連続確率変数Xの微分エントロピーは、その分散で決まるガウス分布を超えないことを示す不等式<br />
+		エントロピーの最大値はガウス分布で達成されることを示す不等式<br />
+        ガウス分布が与えられた分散のもとで最も不確実性が高いことを定量化する不等式<br />
+		ブルン・ミンコフスキー不等式をエントロピー空間で一般化した不等式<br />
+      	ブルン・ミンコフスキー不等式を確率連続分布で一般化した不等式<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (73).png" alt="Var(X)=1ならh(X) ≤ (1/2) log(2πe)"/>
+        <img src="img20/equation (83).png" alt="h(X) \leq \frac{1}{2} \log(2\pi e)"/>
+      </td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+<table class="w-full mb-4">
+  <caption class="text-lg font-semibold">
+    集中不等式・大偏差不等式<br />
+  </caption>
+  <tbody>
+    <tr>
+      <td width="20%">表記</td>
+      <td width="40%">意味</td>
+      <td width="40%">例</td>
+    </tr>
+
+    <!-- チェルノフの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (24).png" alt="P(S_n \geq t) \leq \inf_{s>0} \mathbb{E}[e^{s S_n}] e^{-st}"/>
+      </td>
+      <td class="py-4 pr-4">
+チェルノフの不等式<br />
+チェルノフ不等式<br />
+Chernoff's inequality<br />
+Chernoff inequality<br />
+
+チェルノフ界<br />
+チェルノフ上界<br />
+チェルノフ限界<br />
+Chernoff bound<br />	
+
+独立同一分布の部分和を指定した範囲で抑える不等式<br />
+独立同一分布の部分和が平均からどの程度まで離れるかを制約する不等式<br />
+独立同一分布の部分和の範囲を抑える集中不等式<br />
+独立同一分布はi.i.d.のこと<br />
+i.i.d.は離散型でも連続型でも使える確率分布<br />
+i.i.d.は確率変数の列が、それぞれ他の確率変数と同じ確率分布を持ち、それぞれ互いに独立している場合<br />
+i.i.d.はサイコロの出目（離散的なi.i.d.）<br />
+i.i.d.はコイン投げの結果（離散的なi.i.d.）<br />
+i.i.d.は身長データ（連続的なi.i.d.）<br />
+i.i.d.は待ち時間データ（連続的なi.i.d.）<br />
+独立同一分布の和の大偏差確率の上界を与える不等式<br />
+大偏差確率は独立同一分布な確率変数の和や平均が大きく逸脱する確率<br />
+モーメント母関数を用いた大偏差評価の基本形となる不等式<br />
+モーメント母関数はMoment Generating Gunction<br />
+モーメント母関数はMGF<br />
+モーメント母関数のモーメントは確率変数の平均的な性質や分布の形を特徴づける値の事<br />
+1次モーメントは平均<br />
+2次モーメントは分散<br />
+3次モーメントは歪度<br />
+3次モーメントは左右非対称性<br />
+4次モーメントは尖度<br />
+4次モーメントはとがり具合<br />
+tは平均の範囲を超えるかを指定するパラメータ<br />
+tは平均からどれだけ離れるかを指定するしきい値<br />
+tはthreshold<br />
+tは自分で設定するパラメータ<br />
+S_nは独立同一分布の部分和<br />
+sは右辺の上界をできるだけ小さくするための調整パラメータ<br />
+sは任意の正の数<br />
+infは集合の中ですべての要素以上の最も大きい下界<br />
+infは集合の最大の下界<br />
+eは自然対数の底<br />
+eはネイピア数<br />
+e ≈ 2.71828...<br />
+指数型集中評価を与える不等式<br />
+
+マルコフの不等式を指数関数型で一般化した不等式<br />
+
+ハーマン・チェルノフの不等式<br />
+Herman Chernoff inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (25).png" />
+        <img src="img20/equation (24).png" alt="P(S_n \geq t) \leq \inf_{s>0} \mathbb{E}[e^{s S_n}] e^{-st}"/>
+      </td>
+    </tr>
+    <!-- Hoeffdingの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (21).png" alt="P(\bar{X}_n - \mathbb{E}[\bar{X}_n] \geq t) \leq \exp\left(-\frac{2nt^2}{(b-a)^2}\right)"/>
+      </td>
+      <td class="py-4 pr-4">
+ホフディングの不等式<br />
+ホフディング不等式<br />
+Hoeffding's inequality<br />
+Hoeffding inequality<br />
+
+ホフディング界<br />
+ホフディング上界<br />
+ホフディング限界<br />
+Hoeffding bound<br />	
+
+独立同一分布の部分和を指定した範囲で抑える不等式<br />
+独立同一分布の部分和が平均からどの程度まで離れるかを制約する不等式<br />
+独立同一分布の部分和の範囲を抑える集中不等式<br />
+独立同一分布はi.i.d.のこと<br />
+i.i.d.は離散型でも連続型でも使える確率分布<br />
+i.i.d.は確率変数の列が、それぞれ他の確率変数と同じ確率分布を持ち、それぞれ互いに独立している場合<br />
+i.i.d.はサイコロの出目（離散的なi.i.d.）<br />
+i.i.d.はコイン投げの結果（離散的なi.i.d.）<br />
+i.i.d.は身長データ（連続的なi.i.d.）<br />
+i.i.d.は待ち時間データ（連続的なi.i.d.）<br />
+独立同一分布の和の大偏差確率の上界を与える不等式<br />
+大偏差確率は独立同一分布な確率変数の和や平均が大きく逸脱する確率<br />
+tは平均の範囲を超えるかを指定するパラメータ<br />
+tは平均からどれだけ離れるかを指定するしきい値<br />
+tはthreshold<br />
+tは自分で設定するパラメータ<br />
+S_nは独立同一分布の部分和<br />
+nは独立同一分布の個数<br />
+aは最小値<br />
+bは最大値<br />
+aとbは範囲<br />
+aとbは幅<br />
+指数型集中評価を与える不等式<br />
+チェルノフの不等式を有界確率変数の場合で一般化した不等式<br />
+
+ワシリー・ホフディングの不等式<br />
+Wassily Hoeffding inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (21).png" />
+        <img src="img20/equation (21).png" alt="P(\bar{X}_n - \mathbb{E}[\bar{X}_n] \geq t) \leq \exp(-2nt^2/(b-a)^2)"/>
+      </td>
+    </tr>
+
+	
+	<!-- ベルンシュタイン不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (20).png" alt="P(|S_n| \geq t) \leq 2 \exp\left(-\frac{t^2}{2(n\sigma^2 + Mt/3)}\right)"/>
+      </td>
+      <td class="py-4 pr-4">
+ベルンシュタインの不等式<br />
+ベルンシュタイン不等式<br />
+Bernstein's inequality<br />
+Bernstein inequality<br />
+
+ベルンシュタイン界<br />
+ベルンシュタイン上界<br />
+ベルンシュタイン限界<br />
+Bernstein bound<br />	
+
+独立同一分布の部分和が特定の確率で指定した範囲を超えないことを保証する不等式<br />
+独立同一分布の部分和が平均からどの程度まで離れるかを制約する不等式<br />
+独立同一分布の部分和のばらつきを抑える集中不等式<br />
+独立同一分布の部分和の分散＋最大値を抑える集中不等式<br />
+独立同一分布はi.i.d.のこと<br />
+i.i.d.は離散型でも連続型でも使える確率分布<br />
+i.i.d.は確率変数の列が、それぞれ他の確率変数と同じ確率分布を持ち、それぞれ互いに独立している場合<br />
+i.i.d.はサイコロの出目（離散的なi.i.d.）<br />
+i.i.d.はコイン投げの結果（離散的なi.i.d.）<br />
+i.i.d.は身長データ（連続的なi.i.d.）<br />
+i.i.d.は待ち時間データ（連続的なi.i.d.）<br />
+独立同一分布の和の大偏差確率の上界を与える不等式<br />
+大偏差確率は独立同一分布な確率変数の和や平均が大きく逸脱する確率<br />
+tは分散の範囲を超えるしきい値<br />
+tはthreshold<br />
+tは自分で設定するパラメータ<br />
+S_nは独立同一分布の部分和<br />
+σは分散<br />
+nは独立同一分布の個数<br />
+Mは一つ一つの変数が平均から最大でどれだけ離れ得るかの上限<br />
+Mは一つ一つの変数の平均からの最大のずれの上限<br />
+Mは確率変数の最大値の上界<br />
+Mはばらつきの最大幅<br />
+Mは有界性定数<br />
+指数型集中評価を与える不等式<br />
+有界差分を利用する不等式<br />
+ホフディングの不等式を分散情報を用いて一般化した不等式<br />
+
+セルゲイ・ベルンシュタインの不等式<br />
+Sergei Bernstein inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (20).png" />
+        <img src="img20/equation (20).png" alt="P(|S_n| \geq t) \leq 2\exp(-t^2/(2n\sigma^2 + 2Mt/3))"/>
+      </td>
+    </tr>
+	
+	<!-- Bennettの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (22).png" alt="P(S_n \geq t) \leq \exp\left(-n \cdot h\left(\frac{t}{n\sigma^2}\right)\right)"/>
+      </td>
+      <td class="py-4 pr-4">
+ベネットの不等式<br />
+ベネット不等式<br />
+Bennett's inequality<br />
+Bennett inequality<br />
+
+ベネット界<br />
+ベネット上界<br />
+ベネット限界<br />
+Bennett bound<br />	
+
+分散だけでなく分布の「厚み」も考慮した精緻な評価を示す不等式<br />
+分布の裾が急速に減衰する（テールが軽い）場合により鋭い評価が可能な不等式<br />
+独立同一分布の部分和が特定の確率で指定した範囲を超えないことを保証する不等式<br />
+独立同一分布の部分和が平均からどの程度まで離れるかを制約する不等式<br />
+独立同一分布の部分和のばらつきを抑える集中不等式<br />
+独立同一分布の部分和の分散＋最大値を抑える集中不等式<br />
+独立同一分布はi.i.d.のこと<br />
+i.i.d.は離散型でも連続型でも使える確率分布<br />
+i.i.d.は確率変数の列が、それぞれ他の確率変数と同じ確率分布を持ち、それぞれ互いに独立している場合<br />
+i.i.d.はサイコロの出目（離散的なi.i.d.）<br />
+i.i.d.はコイン投げの結果（離散的なi.i.d.）<br />
+i.i.d.は身長データ（連続的なi.i.d.）<br />
+i.i.d.は待ち時間データ（連続的なi.i.d.）<br />
+独立同一分布の和の大偏差確率の上界を与える不等式<br />
+大偏差確率は独立同一分布な確率変数の和や平均が大きく逸脱する確率<br />
+tは分散の範囲を超えるしきい値<br />
+tはthreshold<br />
+tは自分で設定するパラメータ<br />
+S_nは独立同一分布の部分和<br />
+σは分散<br />
+nは独立同一分布の個数<br />
+hはレート関数<br />
+レート関数は稀な現象がどれくらい起こりにくいかを指数的な速度で評価するための関数<br />
+レート関数は稀な現象がどれくらい小さいかを決める関数<br />
+
+ベルンシュタインの不等式をより精密な分散情報と有界性条件で一般化した不等式<br />
+
+ジョージ・ベネットの不等式<br />
+George Bennett inequality<br /
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (22).png" />
+        <img src="img20/equation (22).png" alt="P(S_n \geq t) \leq \exp(-n h(t/(n\sigma^2)))"/>
+      </td>
+    </tr>
+	
+	<!-- Bousquetの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (84).png" alt="P\left(S_n - \mathbb{E}[S_n] \geq t\right) \leq \exp\left(-\frac{t^2}{2V + 2Mt/3}\right)"/>
+      </td>
+      <td class="py-4 pr-4">
+ブスケの不等式<br />
+Bousquet's inequality<br />
+Bousquet inequality<br />
+
+ブスケ界<br />
+ブスケ上界<br />
+ブスケ限界<br />
+Bousquet bound<br />	
+
+有限個の独立確率変数の和の偏差を指数的に抑えることができる不等式<br />
+バリアンス項Vと最大幅Mによる鋭い評価を与える不等式<br />
+tは分散の範囲を超えるしきい値<br />
+tはthreshold<br />
+tは自分で設定するパラメータ<br />
+S_nは独立同一分布の部分和<br />
+σは分散<br />
+nは独立同一分布の個数<br />
+Mは一つ一つの変数が平均から最大でどれだけ離れ得るかの上限<br />
+Mは一つ一つの変数の平均からの最大のずれの上限<br />
+Mは確率変数の最大値の上界<br />
+Mはばらつきの最大幅<br />
+Mは有界性定数<br />
+ベルンシュタインの不等式を経験過程に拡張して一般化した不等式<br />
+
+機械学習や統計学でのリスク評価や集中不等式として使われる不等式<br />
+
+オリヴィエ・ブスケの不等式
+Olivier Bousquetの不等式<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (74).png" alt="V=10, M=2, t=3 の場合の上界計算例"/>
+        <img src="img20/equation (85).png" alt="P(S_n \geq t) \leq \exp\left( - \frac{t^2}{2(V + M t/3)} \right)"/>
+      </td>
+    </tr>
+	
+	
+	
+    <!-- McDiarmidの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (23).png" alt="P(f(X) - \mathbb{E}[f(X)] \geq t) \leq \exp\left(-\frac{2t^2}{\sum c_i^2}\right)"/>
+      </td>
+      <td class="py-4 pr-4">
+マクディアミッドの不等式<br />
+マクディアミッド不等式<br />
+マクダイアミッドの不等式<br />
+マクダイアミッド不等式<br />
+McDiarmid's inequality<br />
+McDiarmid inequality<br />
+
+マクディアミッド界<br />
+マクディアミッド上界<br />
+マクディアミッド限界<br />
+McDiarmid bound<br />	
+
+有界差分不等式<br />
+bounded differences inequality<br />
+有界差分を利用する不等式<br />
+
+関数の出力値が平均から大きく離れる確率を指数的に小さく抑える集中不等式<br />
+関数の出力値が平均からどの程度まで離れるかを制約する不等式<br />
+有限個の変数の関数f(X)がそれぞれの変数をちょっと変えたときの感度c_iに基づく集中評価する不等式<br />
+C_iは有界差分条件の各個の有界差分<br />
+Cは有界差分条件<br />
+Cはbounded differences<br />
+有界差分条件は複数の変数からなる関数fについて各変数を1つだけ変えても、関数の値はあまり大きく変わらないことを保証する条件<br />
+有界差分は1回だけ変えた時に全体がどれだけ変わるかが上限で決まっている性質<br />
+iは各ステップの番号<br />
+iはindex<br />
+tは平均の範囲を超えるかを指定するパラメータ<br />
+tは平均からどれだけ離れるかを指定するしきい値<br />
+tはthreshold<br />
+tは自分で設定するパラメータ<br />
+離散最適化や組合せ問題で使用する不等式<br />
+指数型集中評価を与える不等式<br />
+ホフディングの不等式をリプシッツ関数で一般化した不等式<br />
+リプシッツ関数は個々の変数への感度が有限な関数<br />
+
+コリン・マクディアミッドの不等式<br />
+コリン・マクダイアミッドの不等式<br />
+Colin McDiarmid inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (23).png" />
+        <img src="img20/equation (23).png" alt="P(f(X) - \mathbb{E}[f(X)] \geq t) \leq \exp(-2t^2/\sum c_i^2)"/>
+      </td>
+    </tr>
+
+    <!-- Boucheron-Lugosi-Massartの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equatiodddddddddddddddn.png" alt="P(S_n - \mathbb{E}[S_n] \geq t) \leq \exp\left(-\frac{t^2}{2V + 2Mt/3}\right)"/>
+      </td>
+      <td class="py-4 pr-4">
+ブシュロン・ルゴシ・マサールの不等式<br />
+ブシュロン・ルゴシ・マサール不等式<br />
+Boucheron-Lugosi-Massart inequality<br />
+
+ブシュロン・ルゴシ・マサール界<br />
+ブシュロン・ルゴシ・マサール限界<br />
+Boucheron-Lugosi-Massart bound<br />	
+
+関数の出力値が平均から大きく離れる確率を指数的に小さく抑える集中不等式<br />
+関数の出力値が平均からどの程度まで離れるかを制約する不等式<br />
+有限個の変数の関数f(X)がそれぞれの変数をちょっと変えたときの感度c_iに基づく集中評価する不等式<br />
+Vは個々の確率変数の分散の合計<br />
+Vは全体のブレやすさを表す<br />
+C_iは有界差分条件の各個の有界差分<br />
+Cは有界差分条件<br />
+Cはbounded differences<br />
+有界差分条件は複数の変数からなる関数fについて各変数を1つだけ変えても、関数の値はあまり大きく変わらないことを保証する条件<br />
+有界差分は1回だけ変えた時に全体がどれだけ変わるかが上限で決まっている性質<br />
+iは各ステップの番号<br />
+iはindex<br />
+tは平均の範囲を超えるかを指定するパラメータ<br />
+tは平均からどれだけ離れるかを指定するしきい値<br />
+tはthreshold<br />
+tは自分で設定するパラメータ<br />
+Mは一つ一つの変数が平均から最大でどれだけ離れ得るかの上限<br />
+Mは一つ一つの変数の平均からの最大のずれの上限<br />
+Mは確率変数の最大値の上界<br />
+Mはばらつきの最大幅<br />
+Mは有界性定数<br />
+有界差分を利用する不等式<br />
+
+マクディアミッドの不等式を有界差分条件の緩和で一般化した不等式<br />
+マクディアミッドの不等式を重みづけ付き和で一般化した不等式<br />
+
+集中評価の統合的な枠組みの不等式<br />
+機械学習での汎化誤差評価を表す不等式<br />
+
+セバスチャン・ブシュロンとガーボル・ルゴシとパスカル・マサールの不等式<br />
+Sébastien Boucheron & Gábor Lugosi & Pascal Massart inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (24).png" />
+        <img src="img20/equatiodddddddddddddddn.png" alt="P(S_n - \mathbb{E}[S_n] \geq t) \leq \exp(-t^2/(2V+2Mt/3))"/>
+      </td>
+    </tr>
+
+    <!-- Dudleyのチェイニング不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (25).png" alt="\mathbb{E}[\sup_{t \in T} X_t] \leq K \int_0^{\infty} \sqrt{\log N(T, d, \epsilon)} d\epsilon"/>
+      </td>
+      <td class="py-4 pr-4">
+        ダドリーのチェイニング不等式<br />
+        Dudley's chaining inequality<br />
+        ガウス過程で極大値の期待値を評価する不等式<br />
+		ガウス過程の最大値を評価する不等式<br />
+		tは探したい場所の番号<br />
+		tは探したい場所のインデックス<br />
+		Tはtの全部の場所<br />
+		Tはtの全部の集合<br />
+		Kは自分で設定するパラメータ<br />
+		Kは定数<br />
+		dは距離の測り方<br />
+		dは距離関数<br />
+		dはセミメトリック<br />
+		セミメトリックは三角不等式のない距離の事<br />
+		セミメトリックはほぼダイバージェンスの事<br />
+		εは被覆に使うボールの半径<br />
+		εはどれくらい細かくグループ分けするか」を決める「ものさし<br />
+		確率解析の道具として重要な不等式<br />
+		
+		単一確率変数の最大値評価を連続的チェイニング構造に拡張して特殊化した不等式<br />
+		離散集合上の最大値評価を連続的チェイニング構造に拡張して特殊化した不等式<br />
+		チェイニングは複雑な空間の最大値や集中現象を精密に評価するための数学的テクニック<br />
+		チェイニングは複雑な空間（たとえば関数クラスや高次元空間）を、だんだん細かくカバーする多段階の玉（ボール）で覆っていく数学的テクニック<br />
+		
+        リチャード・ダドリーのチェイニング不等式<br />
+        Richard Dudley chaining inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (26).png" />
+        <img src="img20/equation (25).png" alt="\mathbb{E}[\sup_{t \in T} X_t] \leq K \int_0^{\infty} \sqrt{\log N(T, d, \epsilon)} d\epsilon"/>
+      </td>
+    </tr>
+	
+	
+
+
+  </tbody>
+</table>
+
+<table class="w-full mb-4">
+  <caption class="text-lg font-semibold">
+    幾何学・測度論・解析の不等式<br />
+  </caption>
+  <tbody>
+    <tr>
+      <td width="20%">表記</td>
+      <td width="40%">意味</td>
+      <td width="40%">例</td>
+    </tr>
+    
+    <!-- ポアンカレの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (39).png" alt="\int_\Omega |u(x) - \bar{u}|^2 dx \leq C \int_\Omega |\nabla u(x)|^2 dx"/>
+      </td>
+      <td class="py-4 pr-4">
+        ポアンカレの不等式<br />
+		ポワンカレの不等式<br />
+        Poincaré inequality<br />
+		
+		関数の分散はその勾配の大きさで抑えられる事を示す不等式<br />
+		関数の分散はその勾配の二乗の積分で抑えられる事を示す不等式<br />
+		関数があまり急に変化しなければ平均から大きく外れないことを示す不等式<br />
+		
+		ソボレフ空間の関数のノルムをその微分のノルムで制約する不等式<br />
+		ノルムはベクトル空間のベクトルの大きさを表す概念<br />
+		ソボレフ空間はSobolev spaces<br />
+		ソボレフ空間は全ての関数が弱微分可能な空間<br />
+		弱微分は絶対値も微分できる微分<br />
+		ソボレフ空間はバナッハ空間を特殊化した空間<br />
+		バナッハ空間はBanach spaces<br />
+		バナッハ空間は完備な空間<br />
+		完備な空間はComplete spaces<br />
+		完備な空間はすべてのコーシー列が収束する空間<br />
+		コーシー列はCauchy sequence<br />
+		コーシー列は差がどんどん0に近づく数列<br />
+        ソボレフ空間の関数とその平均値の二乗差が勾配ノルムで抑えられる事を示す不等式<br />
+		勾配ノルムはgradient norm<br />
+		勾配ノルムは関数の勾配ベクトルの大きさを測る指標<br />
+		勾配ノルムは関数を微分してできたベクトルのノルム<br />
+		勾配ベクトルは関数の変化率を表すベクトル<br />
+		解析の基本となる不等式<br />
+		
+		チェビシェフの不等式を測度空間上で特殊化した不等式<br />
+		チェビシェフの不等式を連続関数上で特殊化した不等式<br />
+		
+        アンリ・ポアンカレの不等式<br />
+		アンリ・ポワンカレの不等式<br />
+        Henri Poincaré inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (45).png" />
+        <img src="img20/equation (39).png" alt="\int_0^L |u(x) - \bar{u}|^2 dx \leq \frac{L^2}{\pi^2} \int_0^L |u'(x)|^2 dx"/>
+      </td>
+    </tr>
+	
+	<!-- ポアンカレ＝ナッシュの不等式 -->
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation (59).png" alt="\mathrm{Var}_\mu(f) \leq C \int |\nabla f|^2 d\mu"/>
+	  </td>
+	  <td class="py-4 pr-4">
+		ポアンカレ・ナッシュの不等式<br />
+		Poincaré–Nash inequality<br />
+		関数の分散を勾配ノルムで抑える不等式<br />
+		ポアンカレ不等式を非線形に一般化したもの<br />
+		
+		ノルムはベクトル空間のベクトルの大きさを表す概念<br />
+		勾配ノルムはgradient norm<br />
+		勾配ノルムは関数の勾配ベクトルの大きさを測る指標<br />
+		勾配ノルムは関数を微分してできたベクトルのノルム<br />
+		勾配ベクトルは関数の変化率を表すベクトル<br />
+		
+		測度空間上の関数とその微分（勾配）の関係を評価する不等式<br />
+		測度空間上の関数とその勾配の関係を評価する不等式<br />
+		測度はある集合に大きさを割り当てる関数<br />
+		測度はある集合に値を割り当てる関数<br />
+		測度はある集合に量を割り当てる関数<br />
+		測度はある集合に非負の実数を割り当てる関数<br />
+		
+		ポアンカレの不等式をL^pノルムで一般化した不等式<br />
+		ポアンカレの不等式をノルムの組み合わせで一般化した不等式<br />
+		ポアンカレの不等式を高次のノルムで一般化した不等式<br />
+		ポアンカレの不等式を非線形評価で一般化した不等式<br />
+		
+		アンリ・ポアンカレとジョン・ナッシュの不等式<br />
+		Henri Poincaré & John Nash inequality<br />
+	  </td>
+	  <td>
+		<img src="img20/ダウンロード (61).png" />
+		<img src="img20/equation (60).png" alt="\mathrm{Var}_\mu(f) \leq C \int |\nabla f|^2 d\mu"/>
+	  </td>
+	</tr>
+	
+	<!-- 凸Poincaré不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/expresssion (1).png" alt="\mathrm{Var}_\mu(f) \leq C \int \|\nabla f\|^2 d\mu, \ \mu:凸測度"/>
+      </td>
+      <td class="py-4 pr-4">
+        凸Poincaré不等式<br />
+        Convex Poincaré inequality<br />
+        凸測度のもとで成立するPoincaré型不等式<br />
+        測度が凸性（log-concave）を持つ場合に、関数の分散をその勾配ノルムで抑える不等式<br />
+		勾配ノルムはgradient norm<br />
+		勾配ノルムは関数の勾配ベクトルの大きさを測る指標<br />
+		勾配ノルムは関数を微分してできたベクトルのノルム<br />
+		勾配ベクトルは関数の変化率を表すベクトル<br />
+        凸性を持つ分布で広く成立する不等式<br />
+        集中不等式や幾何学的解析、確率論で重要な役割を持つ不等式<br />
+		
+		ポアンカレの不等式を凸測度に拡張して一般化した不等式<br />
+      	ポアンカレの不等式を凸関数に拡張して一般化した不等式<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (75).png" alt="ガウス測度でC=1の例"/>
+		<img src="img20/equation (88).png" alt="\mathrm{Var}_\gamma(f) \leq \int_{-\infty}^\infty |\nabla f(x)|^2\, d\gamma(x)"/>
+      </td>
+    </tr>
+	
+	<!-- Tsirelson–Ibragimov–Sudakovの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/expresssion (4).png" alt="\mathrm{Var}_\mu(f) \leq \int \|\nabla f\|^2 d\mu, \ \mu:ガウス測度"/>
+      </td>
+      <td class="py-4 pr-4">
+	    ツィレルソン・イブラギモフ・スダコフの不等式<br />
+		TIS不等式<br />
+        Tsirelson–Ibragimov–Sudakov inequality<br />
+		TIS inequality<br />
+        ガウス測度のもとで成立する強力なPoincaré型不等式<br />
+        関数の分散はその勾配ノルムの積分で抑えられる事を示す不等式<br />
+        ガウス空間、確率論、情報理論の解析で重要な役割を持つ不等式<br />
+		
+		ガウス測度でのポアンカレ不等式をリプシッツ関数を線形関数に制限して特殊化した不等式<br />
+		リプシッツ関数は個々の変数への感度が有限な関数<br />
+		
+		ボリス・ツィレルソンとイルダール・イブラギモフとウラジーミル・スダコフの不等式<br />
+		Boris Tsirelson & ldar Ibragimov & Vladimir Sudakov inequality<br />
+		
+      </td>
+      <td>
+        <img src="img20/ダウンロード (80).png" alt="ガウス測度の1次元の場合の計算例"/>
+        <img src="img20/equation (94).png" alt="P\left( X - \mathbb{E}[X] \geq t \right) = P(X \geq t) \leq \exp\left( -\frac{t^2}{2} \right)"/>
+      </td>
+    </tr>
+
+    <!-- ソボレフ不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (41).png" alt="\|u\|_{L^q} \leq C \|\nabla u\|_{L^p}"/>
+      </td>
+      <td class="py-4 pr-4">
+        ソボレフ不等式<br />
+        Sobolev inequality<br />
+		関数ノルムは、その微分のノルムで上から抑えられる事を示す不等式<br />
+        関数ノルムは、その勾配のノルムで上から抑えられる事を示す不等式<br />
+        関数ノルムとその導関数のノルムの間に成り立つ不等式<br />
+		勾配ノルムはgradient norm<br />
+		勾配ノルムは関数の勾配ベクトルの大きさを測る指標<br />
+		勾配ノルムは関数を微分してできたベクトルのノルム<br />
+		勾配ベクトルは関数の変化率を表すベクトル<br />
+		ノルムはベクトル空間のベクトルの大きさを表す概念<br />
+        偏微分方程式論の基本となる不等式<br />
+		Cは最良定数<br />
+		最良定数は領域の直径や形状、境界条件によって変わる定数<br />
+		最良定数はその不等式が成立するために最も小さい定数<br />
+		∇は勾配<br />
+        ∇は微分<br />
+		
+		ポアンカレの不等式を高次微分で一般化した不等式<br />
+		ポアンカレの不等式をL^p空間で一般化した不等式<br />
+		
+		セルゲイ・ソポレフ不等式<br />
+		Sergei Sobolev inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (47).png" />
+        <img src="img20/equation (42).png" alt="\|u\|_{L^{2^*}(\mathbb{R}^n)} \leq C \|\nabla u\|_{L^2(\mathbb{R}^n)}"/>
+      </td>
+    </tr>
+	
+	<!-- ログ・ソボレフ不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (40).png" alt="\mathrm{Ent}_\mu(f^2) \leq 2 \int |\nabla f|^2 d\mu"/>
+      </td>
+      <td class="py-4 pr-4">
+        ログ・ソボレフ不等式<br />
+		対数ソボレフ不等式<br />
+		log-Sobolev inequality<br />
+        Logarithmic Sobolev inequality<br />
+		散らばりと変化量に関係がある事を示す不等式<br />
+		関数のエントロピーが、その滑らかさで抑えられる事を示す不等式<br />
+		関数のエントロピーが、その勾配の大きさで抑えられる事を示す不等式<br />
+		ソボレフ不等式をエントロピーに関する形で一般化した不等式<br />
+		
+		勾配ノルムが大きいとエントロピーの上限が大きい事を示す不等式<br />
+		ノルムはベクトル空間のベクトルの大きさを表す概念<br />
+		勾配ノルムはgradient norm<br />
+		勾配ノルムは関数の勾配ベクトルの大きさを測る指標<br />
+		勾配ノルムは関数を微分してできたベクトルのノルム<br />
+		勾配ベクトルは関数の変化率を表すベクトル<br />
+		ノルムはベクトル空間のベクトルの大きさを表す概念<br />
+		
+		左辺Ent_μ(f^2)はμとf^2μの相対エントロピー<br />
+		左辺Ent_μ(f^2)はμとf^2μのカルバックライブラー情報量<br />
+		
+		Entはエントロピー<br />
+		EntはH<br />
+		
+		∇は勾配<br />
+        ∇は微分<br />
+        測度空間・確率解析などで重要な不等式<br />
+		
+		ソボレフの不等式をエントロピーを用いて一般化した不等式<br />
+		
+		対数セルゲイ・ソポレフ不等式<br />
+		Logarithmic Sergei Sobolev inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (46).png" />
+        <img src="img20/equation (40).png" alt="\mathrm{Ent}_\gamma(f^2) \leq 2 \int |\nabla f|^2 d\gamma"/>
+      </td>
+    </tr>
+	
+	<!-- Grossの不等式（ガウス型対数ソボレフ不等式） -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/expresssion (5).png" alt="\mathrm{Ent}_\gamma(f^2) \leq 2\int |\nabla f|^2 d\gamma, \ \gamma:ガウス測度"/>
+      </td>
+      <td class="py-4 pr-4">
+        グロスの不等式<br />
+        Gross's inequality<br />
+		Gross inequality<br />
+		
+		ガウス型ログ・ソボレフ不等式<br />
+		ガウス型対数ソボレフ不等式<br />
+		Gaussian log-Sobolev inequality<br />
+		
+        ガウス測度のもとで成立する対数ソボレフ不等式<br />
+        関数fのエントロピーがその勾配ノルムで抑えられることを示す<br />
+        情報理論、確率論、熱方程式、集中不等式の基本となる評価を行う不等式<br />
+		
+		Entはエントロピー<br />
+		EntはH<br />
+
+		γはガウス測度<br />
+		γはGaussian measure<br />
+			
+		ログ・ソボレフ不等式をガウス空間に拡張して一般化した不等式<br />
+		ログ・ソボレフ不等式を無限次元測度空間に拡張して一般化した不等式<br />
+		
+		レナード・グロスの不等号<br />
+        レオナード・グロスの不等号<br />
+        Leonard Gross inequality<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (81).png" alt="f(x)=e^{ax} の場合の計算例"/>
+        <img src="img20/equation (95).png" alt="\operatorname{Ent}_\gamma(f^2) = 2 \int |\nabla f|^2 d\gamma"/>
+      </td>
+    </tr>
+
+    <!-- Φ-Sobolev不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (96).png" alt="\mathrm{Ent}_\mu^\Phi(f) \leq C\int \Phi''(f) |\nabla f|^2 d\mu"/>
+      </td>
+      <td class="py-4 pr-4">
+	    ファイ・ソボレフ不等式<br />
+        Φ Sobolev inequality<br />
+        Φ-Sobolev inequality<br />
+        Phi Sobolev inequality<br />
+        Phi-Sobolev inequality<br />
+		Φは凸関数<br />
+		ΦはConvex function<br />
+		Φ(x) = x^2 の時、Ent_Φは分散<br />
+		Φ(x) = x log x の時、Ent_Φはエントロピー<br />
+
+		Entはエントロピー<br />
+		EntはH<br />
+		
+		γはガウス測度<br />
+		γはGaussian measure<br />
+				
+        任意の凸関数Φに対して成立する一般化ソボレフ型不等式<br />
+        エントロピー汎関数を勾配ノルムで評価する不等式<br />
+        通常のソボレフ・対数ソボレフ不等式の拡張として幅広い分野で利用される不等式<br />
+		
+		ログ・ソボレフ不等式をΦを二次関数に限定して特殊化した不等式<br />
+      	ログ・ソボレフ不等式をΦを対数関数に限定して特殊化した不等式<br />
+      	ポアンカレ不等式をΦを二次関数に限定して特殊化した不等式<br />
+      	ポアンカレ不等式をΦを対数関数に限定して特殊化した不等式<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (82).png" alt="Φ(x)=x\log x のときは対数ソボレフ不等式"/>
+        <img src="img20/equation (97).png" alt="\operatorname{Ent}_\gamma(f^2) \leq 2 \int |\nabla f|^2\, d\gamma"/>
+      </td>
+    </tr>
+	
+	
+
+
+    <!-- 等周不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (43).png" alt="4\pi A \leq L^2"/>
+      </td>
+      <td class="py-4 pr-4">
+        等周不等式<br />
+        Isoperimetric inequality<br />
+        面積Aと周長Lの関係を示す不等式<br />
+		面積Aと境界の長さLの関係を示す不等式<br />		
+		面積が一定なら周長が一番短いのは円である事を示す不等式<br />
+		面積が一定なら境界の長さが一番短いのは円である事を示す不等式<br />
+		丸い形が最大の面積を持つ事を示す不等式<br />
+		一定の周長で囲める面積の最大値は円で他の形はそれより面積が小さい事を示す不等式<br />
+		円で等号成立する不等式<br />
+      	体積が一定なら表面積が一番小さいのは球である事を示す不等式<br />
+		丸い形が最大の体積を持つ事を示す不等式<br />
+		一定の周長で囲める面積の最大値は球で他の形はそれより体積が小さい事を示す不等式<br />
+		球で等号成立する不等式<br />
+		Aは図形の面積<br />
+		Aはエリア<br />
+		AはArea<br />
+		Lは図形の周囲長<br />
+		Lは図形の周長<br />
+		Lは境界の長さ<br />
+		Lはレングス<br />
+		LはLength of the boundary<br />
+		LはPerimeter<br />	
+
+		図形の体積と表面積の関係を全ての図形上で一般化した不等式<br />	
+		図形の体積と表面積の関係を全ての多様体上で一般化した不等式<br />	
+		
+      </td>
+	  
+      <td>
+	    <img src="img20/ダウンロード (48).png" />
+        <img src="img20/equation (44).png" alt="A \leq \frac{L^2}{4\pi}"/>
+      </td>
+    </tr>
+
+    <!-- レヴィの等周不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (45).png" alt="\mu^+(A) \geq C \min(\mu(A), 1-\mu(A))"/>
+      </td>
+      <td class="py-4 pr-4">
+        レヴィの等周不等式<br />
+        Lévy's isoperimetric inequality<br />
+		高次元球面上で大多数の点が特定の部分集合の近くに集中することを保証する不等式<br />
+        測度空間における境界測度の最小値評価を示す不等式<br />
+        確率論・幾何学の融合的結果を示す不等式<br />
+		球面測度やガウス空間で成立する不等式<br />
+		等周不等式を高次元球面上に拡張した不等式<br />
+		等周不等式を球面上で一般化した不等式<br />
+		
+		Aは部分集合<br />
+		
+		μは測度<br />
+		測度はある集合に大きさを割り当てる関数<br />
+		測度はある集合に値を割り当てる関数<br />
+		測度はある集合に量を割り当てる関数<br />
+		測度はある集合に非負の実数を割り当てる関数<br />
+		μは球面測度<br />
+		球面測度は球面上の部分集合に大きさを割り当てる関数<br />
+		球面測度は球面上の部分集合に広さを割り当てる関数<br />
+		球面測度は球面上の部分集合に面積を割り当てる関数<br />
+		μはガウス測度<br />
+		ガウス測度はユークリッド空間の部分集合にガウス分布による確率を割り当てる関数<br />
+		ガウス測度は空間の部分集合にガウス分布に基づく重み付きの広さを割り当てる関数<br />
+		
+		μ^+(A)はAの外側境界測度<br />
+		μ^+(A)はAの外微分<br />
+		μ^+(A)はAの拡張の速さ<br />
+		
+		Cは最良定数<br />
+		最良定数は領域の直径や形状、境界条件によって変わる定数<br />
+		最良定数はその不等式が成立するために最も小さい定数<br />
+		
+		等周不等式をレヴィ球面上で一般化した不等式<br />
+		レヴィ球面は次元が高いと球面上の点は赤道のような細い帯にぎゅっと集まりやすくなる現象<br />
+		
+        ポール・レヴィの等周不等式<br />
+        Paul Lévy isoperimetric inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (49).png" />
+        <img src="img20/equation (45).png" alt="\mu^+(A) \geq C \min(\mu(A), 1-\mu(A))"/>
+      </td>
+    </tr>
+	
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation - 2025-07-04T002631.515.png" alt="\frac{1}{1+e^{-x}} \leq e^x \text{ for } x \geq 0"/>
+	  </td>
+	  <td class="py-4 pr-4">
+		ロジスティック不等式<br />
+		Logistic inequality<br />
+		
+		ロジスティック関数の値が、ある条件下では単純な関数によって上から押さえられる」ことを示す不等式<br />
+		ロジスティック関数の値が、ある条件下では指数関数によって上から押さえられる」ことを示す不等式<br />
+		
+		ロジスティック関数は1/1+e^-x<br />
+		
+		ロジスティック関数（シグモイド関数）やロジスティック回帰に現れる関数値の評価に用いられる不等式<br />
+		
+		等周不等式を関数空間に拡張して一般化した不等式<br />
+	  	等周不等式を確率空間に拡張して一般化した不等式<br />
+	  </td>
+	  <td class="py-4 pr-4">
+	    <img src="img20/ダウンロード (86).png" alt=""/>
+        <img src="img20/equation - 2025-07-04T002554.587.png" alt="\frac{1}{1 + e^{-x}} \leq e^x \qquad (x \geq 0)"/>
+	  </td>
+	</tr>
+
+    <!-- バイナリーハイパーキューブの等周不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (89).png" alt="|\partial A| \geq c \cdot \min(|A|, 2^n - |A|)"/>
+      </td>
+      <td class="py-4 pr-4">
+        バイナリーハイパーキューブの等周不等式<br />
+        Isoperimetric inequality on binary hypercube<br />
+		
+		バイナリーハイパーキューブはバイナリ集合をハミング距離を使用してメトリックにした空間<br />
+		バイナリーハイパーキューブは0と1のベクトル集合をハミング距離を使用してメトリックにした空間<br />
+		バイナリーハイパーキューブはブールキューブ<br />
+		
+        n次元バイナリーハイパーキューブ {0,1}^nにおける等周不等式<br />
+        任意の部分集合Aの境界サイズは、その集合サイズに比例して下から抑えられる事を示す不等式<br />
+        情報理論、組合せ論、離散幾何で基本となる不等式<br />
+		
+		等周不等式を離散空間上で一般化した不等式<br />
+		等周不等式をハイパーキューブ上で一般化した不等式<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (76).png" alt="n=3 の場合の境界評価例"/>
+        <img src="img20/equation (3)_______________.png" alt="\partial A = \left\{\, (x, y)\ \middle|\ x \in A,\ y \in Q_3 \setminus A,\ \mathrm{H}(x, y) = 1 \,\right\}"/>
+      </td>
+    </tr>
+
+    <!-- Bobkovのハイパーキューブ上の等周不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (3)______________________.png" alt="\mu^+(A) \geq \Phi^{-1}(\mu(A))"/>
+      </td>
+      <td class="py-4 pr-4">
+        ボブコフのバイナリーハイパーキューブ上の等周不等式<br />
+        Bobkov's isoperimetric inequality on the hypercube<br />
+		
+		離散ガウス型等周不等式<br />
+		Discrete Gaussian isoperimetric inequalities<br />
+		
+		バイナリーハイパーキューブはバイナリ集合をハミング距離を使用してメトリックにした空間<br />
+		バイナリーハイパーキューブは0と1のベクトル集合をハミング距離を使用してメトリックにした空間<br />
+		バイナリーハイパーキューブはブールキューブ<br />
+		
+        バイナリーハイパーキューブ上での等周境界の最良評価を与える不等式<br />
+        バイナリーハイパーキューブ上で部分集合Aの外側境界測度がその測度のノルムで下から抑えられる事を示す不等式<br />
+		
+		バイナリーハイパーキューブの等周不等式をファンクショナル型に一般化した不等式<br />
+		バイナリーハイパーキューブの等周不等式を関数型に一般化した不等式<br />
+		
+		部分集合Aの大きさだけで、面積をこれより少なくはできないよという、最小限の境界の数を保証するルールを示す不等式<br />
+		
+		Aはバイナリーハイパーキューブ上の好きな角をいくつか選んだ集合<br />
+		
+		∂AはAの境界の大きさ<br />
+		∂AはAのエッジ数<br />
+		∂AはAの測度<br />
+		
+		
+		μはバイナリーハイパーキューブ上の一様測度<br />
+		μ+(A)は集合のエッジ境界測度<br />
+		Φ^-1は標準正規分布の累積分布関数の逆関数<br />
+		Φ^-1は標準正規分布の累積分布関数の等周関数<br />
+		
+		
+		セルゲイ・ボブコフのバイナリーハイパーキューブ上の等周不等式<br />
+        Sergey Bobkov's isoperimetric inequality on binary hypercube<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (77).png" alt="μ(A)=1/2のときの最小境界例"/>
+        <img src="img20/equation (100).png" alt="\text{If }\, \mu(A) = \frac{1}{2}, \text{ then the minimal boundary size is }\, |\partial A| = 2^{n-1}"/>
+      </td>
+    </tr>
+	
+	<!-- Bonami–Beckner不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (92).png" alt="\|T_\rho f\|_q \leq \|f\|_p, \ \frac{q-1}{p-1} = \rho^2"/>
+      </td>
+      <td class="py-4 pr-4">
+        ボナミ・ベックナー不等式<br />
+        Bonami–Beckner inequality<br />
+		
+		バイナリーハイパーキューブはバイナリ集合をハミング距離を使用してメトリックにした空間<br />
+		バイナリーハイパーキューブは0と1のベクトル集合をハミング距離を使用してメトリックにした空間<br />
+		バイナリーハイパーキューブはブールキューブ<br />
+		
+        バイナリーハイパーキューブ上の関数のノルム減衰に関する不等式<br />
+        ノイズ演算子T_ρを作用させた後のqノルムは、元のpノルムで抑えられる事を示す不等式<br />
+		ノイズ演算は関数にちょっとだけランダムなゆらぎ（ノイズ）を加える操作<br />
+		ノイズ演算は各ビットを一定確率でひっくり返す操作<br />
+		
+		
+        集中不等式、フーリエ解析、ブーリアン関数の解析で広く応用される不等式<br />
+		
+		バイナリーハイパーキューブの等周不等式をノルムパラメータ付きで一般化した不等式<br />
+		ロジスティック不等式をノルムパラメータ付きで一般化した不等式<br />
+		
+		アリーン・ボナミとウィリアム・ベックナーの不等式<br />
+        Aline Bonami & William inequality<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (79).png" alt="p=2, q=4, ρ=1/√3 の場合の例"/>
+        <img src="img20/equation (93).png" alt="\text{For } f(+1)=a,\, f(-1)=b \text{ and } \rho = \frac{1}{\sqrt{3}}, \quad
+\| T_{1/\sqrt{3}} f \|_4 \leq \| f \|_2"/>
+      </td>
+    </tr>
+	
+	<!-- Brunn-Minkowski不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (90).png" alt="|A+B|^{1/n} \geq |A|^{1/n} + |B|^{1/n}"/>
+      </td>
+      <td class="py-4 pr-4">
+        ブルン・ミンコフスキー不等式<br />
+        Brunn–Minkowski inequality<br />
+		
+		集合AとBを足し合わせたときの体積の関係を定量的に評価する不等式<br />
+		集合AとBの足し算でできる新しい集合A+Bの体積(n次元体積(は、AとBの体積をそれぞれn乗根して足し合わせたもののn乗以上になる事を示す不等式<br />
+		
+        ユークリッド空間の測度付き集合A, Bについて、和集合の体積と各集合の体積の関係を示す不等式<br />
+        n次元体積のn乗根を用いた加法型評価で、凸集合・体積・測度論の基本定理を示す不等式<br />
+        凸幾何、確率論、最適輸送など広い分野で利用される不等式<br />
+		
+		体積とベクトル和の関係を測度空間に拡張して一般化した不等式<br />
+      	体積とベクトル和の関係を凸集合に拡張して一般化した不等式<br />
+		
+		ハインリッヒ・ブルンとヘルマン・ミンコフスキーの不等式<br />
+		Heinrich  Brunn & Hermann  Minkowski inequality<br />
+		
+      </td>
+      <td>
+        <img src="img20/ダウンロード (78).png" alt="1次元集合の例：区間の長さに対応"/>
+        <img src="img20/equation (91).png" alt="|A+B| \geq |A| + |B|"/>
+      </td>
+    </tr>
+
+    
+    
+
+
+  </tbody>
+</table>
+
+<table class="w-full mb-4">
+  <caption class="text-lg font-semibold">
+    凸解析・汎用不等式<br />
+  </caption>
+  <tbody>
+    <tr>
+      <td width="20%">表記</td>
+      <td width="40%">意味</td>
+      <td width="40%">例</td>
+    </tr>
+	
+	<!-- ホルダーの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (29).png" alt="\left|\sum_{i=1}^n a_i b_i\right| \leq \left(\sum_{i=1}^n |a_i|^p\right)^{1/p} \left(\sum_{i=1}^n |b_i|^q\right)^{1/q}"/>
+      </td>
+      <td class="py-4 pr-4">
+        ホルダーの不等式<br />
+        Hölder's inequality<br />
+        Hölder inequality<br />
+        L^pノルムとL^qノルムの積で内積を上から抑える不等式<br />
+		行列の積は複数の線形変換を連続して行う操作<br />
+		行列の積は線形変換の合成を行う操作<br />
+		行列の内積は行列の要素同士を掛け合わせてその和を取る操作<br />
+		ノルムはベクトル空間のベクトルの大きさを表す概念<br />
+		複数ペアの積の和をべき乗和の積に分解する不等式<br />
+		数列のペアの積の和をべき乗和の積に分解する不等式<br />
+        関数のペアの積の和をべき乗和の積に分解する不等式<br />
+        ベクトルのペアの積の和をべき乗和の積に分解する不等式<br />
+        ノルムのペアの積の和をべき乗和の積に分解する不等式<br />
+		積分や和の汎用的な評価をする不等式<br />
+		ヤングの不等式を多数回使って拡張した不等式<br />
+		コーシー・シュワルツの不等式をp乗和で一般化した不等式<br />
+		
+		コーシー・シュワルツの不等式を任意のp,q > 1で一般化した不等式<br />
+		
+        オットー・ホルダーの不等式<br />
+        Otto Hölder inequality
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (38).png" />
+        <img src="img20/equation (30).png" alt="|a_1b_1 + a_2b_2| \leq (|a_1|^p + |a_2|^p)^{1/p} (|b_1|^q + |b_2|^q)^{1/q}"/>
+      </td>
+    </tr>
+	
+	<!-- コーシー・シュワルツの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (31).png" alt="|\langle x, y \rangle| \leq \|x\| \cdot \|y\|"/>
+      </td>
+      <td class="py-4 pr-4">
+        コーシー・シュワルツの不等式<br />
+        Cauchy–Schwarz inequality<br />
+        ベクトルの内積の絶対値は、それぞれのノルムの積で抑えられる事を示す不等式<br />
+		行列の内積は行列の要素同士を掛け合わせてその和を取る操作<br />
+		行列の積は複数の線形変換を連続して行う操作<br />
+		行列の積は線形変換の合成を行う操作<br />
+		ノルムはベクトル空間のベクトルの大きさを表す概念<br />
+		実数ベクトルの内積評価の不等式<br />
+		数列のペアの積の和を2乗和の積に分解する不等式<br />
+        関数のペアの積の和を2乗和の積に分解する不等式<br />
+        ベクトルのペアの積の和を2乗和の積に分解する不等式<br />
+		ホルダーの不等式を2乗和のみで特殊化した不等式<br />
+		ホルダーの不等式 を p=q=2 の場合で特殊化した不等式<br />
+		
+		オーギュスタン・コーシーとヘルマン・シュワルツの不等式<br />
+        Augustin Cauchy & Hermann Schwarz inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (39).png" />
+        <img src="img20/equation (32).png" alt="|a_1b_1 + a_2b_2| \leq \sqrt{a_1^2 + a_2^2}\sqrt{b_1^2 + b_2^2}"/>
+      </td>
+    </tr>
+
+    <!-- ヤングの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/sssssssssssssssssequation.png" alt="ab \leq \frac{a^p}{p} + \frac{b^q}{q} \quad (p>1, q>1, 1/p + 1/q = 1)"/>
+      </td>
+      <td class="py-4 pr-4">
+        ヤングの不等式<br />
+        Young's inequality<br />
+		Young inequality<br />
+        積ab を (a^p/p) + (b^q/q) で上から抑える不等式<br />
+        凸関数の性質を利用する不等式<br />
+		
+		ホルダーの不等式を凸関数を利用して一般化した不等式<br />
+		ホルダーの不等式を積の評価を利用して一般化した不等式<br />
+		
+        ウィリアム・ヤングの不等式<br />
+        William Young inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (37).png" />
+        <img src="img20/equation (28).png" alt="2 \times 8 \leq \frac{2^4}{4} + \frac{8^{4/3}}{4/3}"/>
+      </td>
+    </tr>
+
+	
+
+    
+
+    <!-- イェンセンの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (33).png" alt="f(\mathbb{E}[X]) \leq \mathbb{E}[f(X)] \quad (f:\text{convex})"/>
+      </td>
+      <td class="py-4 pr-4">
+        イェンセンの不等式<br />
+        Jensen's inequality<br />
+        Jensen inequality<br />
+		凸関数では、<br />
+		平均してから計算するより、計算してから平均する方が大きくなる事を示す不等式<br />
+		関数を適用してからまとめる方が、まとめてから関数を適用するより値が大きい事を示す不等式<br />
+		計算してから平均 > 平均してから計算<br />
+		平均(計算(x)) > 計算(平均(x))<br />
+		
+		凸関数の定義を確率測度に拡張して一般化した不等式<br />
+		凸関数の定義を加重平均に拡張して一般化した不等式<br />
+		
+		ヨハン・イェンセンの不等式<br />
+        Johan Jensen inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (40).png" />
+        <img src="img20/equation (34).png" alt="\log(\mathbb{E}[X]) \leq \mathbb{E}[\log X]"/>
+      </td>
+    </tr>
+
+	<!-- Minkowski不等式 -->
+    <tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equasssssssssssssssstion (4).png" alt="\left(\int |f+g|^p\right)^{1/p} \leq \left(\int |f|^p\right)^{1/p} + \left(\int |g|^p\right)^{1/p}"/>
+	  </td>
+	  <td class="py-4 pr-4">
+		ミンコフスキーの不等式<br />
+		Minkowski's inequality<br />
+		Minkowski inequality<br />
+		積分の空間で距離の加法性を示す不等式<br />
+		ノルムの空間で距離の加法性を示す不等式<br />
+		ノルムはベクトル空間のベクトルの大きさを表す概念<br />
+		凸関数の性質を利用する不等式<br />
+		イェンセンの不等式を利用する不等式<br />
+		三角不等式をL^pノルムで一般化した不等式<br />
+		三角不等式をL^p空間に拡張して一般化した不等式<br />
+		三角不等式をベクトル空間に拡張して一般化した不等式<br />
+		ヘルマン・ミンコフスキーの不等式<br />
+		Hermann Minkowski inequality<br />
+	  </td>
+	  <td>
+		<img src="img20/ダウンロード (60).png" />
+		<img src="img20/equation (58).png" alt="(\int_0^1 |f(x) + g(x)|^p dx)^{1/p} \leq (\int_0^1 |f(x)|^p dx)^{1/p} + (\int_0^1 |g(x)|^p dx)^{1/p}"/>
+	  </td>
+	</tr>
+	
+	
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation - 2025-07-04T002014.306.png" alt="\left(\mathbb{E}\left|\sum_{k=1}^n a_k \varepsilon_k\right|^p\right)^{1/p} \leq K_p \left(\sum_{k=1}^n a_k^2\right)^{1/2}"/>
+	  </td>
+	  <td class="py-4 pr-4">
+		ヒンチンの不等式<br />
+		ヒンチン不等式<br />
+		Khintchine inequality<br />
+		ラデマッハー変数（±1）の線形結合のLpノルムとL2ノルムの関係を評価する不等式。<br />
+		ランダム符号や確率解析で重要。<br />
+		例：a_kは実数、ε_kは独立なラデマッハー変数（±1）<br />
+		
+		三角不等式をラデマッハー和で一般化した不等式<br />
+		三角不等式を独立符号付き和で一般化した不等式<br />
+		三角不等式を確率的線形結合で一般化した不等式<br />
+		ホルダーの不等式をラデマッハー和で一般化した不等式<br />
+		ホルダーの不等式を独立符号付き和で一般化した不等式<br />
+		ホルダーの不等式を確率的線形結合で一般化した不等式<br />
+		
+		アレクサンドル・ヒンチンの不等式<br />
+		Alexander Khinchin inequality<br />
+		
+	  </td>
+	  <td class="py-4 pr-4">
+		<img src="img20/ダウンロード (85).png" alt=""/><br />
+	    <img src="img20/equation - 2025-07-04T001856.290.png" alt="\mathbb{E}\left|\sum_{k=1}^n a_k \varepsilon_k\right| \leq K \left(\sum_{k=1}^n a_k^2\right)^{1/2}"/><br />
+	  </td>
+	</tr>
+
+    <!-- 三角不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (35).png" alt="\|x+y\| \leq \|x\| + \|y\|"/>
+      </td>
+      <td class="py-4 pr-4">
+        三角不等式<br />
+        Triangle inequality<br />
+        ベクトル空間やノルム空間における距離評価の基本となる不等式<br />
+		ノルムはベクトル空間のベクトルの大きさを表す概念<br />
+		ユークリッド空間のノルムの不等式<br />
+		
+		ノルムの定義をノルム空間全般に拡張して一般化した不等式<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (41).png" />
+        <img src="img20/equation (35).png" alt="\|x+y\| \leq \|x\| + \|y\|"/>
+      </td>
+    </tr>
+	
+    <!-- 線形不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (36).png" alt="ax + by \leq c"/>
+      </td>
+      <td class="py-4 pr-4">
+        線形不等式<br />
+        Linear inequality<br />
+        1次の不等式<br />
+        線形計画法や凸最適化で多用される不等式<br />
+		
+		線形計画問題の制約式を実数直線に拡張して一般化した不等式<br />
+      	線形計画問題の制約式を線形空間に拡張して一般化した不等式<br />
+      	凸不等式の制約式を実数直線に拡張して一般化した不等式<br />
+      	凸不等式の制約式を線形空間に拡張して一般化した不等式<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (42).png" />
+        <img src="img20/equation (37).png" alt="2x + 3y \leq 5"/>
+      </td>
+    </tr>
+	
+    <!-- Golden–Thompson不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (38).png" alt="\operatorname{Tr}(e^{A+B}) \leq \operatorname{Tr}(e^A e^B)"/>
+      </td>
+      <td class="py-4 pr-4">
+	    ゴールデン・トンプソン不等式<br />
+        Golden–Thompson inequality<br />
+		トレース不等式<br />
+		Trace inequality<br />
+        エルミート行列A,Bでは、AとBの和の指数行列のトレースは、Aの指数行列とBの指数行列の積のトレース以下となる不等式<br />
+		エルミート行列は自己共役行列<br />
+		エルミート行列はHermitian Matrix<br />
+		エルミート行列は自分自身とその共役転置が同じになる行列<br />
+		行列の共役転置は行と列をひっくり返して、複素数があれば符号を変える操作の事<br />		
+		エルミート行列A, Bに対する行列指数関数のトレースの不等式<br />
+		行列のトレースは行列の対角成分の和<br />
+		T_rは行列のトレース<br />
+		ゴールデン・トンプソン不等式はトレース不等式<br />
+        ゴールデン・トンプソン不等式はTrace inequality<br />
+        トレース不等式は行列のトレースに関する不等式<br />
+		トレース不等式は量子情報理論などで利用する不等式<br />
+		コーシー・シュワルツの不等式を行列の場合で特殊化した不等式<br />
+
+        シドニー・ゴールデンとコリン・トンプソンの不等式<br />
+        Sydney Golden & Colin Thompson inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (43).png" />
+        <img src="img20/equation (38).png" alt="\operatorname{Tr}(e^{A+B}) \leq \operatorname{Tr}(e^A e^B)"/>
+      </td>
+    </tr>
+    
+    
+	<!-- Kurdyka–Łojasiewicz (KL) 不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <!-- 画像は差し替え前提のプレースホルダ。alt に LaTeX を置く -->
+        <img src="img20/equation_kl_main.png"
+             alt="\varphi'(f(x)-f^\star)\,\|\nabla f(x)\| \ge 1 \quad \text{near a critical point}" />
+      </td>
+      <td class="py-4 pr-4">
+        Kurdyka–Łojasiewicz 不等式<br />
+        Kurdyka–Lojasiewicz 不等式<br />
+        クルディカ・ウォジャシェヴィチ不等式<br />
+        クルディカ・ワジャシェビッチ不等式<br />
+        KL 不等式<br />
+        Kurdyka–Łojasiewicz inequality<br />
+        Kurdyka–Lojasiewicz inequality<br />
+        KL inequality<br />
+        <br />
+        非凸最適化で現れる、目的関数の値と勾配ノルムの間の関係を与える不等式。<br />
+        勾配ノルムはgradient norm<br />
+勾配ノルムは関数の勾配ベクトルの大きさを測る指標<br />
+勾配ノルムは関数を微分してできたベクトルのノルム<br />
+         <br />
+        クシシュトフ・クルディカとヴォイチェフ・ウォジャシェヴィチによる不等式。<br />
+        Krzysztof Kurdyka & Stanisław Łojasiewicz inequality<br />
+        Krzysztof Kurdyka & Stanisław Lojasiewicz inequality<br />
+      </td>
+      <td class="py-4 pr-4">
+        <!-- 例画像のプレースホルダ（必要に応じ差し替え） -->
+        <img src="img20/equation_kl_power.png"
+             alt="\|\nabla f(x)\| \ge c\,(f(x)-f^\star)^\theta,\ \ \theta\in[0,1)" /><br />
+        <img src="img20/equation_pl_case.png"
+             alt="(\theta=1/2 の場合) \ \|\nabla f(x)\|^2 \ge 2\mu\,(f(x)-f^\star)" />
+      </td>
+    </tr>
+
+    
+  </tbody>
+</table>
+
+<table class="w-full mb-4">
+  <caption class="text-lg font-semibold">
+    輸送理論・最適輸送の不等式<br />
+  </caption>
+  <tbody>
+    <tr>
+      <td width="20%">表記</td>
+      <td width="40%">意味</td>
+      <td width="40%">例</td>
+    </tr>
+
+    <!-- 輸送不等式（Talagrand型） -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (49).png" alt="W_2^2(\mu, \nu) \leq 2\,H(\nu|\mu)"/>
+      </td>
+      <td class="py-4 pr-4">
+	    タラグランの輸送不等式<br />
+        Talagrand's transportation inequality<br />
+		確率分布が情報的に近ければ輸送コストも小さいことを保証する不等式<br />
+		分布間の輸送コストの二乗が、2倍の情報量的な距離より小さいことを保証する不等式<br />
+		分布間の輸送コストの二乗が、2倍の相対エントロピーより小さいことを保証する不等式<br />
+		分布間の輸送コストの二乗が、2倍のカルバックライブラー情報量のより小さいことを保証する不等式<br />
+        輸送距離Wと相対エントロピーH(ν|μ)の関係を与える不等式<br />
+		輸送距離Wとカルバックライブラー情報量H(ν|μ)の関係を与える不等式<br />
+		集中現象の定量的な評価手段を与える不等式<br />
+		集中現象は関数値が平均から大きくズレる確率は非常に小さい現象<br />
+			
+        最適輸送距離W_2とエントロピーの関係を示す不等式<br />
+        輸送コストと確率分布のずれの定量的評価を行う不等式<br />
+		標準ガウス測度で等号成立する不等式<br />
+        ガウス測度μとμに対して成立する不等式<br />
+		ガウス測度はユークリッド空間の部分集合にガウス分布による確率を割り当てる関数<br />
+		ガウス測度は空間の部分集合にガウス分布に基づく重み付きの広さを割り当てる関数<br />
+		
+		Wはワッサースタイン距離<br />
+		ワッサースタイン距離はWasserstein Distance<br />
+		ワッサースタイン距離は最適輸送距離<br />
+		最適輸送距離は確率分布の距離<br />
+		最適輸送距離は確率分布間の距離を測るための数学的な指標<br />
+		
+		W_2は2次ワッサースタイン距離<br />
+		2次ワッサースタイン距離はコスト関数として距離の二乗を使いコストの平方根をとることで、分布間の二乗平均的な指標とする距離<br />
+		
+		μは基準となるガウス測度の確率分布<br />
+		νは比較対象となるガウス測度の確率分布<br />
+		
+		ピンスカーの不等式をワッサースタイン距離に拡張して一般化した不等式<br />
+		
+		ミシェル・タラグランの輸送不等式<br />
+		Michel Talagrand's transportation inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (52).png" />
+        <img src="img20/equation (49).png" alt="W_2^2(\mu, \nu) \leq 2 H(\nu|\mu)"/>
+      </td>
+    </tr>
+
+    <!-- タラグランの凸距離不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (48).png" alt="P(A)P(B) \leq \exp(-d_T(A,B)^2/4)"/>
+      </td>
+      <td class="py-4 pr-4">
+        タラグランの凸距離不等式<br />
+        Talagrand's convex distance inequality<br />
+		確率空間上の部分集合間の距離を評価する不等式<br />
+		確率空間上の集合AとBが遠く離れているほど、AとBが同時に起こる確率が急激に小さくなる事を示す不等式<br />
+        集合A,Bの間の凸距離を指数関数で抑える不等式<br />
+		凸距離はある点が集合の凸包からどれくらい離れているかを測る距離<br />
+		凸包はconvex hull<br />
+		凸包は複数の点の集まりの集合に対して、その点たちを含みつつ曲がらないゴムひもをぐるっと一周させてできる最小の膨らんだ領域<br />
+		P(A)P(B)はAとBの同時出現確率<br />
+		
+		d_T(A, B)はAとBの間の凸距離<br />
+		
+		タラグランの輸送不等式をワッサースタイン距離以外の一般の凸距離にも拡張して一般化した不等式<br />
+		
+        ミシェル・タラグランの凸距離不等式<br />
+        Michel Talagrand's convex distance inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (51).png" />
+        <img src="img20/equation (48).png" alt="P(A)P(B) \leq \exp(-d_T(A,B)^2/4)"/>
+      </td>
+    </tr>
+	
+	<!-- Marton型条件付き輸送不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (86).png" alt="W_1(\nu, \mu) \leq \sqrt{2 C\, H(\nu|\mu | \mathcal{G})}"/>
+      </td>
+      <td class="py-4 pr-4">
+        マートン型条件付き輸送不等式<br />
+        Marton's conditional transportation inequality<br />
+        条件付き情報量と輸送距離の間の関係を示す不等式<br />
+        条件付きエントロピーや情報量が小さいとき、対応する条件付き輸送距離も小さいことを保証する不等式<br />
+        輸送距離W_1と条件付き相対エントロピーH(ν|μ|G)の関係を与える不等式<br />
+        標準的なタラグラン型不等式の条件付き拡張した不等式<br />
+        集中不等式・マルコフ過程・確率論的情報理論で重要な役割を持つ不等式<br />
+		
+		タラグランの輸送不等式をマルコフ連鎖の条件付き分布に拡張して一般化した不等式<br />
+		マルコフ連鎖は今の状態だけで次にどんな状態になるかが決まる記憶がないタイプの確率的な動きや現象<br />
+		
+		カタリン・マートンの不等式<br />
+        Katalin Marton inequality<br />
+      </td>
+      <td>
+        <img src="img20/ダウンロード (83).png" alt="マルコフ連鎖の例：条件付き分布での距離評価"/>
+        <img src="img20/equation (87).png" alt="|p - q| \leq C\, \sqrt{\, p\log\frac{p}{q} + (1-p)\log\frac{1-p}{1-q}\,}"/>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<table class="w-full mb-4">
+  <caption class="text-lg font-semibold">
+    マルチンゲール不等式<br />
+  </caption>
+  <tbody>
+    <tr>
+      <td width="20%">表記</td>
+      <td width="40%">意味</td>
+      <td width="40%">例</td>
+    </tr>
+
+    <!-- Villeの不等式 -->
+    <tr class="border-collapse border border-slate-400">
+      <td class="pr-4">
+        <img src="img20/equation (51).png" alt="P(\sup_n S_n \geq a) \leq \frac{\mathbb{E}[e^{\lambda S_0}]}{e^{\lambda a}}"/>
+      </td>
+      <td class="py-4 pr-4">
+        ヴィルの不等式<br />
+        Ville's inequality<br />
+		Ville inequality<br />
+        マルチンゲールの最大値確率の上限を与える不等式<br />
+		マルチンゲールの最大値がある値を超える確率を上から抑えるための不等式<br />
+		マルチンゲールは未来の期待値平均が現在の期待値平均と等しいランダムな過程<br />
+		マルチンゲールはコイン投げ<br />
+		マルチンゲールはサイコロ<br />
+		aは上限<br />
+		λは調整パラメータ<br />
+		λは自分で設定するパラメータ<br />
+		
+		マルコフの不等式をマルチンゲール過程に拡張して一般化した不等式<br />
+		
+        ジャン・ヴィルの不等式<br />
+        Jean Ville inequality<br />
+      </td>
+      <td>
+	    <img src="img20/ダウンロード (54).png" />
+        <img src="img20/equation (52).png" alt="P(\sup_n S_n \geq a) \leq \frac{1}{e^{\lambda a}}"/>
+      </td>
+    </tr>
+	
+	<!-- ドゥーブの最大不等式 -->
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation (63).png" alt="P\left(\sup_{k \leq n} |M_k| \geq \lambda\right) \leq \frac{\mathbb{E}[|M_n|]}{\lambda}"/>
+	  </td>
+	  <td class="py-4 pr-4">
+		ドゥーブの最大不等式<br />
+		Doob’s maximal inequality<br />
+		Doob maximal inequality<br />
+		マルチンゲールの最大値確率評価に関する基本不等式<br />
+		マルチンゲールの最大値の分布を期待値で抑える不等式<br />
+		マルチンゲールのある時点までで最大値があるしきい値を超える確率を最後の時刻での期待値で上から抑える不等式<br />
+		
+		マルチンゲールは未来の期待値平均が現在の期待値平均と等しいランダムな過程<br />
+		マルチンゲールはコイン投げ<br />
+		マルチンゲールはサイコロ<br />
+		
+		Mはマルチンゲール<br />
+		
+		kは0からnまでの整数値をとるパラメータ<br />
+		nは時刻<br />
+		
+		λは調整パラメータ<br />
+		λは自分で設定するパラメータ<br />
+		
+		E[|M_n|]は時刻nでの期待値<br />
+		
+		マルチンゲール過程の解析や確率解析の基礎となる不等式<br />
+		
+		マルコフの不等式をマルチンゲール過程に拡張して一般化した不等式<br />
+		マルコフの不等式をサブマルチンゲール過程に拡張して一般化した不等式<br />
+		サブマルチンゲールは将来の期待値が今より大きいか同じマルチンゲール<br />
+		マルチンゲールは将来の期待値が今と同じな確率過程<br />
+		
+		ジョセフ・ドゥーブの不等式<br />
+		Joseph Doob inequality<br />
+	  </td>
+	  <td>
+		<img src="img20/ダウンロード (63).png" />
+		<img src="img20/equation (64).png" alt="P(\sup_{k \leq n} |M_k| \geq \lambda) \leq \mathbb{E}[|M_n|]/\lambda"/>
+	  </td>
+	</tr>
+	
+	<!-- バークホルダー・デイビス・ガンディの不等式 -->
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation (65).png" alt="c_p \mathbb{E}\left[[M]_T^{p/2}\right] \leq \mathbb{E}\left[\sup_{t\leq T} |M_t|^p\right] \leq C_p \mathbb{E}\left[[M]_T^{p/2}\right]"/>
+	  </td>
+	  <td class="py-4 pr-4">
+		バークホルダー・デイビス・ガンディの不等式<br />
+		Burkholder–Davis–Gundy inequality<br />
+		マルチンゲールの最大値ノルムと2乗変動ノルムの間の評価不等式<br />
+		マルチンゲールの最大値のp乗の期待値と2次変分のp/2乗の期待値が同じオーダーであることを保証する不等式<br />
+		2次変分は確率過程がどれくらい小刻みに上下に変動したかを合計してその大きさを2乗で測る量<br />
+		2次変分は関数がどれくらい小刻みに上下に変動したかを合計してその大きさを2乗で測る量<br />
+		
+		マルチンゲールは未来の期待値平均が現在の期待値平均と等しいランダムな過程<br />
+		マルチンゲールはコイン投げ<br />
+		マルチンゲールはサイコロ<br />
+		
+		Mはマルチンゲール<br />
+		
+		Tは観測する時間の終わり<br />
+		tは時間<br />
+
+		[M]_TはT時点でのMの二次変分<br />
+		
+		pはべき指数<br />
+		pはpower<br />
+		
+		C_pはpによって決まる上側の定数<br />
+		c_pはpによって決まる下側の定数<br />
+		
+		ドゥーブの最大不等式をL^pノルムに拡張して一般化した不等式<br />
+		ドゥーブの最大不等式を二次変分に拡張して一般化した不等式<br />
+		
+		ドナルド・バークホルダーとバリー・デイビスとロバート・ガンディの不等式<br />
+		Donald Burkholder&Barry Davis&Robert  Gundy inequality<br />
+	  </td>
+	  <td>
+		<img src="img20/ダウンロード (64).png" />
+		<img src="img20/equation (66).png" alt="c_p E[[M]_T^{p/2}] \leq E[\sup_{t\leq T} |M_t|^p] \leq C_p E[[M]_T^{p/2}]"/>
+	  </td>
+	</tr>
+	
+	<!-- アズマ＝ホフディングの不等式 -->
+	<tr class="border-collapse border border-slate-400">
+	  <td class="pr-4">
+		<img src="img20/equation (61).png" alt="P(|X_n - X_0| \geq t) \leq 2 \exp\left(-\frac{t^2}{2\sum_{i=1}^n c_i^2}\right)"/>
+	  </td>
+	  <td class="py-4 pr-4">
+アズマ・ホフディングの不等式<br />
+Azuma–Hoeffding inequality<br />
+有限差マルチンゲールの集中不等式<br />
+
+アズマ・ホフディング界<br />
+アズマ・ホフディング上界<br />
+アズマ・ホフディング限界<br />
+Azuma–Hoeffding bound<br />	
+
+マルチンゲール過程が平均から大きく逸脱する確率の上限を示す不等式<br />
+マルチンゲールは未来の期待値平均が現在の期待値平均と等しいランダムな過程<br />
+マルチンゲールはコイン投げ<br />
+マルチンゲールはサイコロ<br />
+変数間の変化が各ステップで有限の場合に有効<br />
+
+tは平均からどれだけ離れるかを指定するしきい値<br />
+tはthreshold<br />
+tは自分で設定するパラメータ<br />
+
+C_iは有界差分条件の各個の有界差分<br />
+Cは有界差分条件<br />
+Cはbounded differences<br />
+有界差分条件は複数の変数からなる関数fについて各変数を1つだけ変えても、関数の値はあまり大きく変わらないことを保証する条件<br />
+
+iは各ステップの番号<br />
+iはindex<br />
+
+ホフディングの不等式をマルチンゲール差分列に拡張して一般化した不等式<br />
+
+吾妻一興とワシリー・ホフディングの不等式<br />
+Kazuoki Azuma & Wassily Hoeffding inequality<br />
+	  </td>
+	  <td>
+		<img src="img20/ダウンロード (62).png" />
+		<img src="img20/equation (62).png" alt="P(|X_n - X_0| \geq t) \leq 2\exp(-t^2/(2\sum c_i^2))"/>
+	  </td>
+	</tr>
+
+  </tbody>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/cf9d868425.js" crossorigin="anonymous"></script>
+  <title>| // 整数論演算子 - 情報理論で使用する記号の一覧</title>
+</head>
+<body>
+	<h1 class="text-center mb-8 mt-2 text-2xl font-extrabold">⌊⌋ // 整数論演算子 <span class="text-xs font-extrabold underline"><a href="./index.html">計算機科学で使用する記号の一覧</a></span></h1>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		整序演算子/除数演算子/割り切り演算子
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>|</td>
+		  <td>\mid</td>
+		  <td>2がyを割り切る<br />
+		  2はyの約数である<br />
+		  yを2で割った余りが0になる<br />
+		  yは2の倍数である<br />
+		  yは2で割り切れる<br />
+		  yは偶数である<br />
+		  y = 2k（k は整数）<br />
+		  </td>
+		  <td>2 | y</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>|</td>
+		  <td>\mid</td>
+		  <td>AがBを割り切る<br />
+		  AはBの約数である<br />
+		  BをAで割った余りが0になる<br />
+		  BはAの倍数である<br />
+		  BはAで割り切れる<br />
+		  B = kA（k は整数）<br />
+		  </td>
+		  <td>A | B</td>
+		</tr>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		ガウス記号/床関数/天井関数
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>⌊⌋</td>
+		  <td class="text-xs">\lfloor	\rfloor</td>
+		  <td class="pr-4">ガウス記号<br />
+		  床関数<br />
+		  床<br />
+		  切り捨て関数<br />
+		  小数部分を切り捨てた整数部分を表す<br />
+		  x以下の最大の整数を返す<br />
+		  xを超えない最大の整数<br />
+		  </td>
+		  <td><span>⌊x⌋</span><br />
+		  <span>⌊3.14⌋ = 3</span><br />
+		  <span>⌊-2.3⌋ = -3</span><br />
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>⌈⌉</td>
+		  <td class="text-xs">\lceil	\rceil</td>
+		  <td class="pr-4">天井関数<br />
+		  天井<br />
+		  切り上げ関数<br />
+		  小数部分を切り上げた整数部分を表す<br />
+		  x以上の最小の整数を返す<br />
+		  xを超えない最小の整数<br />
+		  </td>
+		  <td><span>⌈x⌉</span><br />
+		  <span>⌈3.14⌉ = 4</span><br />
+		  <span>⌈-2.3⌉ = -2</span><br />
+		  </td>
+		</tr>
+	　　</tbody>
+	</table>
+		
+</body>
+</html>

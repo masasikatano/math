@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/cf9d868425.js" crossorigin="anonymous"></script>
+  <title>* // 形式言語演算子 - 形式言語で使用する記号の一覧</title>
+</head>
+<body>
+	<h1 class="text-center mb-8 mt-2 text-2xl font-extrabold">* // 形式言語演算子 <span class="text-xs font-extrabold underline"><a href="./index.html">計算機科学で使用する記号の一覧</a></span></h1>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		空文字列
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">ε</td>
+		  <td>\varepsilon</td>
+		  <td class="pr-2">
+		  空文字列<br />
+		  空文字<br />
+		  長さ0の文字列<br />
+		  0個の記号からなる文字列<br />
+		  </td>
+		  <td><span>ε</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">λ</td>
+		  <td>\lambda</td>
+		  <td class="pr-2">
+		  空文字列<br />
+		  空文字<br />
+		  長さ0の文字列<br />
+		  0個の記号からなる文字列<br />
+		  </td>
+		  <td><span>λ</span></td>
+		</tr>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		生成規則
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">→</td>
+		  <td>\nRightarrow</td>
+		  <td class="pr-2">
+		  生成規則<br />
+		  文法規則<br />
+		  非終端記号A を aB という記号列で置き換えることができる<br />
+		  非終端記号A が終端記号a と非終端記号B の連結aBに置き換えられる<br />
+		  非終端記号A の置換物が aB<br />
+		  変数A が トークンa と変数B の連結aB に置き換えられる<br />
+		  変数A の 置換物が aB<br />
+		  </td>
+		  <td><span>A → aB</span></td>
+		</tr>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		導出
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">⇒</td>
+		  <td>\Rightarrow</td>
+		  <td class="pr-2">
+		  S が aaabbb に導出される<br />
+		  非終端記号 S は aaabbb に置換される<br />
+		  入力文字列 S は aaabbb に置換される<br />
+		  非終端記号Sが生成規則を用いてaaabbbという文字列に導出される<br />
+		  非終端記号Sが生成規則を用いてaaabbbという文字列に置換される<br />
+		  非終端記号Sが文法規則を用いてaaabbbという文字列が生成される<br />
+		  </td>
+		  <td><span>S ⇒ aaabbb</span></td>
+		</tr>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		選択
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">|</td>
+		  <td>|</td>
+		  <td class="pr-2">
+		  A または B のいずれか1つを選択する<br />
+		  非終端記号A または 非終端記号B のどちらかから一方を選択する<br />
+		  </td>
+		  <td><span>(A | B)</span></td>
+		</tr>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		トップとボトム
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">⊤</td>
+		  <td>\top</td>
+		  <td class="pr-2">
+		  トップ<br />
+		  トートロジー<br />
+		  常に真<br />
+		  恒真<br />
+		  </td>
+		  <td><img class="pr-2" src="img19/equation (68).png"/></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">⊥</td>
+		  <td>\bot</td>
+		  <td class="pr-2">
+		  ボトム<br />
+		  矛盾<br />
+		  常に偽<br />
+		  恒偽<br />
+		  </td>
+		  <td><img class="pr-2" src="img19/equation (68).png"/></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">L</td>
+		  <td>L</td>
+		  <td class="pr-2">
+		  束論<br />
+		  束<br />
+		  Lattice<br />
+		  ラティス<br />
+		  構造の順序に基づく合成と選択の論理<br />
+		  </td>
+		  <td><img class="pr-2" src="img19/equation (68).png"/></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">Ku</td>
+		  <td>Ku</td>
+		  <td class="pr-2">
+		  空<br />
+		  仏教の空<br />
+		  sunya<br />
+		  あらゆる存在の根底、無自性、絶対的包摂<br />
+		  あらゆる命題を含みうる包摂的極限<br />
+		  非実体性<br />
+		  </td>
+		  <td><img class="pr-2" src="img19/equation (68).png"/></td>
+		</tr>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		反復
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">∗</td>
+		  <td>∗</td>
+		  <td class="pr-2">
+		  a の0回以上の繰り返し<br />
+		  空文字列ϵ、あるいはa、aa、aaa、aaaa といった、a の任意の回数の繰り返し<br />
+		  a の反復<br />
+		  a のスター閉包<br />
+		  a クリーネスター<br />
+		  a クリーネ閉包<br />
+		  </td>
+		  <td><span>a∗</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">+</td>
+		  <td>+</td>
+		  <td class="pr-2">
+		  a の1回以上の繰り返し<br />
+		  a、aa、aaa、aaaa といった、a の1回以上の任意の回数の繰り返し<br />
+		  a の一度以上の反復<br />
+		  a の正のスター閉包<br />
+		  a 正のクリーネスター<br />
+		  a 正のクリーネ閉包<br />
+		  </td>
+		  <td><span>a+</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">Σ∗</td>
+		  <td>\sum ∗</td>
+		  <td class="pr-2">
+		  Σの各記号を0回以上繰り返して作ることができるすべての文字列<br />
+		  Σ の文字列の反復<br />
+		  Σ の文字列のスター閉包<br />
+		  Σ の文字列のクリーネスター<br />
+		  Σ の文字列のクリーネ閉包<br />
+		  </td>
+		  <td><span>Σ∗</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pl-2">Σ+</td>
+		  <td>\sum +</td>
+		  <td class="pr-2">
+		  Σの各記号を1回以上繰り返して作ることができるすべての文字列<br />
+		  Σ の文字列の一度以上の反復<br />
+		  Σ の文字列の正のスター閉包<br />
+		  Σ の文字列の正のクリーネスター<br />
+		  Σ の文字列の正のクリーネ閉包<br />
+		  </td>
+		  <td><span>Σ+</span></td>
+		</tr>
+	</table>
+
+</body>
+</html>

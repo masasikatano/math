@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/cf9d868425.js" crossorigin="anonymous"></script>
+  <title>H(x) // 情報理論演算子 - 情報理論で使用する記号の一覧</title>
+</head>
+<body>
+	<h1 class="text-center mb-8 mt-2 text-2xl font-extrabold">H(x) // 情報理論演算子 <span class="text-xs font-extrabold underline"><a href="./index.html">計算機科学で使用する記号の一覧</a></span></h1>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		エントロピー
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>H(X)</td>
+		  <td class="text-xs">H(X)</td>
+		  <td class="pr-4">情報源xから、ある確率分布に基づいて得られる情報の「予測のしにくさ」や「不確実さ」を測定する指標<br />
+		  情報源xが生成するシンボルの不確実性を表す指標<br />
+		  情報源Xの平均的な情報量<br />
+		  情報源Xから生成されるメッセージの平均情報量<br />
+		  情報源Xの平均情報量を示す<br />
+		  情報源Xの不確実性の尺度を表す<br />
+		  情報源Xの不確実性の度合いを表す<br />
+		  情報源Xの無作為性の尺度を表す<br />
+		  情報源Xの無作為性の度合いを表す<br />
+		  情報源Xの自己情報量の平均値<br />
+		  情報源Xの確率分布に基づく自己情報量の期待値<br />
+		  情報源Xの確率分布に基づく自己情報量の平均値<br />
+		  情報源Xの個々の自己情報量を全体的に見たときの平均的な情報量<br />
+		  ランダム変数Xのエントロピー<br />
+		  エントロピー<br />
+		  「驚き」や「予想外さ」を数値化したもの<br />
+		  予想外なものほど数値が大きい<br />
+		  予想通りなものほど数値が小さい<br />
+		  情報の予測のしにくさや不確実さを測定する指標<br />
+		  コインのエントロピー H(x)=-(0.5 log_2 0.5 + 0.5 log_2 0.5) = 1<br />
+		  サイコロのエントロピー H(x)=2.585<br />
+		  </td>
+		  <td><img src="img14/equation (2).png"/></td>
+		</tr>
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		結合エントロピー
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTeX</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>H(X, Y)</td>
+		  <td class="text-xs">H(X, Y)</td>
+		  <td class="pr-4">
+			2つの確率変数XとYの結合分布にもとづいて得られる全体のエントロピー<br />
+			2つの確率変数XとYを合わせて見たときの全体のエントロピー<br />
+			XとYの同時分布における平均情報量<br />
+			XとYを一緒に観測したときに得られる情報の不確実性の尺度<br />
+			XとYが独立な場合、結合エントロピーは各エントロピーの和になるH(X, Y) = H(X) + H(Y)<br />
+			XとYが強く依存している場合、結合エントロピーはそれより小さくなる<br />
+			コイン（X:表/裏）とサイコロ（Y:1～6）が独立なら<br />
+			H(X, Y) = H(X) + H(Y) = 1 + 2.585 = 3.585<br />
+		  </td>
+		  <td><img src="img14/essssssquation (3).png"/></td>
+		</tr>
+	  </tbody>
+	</table>
+
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		自己情報量
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>I(X)</td>
+		  <td class="text-xs">I(X)</td>
+		  <td class="pr-4">事象xが発生する確率が低いほど、その事象が発生した時に得られる情報量が多いということを表す<br />
+		  事象xが与えられたときに、それがどれだけ予測困難であるかを示す尺度<br />
+		  事象xがどれだけ「驚き」や「新しさ」を持っているかを数値で表したもの<br />
+		  エントロピーを計算するための基本的な単位<br />
+		  エントロピーを構成する個々の要素<br />
+		  自己情報量<br />
+		  コインの表の自己情報量 I(x)=-(log_2 0.5) = 1<br />
+		  コインの裏の自己情報量 I(x)=-(log_2 0.5) = 1<br />
+		  サイコロの1の目の自己情報量 H(x)=2.58<br />
+		  サイコロの6の目の自己情報量 H(x)=2.58<br />
+		  </td>
+		  <td><img src="img14/equation (4).png"/></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>∝</td>
+		  <td class="text-xs">\propto</td>
+		  <td class="pr-4">事象xの自己情報量は事象xの確率の逆数に比例する<br />
+		  事象xの確率が高いほど、自己情報量が小さい<br />
+		  事象xの確率が低いほど、自己情報量が大きい<br />
+		  確率の高い事象xからは、あまり「情報」を得られない<br />
+		  当たり前の事象xからは、あまり「情報」を得られない<br />
+		  確率の低い事象xが起きると、多くの「情報」を得られる<br />
+		  珍しい事象xが起こると、多くの「情報」を得られる<br />
+		  </td>
+		  <td><img src="img14/equation (16).png"/></td>
+		</tr>
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		相互情報量
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>I(X;Y)</td>
+		  <td class="text-xs">I(X;Y)</td>
+		  <td class="pr-4">2つの確率変数XとYの相互依存の尺度を表す量<br />
+		  X と Y がどれだけ互いに関連しているかを測る確率的な指標<br />
+		  X と Y がどれだけ互いに情報を共有しているかを測る確率的な指標<br />
+		  X と Y がどれだけ互いに依存しているかを測る確率的な指標<br />
+		  数値が大きいほど強い相関関係にあることを示す<br />
+		  数値が小さいほど関係がないことを示す<br />
+		  数値が0の場合 X と Y は独立であることを示す<br />
+		  相互情報量<br />
+		  </td>
+		  <td><img src="img14/equation (5).png"/></td>
+		</tr>
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		情報利得
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>IG(X; Y)</td>
+		  <td class="text-xs">IG(X; Y)</td>
+		  <td class="pr-4">XによるYの情報利得<br />
+		  XによるYの情報ゲイン<br />
+		  XによるYのInformation Gain<br />
+		  XによるYのIG<br />
+		  XとYの情報利得<br />
+		  Xを知ることによってYについて得られる情報量<br />
+		  特徴量Xによる分割が目標変数Yに対してもたらす情報の増加量<br />
+		  条件付き情報利得<br />
+		  情報利得が髙いと相互情報量が髙い<br />
+		  相互情報量が髙いと情報利得が髙い</td>
+		  <td><span>IG(X; Y) = H(Y) - H(Y|X)</span></td>
+		</tr>
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		相対エントロピー
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td><img class="pr-4" src="img14/equation (9).png" alt="D_{KL}(P||Q)"/></td>
+		  <td class="text-xs">D_{KL}(P||Q)</td>
+		  <td class="pr-4">
+		  2つの確率分布PとQ間の「ズレ」を測る尺度<br />
+		  2つの確率分布PとQがどれだけ違うかを測る尺度<br />
+		  分布 P から分布 Q への情報の差異を測定する<br />
+		  値が大きいほど、2つの分布の差異が大きいことを示す<br />
+		  値が0の場合、2つの分布は同一であることを示す<br />
+		  Kullback-Leibler 情報量<br />
+		  Kullback-Leibler ダイバージェンス<br />
+		  Kullback-Leibler 発散<br />
+		  カルバックライブラー 情報量<br />
+		  カルバックライブラー ダイバージェンス<br />
+		  カルバックライブラー 発散<br />
+		  ダイバージェンス カルバックライブラー<br />
+		  DKL<br />
+		  KL 情報量<br />
+		  KL ダイバージェンス<br />
+		  KL 発散<br />
+		  ダイバージェンス<br />
+		  相対エントロピー<br />
+		  </td>
+		  <td><img src="img14/equation (6).png"/  alt="D_{\mathrm{KL}}(P \| Q) = \sum_x P(x) \log \frac{P(x)}{Q(x)}"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>P || Q</td>
+		  <td class="text-xs">P||Q</td>
+		  <td class="pr-4">PからQへの相対的な情報量の差<br />
+		  PからQへの情報量の「流れ」 <br />
+		  PからQへの情報量の「距離」 <br />
+		  PからQへの情報量の「発散」 <br />
+		  対<br />
+		  間<br />
+		  確率分布Pが確率分布Qからどれだけ離れているかを測る尺度を表す<br />
+		  確率分布Pが確率分布Qからどれだけ異なるかを測る尺度を表す<br />
+		  </td>
+		  <td><img src="img14/equation (6).png"  alt="D_{\mathrm{KL}}(P \| Q) = \sum_x P(x) \log \frac{P(x)}{Q(x)}"/></td>
+		</tr>
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+	    交差エントロピー
+	  </caption>
+	  <tbody >
+	    <tr>
+	      <td width="15%">記号</td>
+	      <td width="15%">LaTex</td>
+	      <td width="40%">意味</td>
+	      <td width="30%">例</td>
+	    </tr>
+
+	    <tr class="border-collapse border border-slate-400">
+	      <td><img class="pr-4" src="img14/equation_ce_symbol.png" alt="H(P, Q)"/></td>
+	      <td class="text-xs">H(P, Q)</td>
+	      <td class="pr-4">
+		2つの確率分布P(真の分布)とQ(モデル・近似分布)の「ずれ」に基づく符号化コスト<br />
+		符号化コストは確率分布からデータを得たとき、それを符号（0や1の並びなど）で表すために必要な平均的なビット数や情報量のこと<br />
+		分布 Pに従うデータを、分布 Qを用いて符号化したときの平均コード長（期待損失）と等しい量<br />
+		Cross Entropy<br />
+		Cross-Entropy<br />
+		クロスエントロピー<br /> 
+		交差エントロピー<br />
+	      </td>
+	      <td>
+		<img src="img14/equation_ce_def.png" alt="H(P,Q) = - \sum_x P(x)\,\log Q(x)"/>
+              </td>
+	    </tr>
+	    
+	    <tr class="border-collapse border border-slate-400">
+	      <td><img class="pr-4" src="img14/equation_ce_symbol.png" alt="H(P, Q)"/></td>
+	      <td class="text-xs">H(P, Q)</td>
+	      <td class="pr-4">
+		交差エントロピー = 自己エントロピー + 相対エントロピー<br />
+	        Cross Entropy<br />
+		Cross-Entropy<br />
+		クロスエントロピー<br /> 
+		交差エントロピー<br />
+		
+	      </td>
+	      <td>
+		<img src="img14/equation_ce_kl.png" alt="H(P,Q) = H(P) + D_{KL}(P \| Q)"/>
+	      </td>
+	    </tr>
+
+	  </tbody>
+	</table>
+
+<table class="w-full mb-4" >
+  <caption class="text-2xl font-extrabold">
+    交差エントロピーの応用
+  </caption>
+  <tbody >
+    <tr>
+      <td width="15%">記号</td>
+      <td width="15%">LaTeX</td>
+      <td width="40%">意味</td>
+      <td width="30%">例</td>
+    </tr>
+
+    <!-- ロジスティック回帰（モデル） -->
+    <tr class="border-collapse border border-slate-400">
+      <td>
+        <img class="pr-4" src="img14/equation_logreg_symbol.png" alt="p_\theta(y=1|x)"/>
+      </td>
+      <td class="text-xs">p_\theta(y=1|x)=\sigma(\mathbf{w}^\top \mathbf{x}+b)</td>
+      <td class="pr-4">
+        ロジスティック回帰<br />
+        確率的線形分類器<br />
+        出力は2値分類ならシグモイド関数で確率化<br />
+        出力は多クラス分類ならソフトマックス関数で確率化<br />
+        出力のロジスティック損失の最小化で学習<br />
+        出力のロジスティック損失の最小化は対数尤度最大化の事 <br />
+        出力の交差エントロピー最小化で学習<br />
+        出力の交差エントロピー最小化は対数尤度最大化の事 <br />
+       </td>
+      <td>
+        <img src="img14/equation_logreg_def.png" 
+             alt="\sigma(z)=\frac{1}{1+e^{-z}},\ \hat{p}=\sigma(\mathbf{w}^\top \mathbf{x}+b)"/>
+      </td>
+    </tr>
+    
+    <!-- ロジスティック損失（二値）＝ 交差エントロピー（ベルヌーイ） -->
+    <tr class="border-collapse border border-slate-400">
+      <td>
+        <img class="pr-4" src="img14/equation_logistic_loss_symbol.png" alt="\ell_{\text{logistic}}(y,\hat{p})"/>
+      </td>
+      <td class="text-xs">\ell_{\text{logistic}}(y,\hat{p})</td>
+      <td class="pr-4">
+       2値分類のロジスティック損失<br />
+       2値分類の交差エントロピー損失<br />
+       
+       バイナリクロスエントロピー損失<br />
+      バイナリ交差エントロピー損失<br />
+       Binary Cross-Entropy Loss<br />
+       シグモイドクロスエントロピー損失<br />
+       シグモイド交差エントロピー損失<br />
+        真のベルヌーイ分布 <em>P</em> と 予測確率 <em>Q</em> の交差エントロピーの事<br />
+        交差エントロピーの最小化は対数尤度最大化の事<br />
+      </td>
+      <td>
+        <img src="img14/equation_logistic_loss_def.png" 
+             alt="\ell(y,\hat{p}) = -[\,y\log \hat{p} + (1-y)\log(1-\hat{p})\,]"/>
+      </td>
+    </tr>
+
+    <!-- ロジスティック損失（多クラス）＝ ソフトマックス交差エントロピー -->
+    <tr class="border-collapse border border-slate-400">
+      <td>
+        <img class="pr-4" src="img14/equation_softmax_ce_symbol.png" alt="\ell(\mathbf{y},\hat{\mathbf{p}})"/>
+      </td>
+      <td class="text-xs">\ell(\mathbf{y},\hat{\mathbf{p}})</td>
+      <td class="pr-4">
+        多クラス分類のソフトマックスの交差エントロピー損失<br />
+        カテゴリカルクロスエントロピー損失<br />
+       カテゴリカル交差エントロピー損失<br />
+        Categorical Cross-Entropy Loss<br />
+        真のカテゴリ分布 <em>P</em> と 予測分布 <em>Q</em> の交差エントロピー<br />
+        一般に one-hot の <code>y</code> を用いる
+      </td>
+      <td>
+        <img src="img14/equation_softmax_ce_def.png" 
+             alt="\ell(\mathbf{y},\hat{\mathbf{p}}) = -\sum_{k} y_k \log \hat{p}_k"/>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		バイト
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>B</td>
+		  <td class="text-xs">B</td>
+		  <td class="pr-4">1キロバイト は 2^10バイト<br />
+		  1KB は 2^10 B<br />
+		  2^10バイト は 1,024バイト<br />
+		  2^10 B は 1,024 B<br />
+		  </td>
+		  <td>
+		  <img src="img14/equation (3).png"/><br />
+		  <img src="img14/equation (8).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>B</td>
+		  <td class="text-xs">B</td>
+		  <td class="pr-4">1メガバイト は 2^20バイト<br />
+		  1MB は 2^20 B<br />
+		  2^20バイト は 1,048,576バイト<br />
+		  2^20 B は 1,048,576 B<br />
+		  </td>
+		  <td>
+		  <img src="img14/equation (10).png"/><br />
+		  <img src="img14/equation (11).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>B</td>
+		  <td class="text-xs">B</td>
+		  <td class="pr-4">1ギガバイト は 2^30バイト<br />
+		  1GB は 2^30 B<br />
+		  2^30バイト は 1,073,741,824バイト<br />
+		  2^30 B は 1,073,741,824 B<br />
+		  </td>
+		  <td>
+		  <img src="img14/equation (12).png"/><br />
+		  <img src="img14/equation (13).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>B</td>
+		  <td class="text-xs">B</td>
+		  <td class="pr-4">1テラバイト は 2^40バイト<br />
+		  1TB は 2^40 B<br />
+		  2^40バイト は 1,099,511,627,776バイト<br />
+		  2^40 B は 1,099,511,627,776 B<br />
+		  </td>
+		  <td>
+		  <img src="img14/equation (14).png"/><br />
+		  <img src="img14/equation (15).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>B</td>
+		  <td class="text-xs">B</td>
+		  <td class="pr-4">1ペタバイト は 2^50バイト<br />
+		  1PB は 2^50 B<br />
+		  2^50バイト は 1,125,899,906,842,624バイト<br />
+		  2^50 B は 1,125,899,906,842,624 B<br />
+		  </td>
+		  <td>
+		  <img src="img14/equation (17).png"/><br />
+		  <img src="img14/equation (18).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>B</td>
+		  <td class="text-xs">B</td>
+		  <td class="pr-4">1エクサバイト は 2^60バイト<br />
+		  1EB は 2^60 B<br />
+		  2^60バイト は 1,152,921,504,606,846,976バイト<br />
+		  2^60 B は 1,152,921,504,606,846,976 B<br />
+		  </td>
+		  <td>
+		  <img src="img14/equation (19).png"/><br />
+		  <img src="img14/equation (20).png"/>
+		  </td>
+		</tr>
+	　　</tbody>
+	</table>
+		
+</body>
+</html>

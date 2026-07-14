@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/cf9d868425.js" crossorigin="anonymous"></script>
+  <title>det(A) // 線形代数 - 代数/線形代数で使用する記号の一覧</title>
+</head>
+<body>
+	<h1 class="text-center mb-8 mt-2 text-2xl font-extrabold">det(A) // 線形代数 <span class="text-xs font-extrabold underline"><a href="./index.html">計算機科学で使用する記号の一覧</a></span></h1>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		関係演算子
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>&prop;</td>
+		  <td>\propto</td>
+		  <td>A が B に比例する<br />
+		  A が B の変化に応じて一定の割合で変化する<br />
+		  A が増加すると B も増加する関係<br />
+		  A が減少すると B も減少する関係<br />
+		  A が B の2倍になると、 A も2倍になる関係<br />
+		  A と B の間に一定の比率が存在する<br />
+		  A と B の間の比例関係<br />
+		  A proportional to B<br />
+		  A = kB と同じ (kは比例定数)<br />
+		  y = 2x の場合、y &prop; x<br />
+		  A ∝ B の場合、B ∝ A も成り立つ<br />
+		  B も A に比例する<br />
+		  B も A の変化に応じて一定の割合で変化する<br />
+		  B が増加すると A も増加する関係<br />
+		  B が減少すると A も減少する関係<br />
+		  B が A の2倍になると、 B も2倍になる関係<br />
+		  B と A の間に一定の比率が存在する<br />
+		  B と A の間の比例関係<br />
+		  </td>
+		  <td><span>A &prop; B</span></td>
+		</tr>
+		<!-- ここから追加 -->
+		<tr class="border-collapse border border-slate-400">
+		  <td>&succ;</td>
+		  <td>\succ</td>
+		  <td>
+			AはBより大きい<br>
+			AはBを厳密に含む<br>
+			AはBを上回る<br>
+			AはBを順序で上回る<br>
+			AはBを2次形式で上回る<br>
+			行列の2次形式の2次は多項式の次数<br>
+			行列の2次形式は行列がベクトルに与える作用をそのベクトルとの内積で測ったもの<br>
+			行列の2次形式は行列の性質をベクトルの二乗量として表すもの<br>
+			A サクシード B<br>
+			A−Bは正定値(Positive Definite)<br>
+			正定値は負にならない性質<br>
+			A−Bはゼロより大きい<br>
+		  	A−B > 0<br>
+		  </td>
+		  <td><img src="img17/equation (20).png"/ class="py-4 pr-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>&succeq;</td>
+		  <td>\succeq</td>
+		  <td>
+			AはBより大きいまたは等しい<br>
+			AはBを包含する<br>
+			AはBを含む<br>
+			AはBを順序で上回るまたは等しい<br>
+			AはBを2次形式で上回るまたは等しい<br>
+			行列の2次形式の2次は多項式の次数<br>
+			行列の2次形式は行列がベクトルに与える作用をそのベクトルとの内積で測ったもの<br>
+			行列の2次形式は行列の性質をベクトルの二乗量として表すもの<br>
+			A サクシードオアイコール B<br>
+			A スセック B<br>
+			A−Bは半正定値(Positive SemiDefinite, PSD)<br>
+			半正定値は負にならずゼロも許される性質<br>
+		  	A−Bはゼロ以上<br>
+		  	A−B ≧ 0<br>
+		  </td>
+		  <td><img src="img17/equation (35).png"/ class="py-4 pr-4"></td>
+		</tr>
+		<!-- 追加ここまで -->
+	　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		直交和
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>H</td>
+		  <td>H</td>
+		  <td>空間 ( H ) <br />
+		  ヒルベルト空間 ( H ) <br />
+		  バナッハ空間の内ノルムが内積によって定義される空間<br />
+		  バナッハ空間はベクトルのノルムを持つ空間で完備性を持つ空間<br />
+		  完備性はコーシー列が収束する場所が必ずある性質<br />
+		  コーシー列は列の後半の項同士が互いに非常に近くなる性質を持つ数列<br />
+		  内積からノルムが定まる完備な空間<br />
+		  </td>
+		  <td><img src="img17/equation - 2024-11-08T233341.632.png"/ class="py-4 pr-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>V</td>
+		  <td>V</td>
+		  <td>ベクトル ( V ) <br />
+		  </td>
+		  <td><img src="img17/equation - 2024-11-08T233341.632.png"/ class="py-4 pr-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>⊕</td>
+		  <td>\oplus</td>
+		  <td>直交和<br />
+		  直和<br />
+		  direct sum<br />
+		  二つの空間が互いに独立（直交）していて、それらが重ならずに全体を構成する事<br />
+		  複数の部分空間が互いに重ならず、それらのベクトルの和で空間全体を張る場合の事<br />
+		  生成するベクトルが一意に表され、交わりがゼロベクトルのみである事<br />
+		  共通するベクトルがない和の事<br />
+		  </td>
+		  <td><img src="img17/equation - 2024-11-08T233341.632.png"/ class="py-4 pr-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>V ⊥</td>
+		  <td>V^{\perp}</td>
+		  <td>直交補空間<br />
+		  V のすべてのベクトルと直交するベクトル全体の集合<br />
+		  V に属する任意のベクトルvと、V⊥に属する任意のベクトル w との内積がゼロになるような w たちの集合<br />
+		  <br />
+		  論理定数の⊥(\bot、ボトム、矛盾、恒偽)も同じ記号を使うが無関係<br />
+		  </td>
+		  <td><img src="img17/equation - 2024-11-08T233341.632.png"/ class="py-4 pr-4"></td>
+		</tr>
+	　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		合成写像・合成関数
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>∘</td>
+		  <td>\circ</td>
+		  <td>写像の合成（Composition of mappings）<br />
+		  写像Aと写像Bを合成した写像を表す<br />
+		  写像Aと写像Bの合成写像<br />
+		  AとBの合成写像<br />
+		  写像は関数と同義<br />
+		  </td>
+		  <td><img src="img17/equation (36).png"/ class="py-4 px-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>∘</td>
+		  <td>\circ</td>
+		  <td>関数の合成（Composition of functions）<br />
+		  関数Aと関数Bを合成した関数を表す<br />
+		  関数Aと関数Bの合成関数<br />
+		  AとBの合成関数<br />
+		  関数は写像と同義<br />
+		  </td>
+		  <td><img src="img17/equation (36).png"/ class="py-4 px-4"></td>
+		</tr>
+	　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		ベクトルの計算
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>+</td>
+		  <td>+</td>
+		  <td>ベクトルの線形結合（Linear combination of vectors）<br />
+		  複数のベクトルにスカラー（数）を掛けて、それらを足し合わせる操作<br />
+		  新しいベクトルを作る操作<br />
+		  </td>
+		  <td><img src="img17/equation - 2025-02-22T202741.646.png"/ class="py-4 px-4"></td>
+		</tr>
+		</tr>
+	　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		行列の計算
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>・</td>
+		  <td>\cdot</td>
+		  <td>ベクトルの内積（Dot Product of a Matrix）<br />
+		  ベクトルのドット積<br />
+		  ベクトルの要素同士を掛け合わせてその和を取る操作<br />
+		  ベクトルのスカラー値（1つの数値）を表す<br />
+		  </td>
+		  <td><img src="img17/equation (10).png"/ class="py-4 pr-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>×</td>
+		  <td>\times</td>
+		  <td>ベクトルの外積（Cross Product of a Matrix）<br />
+		  ベクトルのクロス積（Cross Product of a Matrix）<br />
+		  二つのベクトルから新しいベクトルを生成する操作<br />
+		  </td>
+		  <td><img src="img17/equation (11).png"/ class="py-4 pr-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>×</td>
+		  <td>\times</td>
+		  <td>行列の積（Matrix Multiplication）<br />
+		  複数の線形変換（Linear Transformation）を連続して行う操作<br />
+		  線形変換の合成を表す<br />
+		  </td>
+		  <td><img src="img17/equation (9).png"/ class="py-4 pr-4"></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+  <td>⊙</td>
+  <td>\odot</td>
+  <td>
+    アダマール積<br />
+    ハダマール積<br />
+    Hadamard Product<br />
+    行列の要素ごとの積<br />
+    同じ形の行列同士で，各要素を掛け合わせて得られる行列<br />
+    行列積（×,\times,Matrix Multiplication）とは別物<br />
+    線形変換の合成ではない<br />
+  </td>
+  <td class="py-4 pr-4">
+    <img src="img17/equation_hadamard.png" alt="
+\begin{pmatrix}a&b\\c&d\end{pmatrix}\odot
+\begin{pmatrix}x&y\\z&w\end{pmatrix} =
+\begin{pmatrix}ax&by\\cz&dw\end{pmatrix}
+" class="py-4 pr-4" />
+  </td>
+</tr>
+
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>⊗</td>
+		  <td>\otimes</td>
+		  <td>行列のテンソル積（Tensor Product）<br />
+		  行列のクロネッカー積（Kronecker Product）<br />
+		  行列の直積（Direct Product）<br />
+	      行列のデカルト積（Cartesian Product）<br />
+		  2つの行列を組み合わせて、新しい大きな行列を生成する操作<br />
+		  
+		  </td>
+		  <td><img src="img17/equation (8)___.png"/ class="py-4 pr-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>Det</td>
+		  <td>Det</td>
+		  <td>行列式（Determinant）<br />
+		  行列Aの特定の数値を表す<br />
+		  行列Aの行列式が0でない場合、行列Aには逆行列が存在する<br />
+		  行列Aの行列式が0でない場合、行列Aは可逆行列<br />
+		  行列Aの行列式が0でない場合、行列Aは正則行列<br />
+		  行列Aの行列式が0でない場合、行列Aは非特異行列<br />
+		  行列Aが正方行列で行列式が0でない場合、行列Aはフルランク<br />
+		  </td>
+		  <td>
+		  <img src="img17/equation (5).png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+  <td>Tr</td>
+  <td>Tr</td>
+  <td>
+    行列のトレース（Trace）<br />
+    正方行列の対角成分の総和を表すスカラー値<br />
+    特異値行列 ⊂ 対角行列<br />
+    特異値行列 = 特異値分解した対角行列<br />
+  </td>
+  <td>
+    <img src="img17/equation_tr0.png"/ class="py-4 pr-4">
+    <img src="img17/equation_tr1.png"/ class="py-4 pr-4">
+    <img src="img17/equation_tr2.png"/ class="py-4 pr-4">
+  </td>
+</tr>
+
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>λ</td>
+		  <td>\lambda</td>
+		  <td>固有値（Eigenvalues）<br />
+		  行列がどのような性質を持っているかを示す数<br />
+		  行列が方向を変えずにどう変化するかを示す数<br />
+		  
+スペクトルノルムは固有値の絶対値<br />
+フロベニウスノルムは固有値の二乗和の平方根<br />
+核ノルムは固有値の絶対値の総和<br />
+		  </td>
+		  <td>
+			  <img src="img17/equation (8).png"/ class="py-4 pr-4">
+			  <img src="img17/equation (12).png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+      <td>σ<sub>i</sub>(A)</td>
+      <td class="text-xs">\sigma_i(A)</td>
+      <td class="pr-4">
+        特異値（Singular Values）<br />
+       σ_i(A)は行列Aのi番目の特異値<br />
+       σ(特異値)は A^* A の固有値の平方根を並べたもので、その集合全体を指す<br />
+       A^* Aは常に半正定値エルミート行列<br />
+        エルミート行列のときは特異値は固有値の絶対値となる<br />
+        実対称行列のときは特異値は固有値の絶対値となる<br />
+        行列の伸びの強さを方向ごとに表す量のこと<br />
+        行列のスケーリングの強さを方向ごとに表す量のこと<br />
+        行列が方向を問わずにどれくらい伸び縮みするかを示す数の集合<br />
+        特異値は非負の実数<br />
+        <br />
+        スペクトルノルムは特異値の集合の最大値<br />
+       Spectralノルムは特異値の集合の最大値<br />
+        <br />
+        フロベニウスノルムは全ての特異値の二乗和の平方根<br />
+       Frobeniusノルムは全ての特異値の二乗和の平方根<br />
+        <br />
+        核ノルムは特異値の総和<br />
+        Nuclearノルムは特異値の総和<br />
+      </td>
+      <td class="py-4 pr-4 text-xs">
+        <img src="img17/equation_sv1.png" class="py-4 pr-4" alt="\sigma_i(A) \quad (i=1,\dots,r)" />
+        <img src="img17/equation_sv.png" class="py-4 pr-4" alt="\sigma_i(A) = \sqrt{\lambda_i(A^{*}A)}" />
+      </td>
+    </tr>
+
+    <!-- SVD 本体 -->
+    <tr class="border-collapse border border-slate-400">
+      <td>A=UΣV<sup>*</sup></td>
+      <td class="text-xs">A=U\,\Sigma\,V^{*}</td>
+      <td class="pr-4">
+        特異値分解（Singular Value Decomposition）<br />
+        行列を，U(左ユニタリ行列)・Σ(対角行列）・V(右ユニタリ行列) に分解する事<br />
+       Σ(対角行列）は特異値行列<br />
+      </td>
+      <td class="py-4 pr-4 text-xs">
+        <img src="img17/equation_svd.png" class="py-4 pr-4" alt="\sigma_i(A) \quad (i=1,\dots,r)" />
+      </td>
+    </tr>
+		
+		<!-- 基底（一般） -->
+    <tr class="border-collapse border border-slate-400">
+      <td>𝓑={v_1,v_2...,v_k}</td>
+      <td class="text-xs">\mathcal{B}=\{v_1,\dots,v_k\}</td>
+      <td>
+基底（Basis）<br />
+あるベクトル空間を最小限の独立なベクトルで表す集合<br />
+線形独立かつ空間を張るベクトル集合<br />
+任意のベクトルが基底の一意な線形結合で表せる<br />
+行列Aのランクは行列Aの列空間(C)の次元の事<br />
+CはColumn<br />
+行列Aのランクは行列Aの行空間(R)の次元の事<br />
+RはRow<br />
+行列の基底の列空間(C)の本数は行列の列空間(C)の次元の事<br />
+行列の基底の行空間(R)の本数は行列の行空間(R)の次元の事<br />
+      </td>
+      <td>
+        <span class="text-xs">
+          <img src="img17/equation_basis.png"/ class="py-4 pr-4">
+        </span>
+      </td>
+    </tr>
+		
+		<!-- 行列のランク -->
+<tr class="border-collapse border border-slate-400">
+  <td>rank(A)</td>
+  <td>\operatorname{rank}(A)</td>
+  <td>
+    行列のランク（Rank of a Matrix）<br />
+    行ベクトル（または列ベクトル）の一次独立な本数<br />
+    行列が張る部分空間の次元を表す<br />
+    線形写像の像（出力空間）の次元<br />
+    行列の一次独立な行の本数<br />
+    行列の一次独立な列の本数<br />
+    ランクが小さいほど情報（独立成分）が少ない<br />
+    3×3行列なら、ランクは最大3<br />
+    3×3行列なら、3がフルランク<br />
+    正方行列で rank(A)=n なら A は可逆行列<br />
+    正方行列は行列式が0でなければフルランク<br />
+  </td>
+  <td>
+     <img src="img17/equation_rank1.png" alt="
+\operatorname{rank}\!\begin{pmatrix}1&0\\0&0\end{pmatrix} = 1 \\
+\operatorname{rank}\!\begin{pmatrix} 1 & 2 \\ 2 & 4 \end{pmatrix} = 1 \\
+\operatorname{rank}\!\begin{pmatrix}
+1 & 2 & 3 \\
+0 & 0 & 0 \\
+2 & 4 & 6
+\end{pmatrix} = 1 \\
+" class="py-4 pr-4">
+
+<img src="img17/equation_rank2.png" alt="
+\operatorname{rank}\!\begin{pmatrix}1&0\\0&1 \end{pmatrix} = 2 \\
+\operatorname{rank}\!\begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} = 2 \\
+\operatorname{rank}\!\begin{pmatrix}1&0&0\\0&1&0\\0&0&0 \end{pmatrix} = 2 \\
+" class="py-4 pr-4">
+
+<img src="img17/equation_rank3.png" alt="
+\operatorname{rank}\!\begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix} = 3 \\
+\operatorname{rank}\!\begin{pmatrix}
+1 & 2 & 3 \\
+0 & 1 & 4 \\
+5 & 6 & 0
+\end{pmatrix} = 3 \\
+\operatorname{rank}\!\begin{pmatrix}
+2 & 1 & -1 \\
+0 & 3 & 4 \\
+0 & 0 & 5
+\end{pmatrix} = 3
+
+" class="py-4 pr-4">
+
+  </td>
+</tr>
+
+<tr class="border-collapse border border-slate-400">
+  <td>A=LU</td>
+  <td class="text-xs">
+    A = LU
+  </td>
+  <td class="pr-4">
+    LU分解（LU Decomposition）<br />
+    LはLower triangular matrix<br />
+    Lは下三角行列<br />
+    UはUpper triangular matrix<br />
+    Uは上三角行列<br />
+    行列 <em>A</em> を下三角行列 <em>L</em> と上三角行列 <em>U</em> に分解する操作<br />
+  </td>
+  <td class="py-4 pr-4 text-xs">
+    <img src="img17/equation_lu_ex.png" alt="
+\begin{pmatrix}
+2 & 3\\
+4 & 7
+\end{pmatrix}
+=
+\underbrace{\begin{pmatrix}
+1 & 0\\
+2 & 1
+\end{pmatrix}}_{L}
+\underbrace{\begin{pmatrix}
+2 & 3\\
+0 & 1
+\end{pmatrix}}_{U}
+" class="py-4 pr-4" />
+  </td>
+</tr>
+
+
+<tr class="border-collapse border border-slate-400">
+  <td>
+  A=LLᵀ
+  </td>
+  <td class="text-xs">A = L\,L^{\top}</td>
+  <td class="pr-4">
+    コレスキー分解<br />
+    チョレスキー分解<br />
+    Cholesky Decomposition<br />
+    対称正定値行列（SPD）を，下三角行列 <em>L</em> とその転置で表す分解<br />
+    SPDはSymmetric Positive Definite Matrix<br />
+    LはLower triangular matrix<br />
+    Lは下三角行列<br />
+    
+    LU分解のSPD特化版で，高速・数値的に安定（計算量はおよそ <em>n<sup>3</sup>/3</em>）<br />
+    LU分解は Lower triangular Upper triangular Decomposition<br />
+    
+    アンドレ・コレスキー（André Cholesky）の分解<br />
+  </td>
+  <td class="py-4 pr-4 text-xs">
+    <img src="img17/equation_chol_ex.png" alt="
+\begin{pmatrix}
+4&2&2\\
+2&5&1\\
+2&1&3
+\end{pmatrix}
+=
+\begin{pmatrix}
+2&0&0\\
+1&2&0\\
+1&0&\sqrt{2}
+\end{pmatrix}
+\begin{pmatrix}
+2&1&1\\
+0&2&0\\
+0&0&\sqrt{2}
+\end{pmatrix}
+" class="py-4 pr-4" />
+  </td>
+</tr>
+
+
+
+	　</tbody>
+	</table>
+	
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		ネームド行列
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>I</td>
+		  <td>I</td>
+		  <td>単位行列（Identity Matrix）<br />
+		  正方行列で、対角成分が1、それ以外がすべて0<br />
+		  行列における「1」に相当<br />
+		  行列の積において、元の行列に影響を与えない<br />
+		  対角行列の特殊ケースの行列<br />
+		  
+		  </td>
+		  <td>
+			<img src="img17/equation.png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>Σ</td>
+		  <td>\Sigma</td>
+		  <td>対角行列（Diagonal Matrix）<br />
+		  正方行列で、対角成分が0以外、それ以外がすべて0<br />
+		  <td>
+		  <img src="img17/equation_diagonal.png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>A</td>
+		  <td>A^{-1}</td>
+		  <td>逆行列（inverse matrix）<br />
+		  正則行列を単位行列に変える行列<br />
+		  正則行列と掛けると単位行列になる行列<br />
+		  正則行列を掛けると単位行列(I)になる行列の事<br />
+		  正則行列Aは逆行列(A^-1)を掛けると単位行列(I)になる<br />
+		  正則行列A×逆行列(A^-1)=単位行列(I)<br />
+		  <br />
+		  可逆行列を単位行列に変える行列<br />
+		  可逆行列と掛けると単位行列になる行列<br />
+		  可逆行列を掛けると単位行列(I)になる行列の事<br />
+		  可逆行列Aは逆行列(A^-1)を掛けると単位行列(I)になる<br />
+		  可逆行列A×逆行列(A^-1)=単位行列(I)<br />
+		  <br />
+		  非特異行列を単位行列に変える行列<br />
+		  非特異行列と掛けると単位行列になる行列<br />
+		  非特異行列を掛けると単位行列(I)になる行列の事<br />
+		  非特異行列Aは逆行列(A^-1)を掛けると単位行列(I)になる<br />
+		  非特異行列A×逆行列(A^-1)=単位行列(I)<br />
+		  </td>
+		  <td>
+			<img src="img17/equation (3).png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>A</td>
+		  <td>A</td>
+		  <td>可逆行列（Invertible Matrix）<br />
+		  正則行列（Regular Matrix）<br />
+		  非特異行列（Nonsingular Matrix）<br />
+		  <br/>
+		  逆行列(A^-1)と可逆行列Aを掛けると単位行列(I)となる<br />
+		  逆行列(A^-1)と正則行列Aを掛けると単位行列(I)となる<br />
+		  逆行列(A^-1)と非特異行列Aを掛けると単位行列(I)となる<br />
+		  <br/>
+		  逆行列(A^-1)を掛けると単位行列(I)となる行列<br />
+		  逆行列(A^-1)が存在する行列Aの事<br />
+		  逆行列(A^-1)を持つ行列Aの事<br />
+		  
+		  <br />
+		  ユニタリ行列 ⊂ 可逆行列 = 正則行列 = 非特異行列<br />
+		  </td>
+		  <td>
+			<img src="img17/equation (3).png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>Aᵀ</td>
+		  <td>A^\top<br />A^T</td>
+		  <td>転置行列（Transport of Matrix）<br />
+		  行列の「行」と「列」を入れ替えた行列<br />
+		  横に並んでいた数字を縦に、縦に並んでいた数字を横に並べた行列<br />
+		  90度回転させた行列<br />
+		  <br />
+		  論理定数の⊤(\top、トップ、トートロジー、恒真)も同じ記号を使うが無関係<br />
+		  <td>
+		  <img src="img17/equation (2).png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>A^*</td>
+		  <td>A^*</td>
+		  <td>
+		  A^*は共役転置行列(Conjugate Transpose of a matrix)<br />
+		  A^*は随伴行列(Adjoint of a matrix)<br />
+		  共役転置行列は転置して複素数があれば符号も変える操作をした行列<br />
+		  A^*は行列Aと掛け算する順番を変えても結果が変わらない行列<br />
+		  </td>
+		  <td>
+			  <img src="img17/equation (3)__.png"/ class="py-4 pr-4">
+			  <img src="img17/equation (4).png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>A</td>
+		  <td>A</td>
+		  <td>
+		  正規行列（Normal Matrix）<br />
+		  
+		  共役転置行列を可換する行列<br />
+		  随伴行列を可換する行列<br />
+		  対角化可能で固有値が直交基底を持つ行列<br />
+		  <br />
+		  対称行列 ⊂ 正規行列<br />
+		  歪対称行列 ⊂ 正規行列<br />
+		  エルミート行列 ⊂ 正規行列<br />
+		  ユニタリ行列 ⊂ 正規行列<br />
+		  </td>
+		  <td>
+			  <img src="img17/equation (3)__.png"/ class="py-4 pr-4">
+			  <img src="img17/equation (4).png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+
+		<tr class="border-collapse border border-slate-400">
+		  <td>A</td>
+		  <td>A^T</td>
+		  <td>対称行列（Symmetric Matrix）<br />
+		  シンメトリック行列<br />
+		  行列の「行」と「列」を入れ替えて変わらない行列<br />
+		  横に並んでいた数字を縦に、縦に並んでいた数字を横に並べて変わらない行列<br />
+		  90度回転させて変わらない行列<br />
+		  必ず正方行列<br />
+		  A = A^T<br />
+		  対称行列 ⊂ 正規行列<br />
+		  </td>
+		  <td>
+			<img src="img17/equation (6).png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>A</td>
+		  <td>-A^T</td>
+		  <td>歪対称行列（skew-symmetric matrix）<br />
+		  歪シンメトリック行列<br />
+		  交代行列（symmetric matrix）<br />
+		  行列の「行」と「列」を入れ替えて行列の符号がすべて反転する行列<br />
+		  横に並んでいた数字を縦に、縦に並んでいた数字を横に並べて行列の符号がすべて反転する行列<br />
+		  90度回転させて行列の符号がすべて反転する行列<br />
+		  必ず正方行列<br />
+		  対角成分は0<br />
+		  A^T = -A<br />
+		  A = -A^T<br />
+		  歪対称行列 ⊂ 正規行列
+		  </td>
+		  <td>
+			<img src="img17/equation (7).png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		
+
+
+		
+		
+		<!-- エルミート行列 -->
+<tr class="border-collapse border border-slate-400">
+  <td>A</td>
+  <td>A=A^{*}</td>
+  <td>
+    エルミート行列（Hermitian Matrix）<br />
+    自分自身とその共役転置行列が同じになる行列<br />
+    共役転置行列は転置して複素数があれば符号も変える操作をした行列<br />
+    共役転置で不変（実数の場合は対称行列）な行列<br />
+    エルミート行列 ⊂ 正規行列<br />
+    Charles Hermiteの行列<br />
+  </td>
+  <td>
+     <img src="img17/equation_hermitian.png" alt="
+A=\begin{pmatrix}2&1+i\\1-i&3\end{pmatrix}=A^*
+"
+    class="py-4 pr-4">
+ 
+  </td>
+</tr>
+	
+		
+		
+		
+		
+		<!-- ユニタリ行列 -->
+<tr class="border-collapse border border-slate-400">
+  <td>U</td>
+  <td>U^{*}U=I</td>
+  <td>
+    ユニタリ行列（Unitary Matrix）<br />
+    その行列とその共役転置行列をかけると単位行列になる行列<br />
+    U^*は共役転置行列<br />
+    共役転置行列は転置して複素数があれば符号も変える操作をした行列<br />
+    逆戻しができる行列<br />
+    長さ・内積を保存できる行列<br />
+    ユニタリ行列 ⊂ 正規行列<br />
+    ユニタリ行列 ⊂ 可逆行列 = 正則行列 = 非特異行列<br />
+  </td>
+  <td>
+   <img src="img17/equation_unitary.png" alt="
+U^{*}U=I \\
+U=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\-1&1\end{pmatrix}
+"
+    class="py-4 pr-4">
+
+  </td>
+</tr>
+		
+
+		
+		
+		
+		
+		<!-- 正定値行列 -->
+<tr class="border-collapse border border-slate-400">
+  <td>A ≻ 0</td>
+  <td>A \succ 0</td>
+  <td>
+    正定値行列（Positive Definite Matrix）<br />
+    正定値は負にならない性質<br>
+    すべての非ゼロベクトルに対して、対応する二次形式が正になる対称行列の事<br />
+    二次形式はベクトルを行列で測った広がりを表す<br />
+    固有値がすべて正になる行列<br />
+    0以下の固有値を持たない行列<br />    
+  </td>
+  <td>
+    <img src="img17/equation_pdm.png"/ class="py-4 pr-4" alt="
+\begin{pmatrix}2&1\\1&2\end{pmatrix} \succ 0
+">
+  </td>
+</tr>
+
+<!-- 半正定値行列 -->
+<tr class="border-collapse border border-slate-400">
+  <td>A ⪰ 0</td>
+  <td>A \succeq 0</td>
+  <td>
+    半正定値行列（Positive Semi Definite Matrix, PSD）<br />
+    半正定値は負にならずゼロも許される性質<br />
+    0を含むすべてのベクトルに対して、対応する二次形式が負にならない対称行列の事<br />
+    二次形式はベクトルを行列で測った広がりを表す<br />
+    固有値がすべて0以上の行列<br />
+    負の固有値を持たない行列<br />
+  </td>
+  <td>
+    <img src="img17/equation_psd.png"/ class="py-4 pr-4" alt="
+\begin{pmatrix}2&1\\1&2\end{pmatrix} \succeq 0
+">
+  </td>
+</tr>
+
+
+<!-- ヘッセ行列 -->
+<tr class="border-collapse border border-slate-400">
+  <td>∇² f(x)</td>
+  <td>\nabla^{2} f(x)</td>
+  <td>
+    ヘッセ行列（Hessian Matrix）<br />
+    ヘシアン行列<br />
+    2階偏導関数を成分に持つ正方行列<br />
+    2階偏微分関数を成分に持つ正方行列<br />
+    Otto Hesseの行列<br />
+  </td>
+  <td>
+    <img src="img17/equation_hessian.png"/ class="py-4 pr-4" alt="">
+  </td>
+</tr>
+
+<!-- ヤコビ行列 -->
+<tr class="border-collapse border border-slate-400">
+  <td>J_f(x)</td>
+  <td>J_f(x)</td>
+  <td>
+    ヤコビ行列（Jacobian Matrix）<br />
+    ヤコビアン行列<br />
+    1階導関数を成分に持つ行列<br />
+    1階微分関数を成分に持つ行列<br />
+    J_fのfは特定の関数空間の事<br />
+    Carl Jacobiの行列<br />
+  </td>
+  <td>
+<img src="img17/equation_jacobian.png"/ class="py-4 pr-4" alt="
+J_F(x) = 
+\begin{bmatrix}
+\frac{\partial f_1}{\partial x_1} & \cdots & \frac{\partial f_1}{\partial x_n} \\
+\vdots & \ddots & \vdots \\
+\frac{\partial f_m}{\partial x_1} & \cdots & \frac{\partial f_m}{\partial x_n}
+\end{bmatrix}
+">  
+  
+
+  </td>
+</tr>
+
+<!-- ラプラシアン行列 -->
+<tr class="border-collapse border border-slate-400">
+  <td>L</td>
+  <td class="text-xs">
+    L
+  </td>
+  <td>
+    ラプラシアン行列（Graph Laplacian）<br />
+    隣接行列Aと、各点につながる辺の数をまとめた 次数行列Dから作られる行列<br />
+    隣接行列はグラフのノードのつながりを、重みで表にした行列<br />
+    次数行列は各ノードのつながっている辺の本数を対角成分に並べた行列<br />
+    次数行列は各ノードの次数を対角成分に並べた行列<br />
+    無向グラフの次数行列Dから隣接行列Aを引いて作られる行列<br />
+    各行の総和は必ず0になる<br />
+    各行を足すと必ず0になる<br />
+    必ず対称行列になる<br />
+    必ず半正定値行列になる<br />
+    半正定値は負にならずゼロも許される性質<br />
+    グラフの解析に使用される行列<br />
+    Pierre Laplaceの行列<br />
+  </td>
+  <td>
+    <img src="img17/equation_laplacian.png" class="py-4 pr-4" alt="
+A=\begin{pmatrix}0&1&0\\1&0&1\\0&1&0\end{pmatrix},\;
+D=\mathrm{diag}(1,2,1),\;
+L=D-A=\begin{pmatrix}1&-1&0\\-1&2&-1\\0&-1&1\end{pmatrix}
+">
+  </td>
+</tr>
+
+<!-- カーネル行列 -->
+<tr class="border-collapse border border-slate-400">
+  <td>K</td>
+  <td class="text-xs">K</td>
+  <td>
+    カーネル行列（Kernel Matrix）<br />
+    データ同士のカーネル関数の値を並べて作った行列<br />
+    データ点 x_i, x_j の間のカーネル関数 k の値を並べた n×n 行列<br />
+    カーネル関数は特徴空間に写像したデータ同士の内積を計算する関数<br />
+    特徴空間は特徴量を座標として表現した空間の事<br />
+    必ず対称行列になる<br />
+    必ず半正定値行列になる<br />
+    特徴空間に写したときのグラム行列と同じものになる<br />
+    特徴空間に写したときの内積行列と同じものになる<br />
+  </td>
+  <td>
+    <img src="img17/equation_kernel.png" class="py-4 pr-4" alt="
+K =
+\begin{bmatrix}
+1 & e^{-\|x_1-x_2\|^2/(2\sigma^2)} & e^{-\|x_1-x_3\|^2/(2\sigma^2)} \\
+e^{-\|x_2-x_1\|^2/(2\sigma^2)} & 1 & e^{-\|x_2-x_3\|^2/(2\sigma^2)} \\
+e^{-\|x_3-x_1\|^2/(2\sigma^2)} & e^{-\|x_3-x_2\|^2/(2\sigma^2)} & 1
+\end{bmatrix}
+
+">
+  </td>
+</tr>
+
+<!-- グラム行列 -->
+<tr class="border-collapse border border-slate-400">
+  <td>G</td>
+  <td class="text-xs">
+    G
+  </td>
+  <td>
+    グラム行列（Gram Matrix）<br />
+    ベクトル集合の内積を要素に持つ行列<br />
+    複数のベクトル同士の内積を集めて作った行列<br />
+    必ず対称行列になる<br />
+    必ず半正定値行列になる<br />
+    対角要素は各ベクトルの二乗ノルム||v{_i}^2||になる<br />
+    対角の部分はそれぞれのベクトルの長さ（二乗ノルム）になる<br />
+    線形カーネルのカーネル行列と一致する行列<br />
+   Jørgen Gramの行列
+  </td>
+  <td>
+    <img src="img17/equation_gram.png" class="py-4 pr-4" alt="
+v_1=(1,0),\; v_2=(1,1)\;\Rightarrow\;
+G=\begin{pmatrix}\langle v_1,v_1\rangle & \langle v_1,v_2\rangle\\
+\langle v_2,v_1\rangle & \langle v_2,v_2\rangle\end{pmatrix}
+=\begin{pmatrix}1&1\\1&2\end{pmatrix}
+">
+  </td>
+</tr>
+
+	  </tbody>
+	</table>
+	
+</body>
+</html>

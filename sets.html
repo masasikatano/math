@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/cf9d868425.js" crossorigin="anonymous"></script>
+  <title>∈ // 集合記号演算子 - 数理論理学で使用する記号の一覧</title>
+</head>
+<body>
+	<h1 class="text-center mb-8 mt-2 text-2xl font-extrabold">∈ // 集合演算子 <span class="text-xs font-extrabold underline"><a href="./index.html">計算機科学で使用する記号の一覧</a></span></h1>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		要素
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td><img src="img/in.png"/></td>
+		  <td>&#x2208;</td>
+		  <td>\in</td>
+		  <td>aは集合Aの要素である<br />
+		  aは集合Aの一部である<br />
+		  aは集合Aの元である<br />
+		  aは集合Aに所属する<br />
+		  aは集合Aに属する</td>
+		  <td><span>a &#x2208; A</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/notin.png"/></td>
+		  <td>&#x2209;</td>
+		  <td>\notin</td>
+		  <td>bは集合Aの要素でない<br />
+		  bは集合Aの一部でない<br />
+		  bは集合Aの元でない<br />
+		  bは集合Aに所属しない<br />
+		  bは集合Aに属さない</td>
+		  <td><span>b &#x2209; A</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/ni.png"/></td>
+		  <td>&#x220B;</td>
+		  <td>\ni</td>
+		  <td>集合Aにaは属している<br/>
+		  集合Aがaを含む
+		  </td>
+		  <td><span>A &#x220B; a</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/notni.png"/></td>
+		  <td>&#x220C;</td>
+		  <td>\notni</td>
+		  <td>集合Aにbは属していない<br/>
+		  集合Aがbを含まない<br/>
+		  <td><span>A &#x220C; b</span></td>
+		</tr>
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		部分集合
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td><img src="img/subseteq.png"/></td>
+		  <td>&#x2286;</td>
+		  <td>\subseteq</td>
+		  <td>集合Bは集合Aと等しい<br />
+		  集合Bは集合Aの部分集合である<br />
+		  集合Bの要素はすべて集合Aの要素である<br />
+		  集合Bの元はすべて集合Aの元である<br />
+		  集合Bが集合Aの下位集合である<br />
+		  集合Bが集合Aに包含される<br />
+		  </td>
+		  </td>
+		  <td><span>B &#x2286; A</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/nsubseteq.png"/></td>
+		  <td>&#x2288;</td>
+		  <td>\nsubseteq</td>
+		  <td>集合Cは集合Aの部分集合でない<br />
+		  集合Cの要素は集合Aの要素でないものがある<br />
+		  集合Cの元は集合Aの元でないものがある<br />
+		  集合Cが集合Aの下位集合でない<br />
+		  集合Cが集合Aに包含されない<br />
+		  </td>
+		  <td><span>C &#x2288; A</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/supseteq.png"/></td>
+		  <td>&#x2287;</td>
+		  <td>\nsubseteq</td>
+		  <td>集合Aは集合Bと等しい<br/>
+		  集合Aに集合Bは属している<br/>
+		  集合Aが集合Bを含む<br/>
+		  集合Aが集合Bを包含する<br/>
+		  集合Aが集合Bの上位集合である<br/>
+		  </td>
+		  <td><span>A &#x2287; B</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/nsupseteq.png"/></td>
+		  <td>&#x2289;</td>
+		  <td>\supseteq</td>
+		  <td>集合Cは集合Bに属していない<br/>
+		  集合Cが集合Bを含まない<br/>
+		  集合Cが集合Bの上位集合でない<br/>
+		  集合Cが集合Bに包含されない
+		  </td>
+		  <td><span>C &#x2289; B</span></td>
+		</tr>
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		真部分集合
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td><img src="img/subset.png"/></td>
+		  <td>&#x2282;</td>
+		  <td>\subset</td>
+		  <td>集合Bは集合Aの真部分集合である<br />
+		  集合Bの要素はすべて集合Aの要素である<br />
+		  集合Bの元はすべて集合Aの元である<br />
+		  集合Bが集合Aの下位集合である
+		  </td>
+		  </td>
+		  <td><span>B &#x2282; A</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/notsubset.png"/></td>
+		  <td>&#x2284;</td>
+		  <td>\notsubset</td>
+		  <td>集合Cは集合Aの真部分集合でない<br />
+		  集合Cの要素は集合Aの要素でないものがある<br />
+		  集合Cの元は集合Aの元でないものがある<br />
+		  集合Cが集合Aの下位集合でない
+		  </td>
+		  <td><span>C &#x2284; A</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/supset.png"/></td>
+		  <td>&#x2283;</td>
+		  <td>\supset</td>
+		  <td>集合Aに集合Bは属している<br/>
+		  集合Aが集合Bを含む<br/>
+		  集合Aが集合Bの上位集合である
+		  </td>
+		  <td><span>A &#x2283; B</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/notsupset.png"/></td>
+		  <td>&#x2285;</td>
+		  <td>\notsupset</td>
+		  <td>集合Cは集合Bに属していない<br/>
+		  集合Cが集合Bを含まない<br/>
+		  集合Cが集合Bの上位集合でない
+		  </td>
+		  <td><span>C &#x2285; B</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/subsetneq.png"/></td>
+		  <td>&#x228A;</td>
+		  <td>\subsetneq</td>
+		  <td>集合Bは集合Aの真部分集合である<br />
+		  集合Bの要素はすべて集合Aの要素である<br />
+		  集合Bの元はすべて集合Aの元である<br />
+		  集合Bが集合Aの下位集合である
+		  </td>
+		  </td>
+		  <td><span>B &#x228A; A</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/supsetneq.png"/></td>
+		  <td>&#x228B;</td>
+		  <td>\supsetneq</td>
+		  <td>集合Aに集合Bは属している<br/>
+		  集合Aが集合Bを含む<br/>
+		  集合Aが集合Bの上位集合である
+		  </td>
+		  <td><span>A &#x228B; B</span></td>
+		</tr>
+		
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		集合演算子
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td><img src="img/cap.png"/></td>
+		  <td>&#x2229;</td>
+		  <td>\cap</td>
+		  <td>集合Aと集合Bの積集合<br />
+		  集合Aと集合Bの共通部分<br />
+		  集合Aと集合Bの両方に含まれる要素の集まり<br />
+		  集合Aと集合Bの両方に含まれる元の集まり<br />
+		  集合Aかつ集合Bに含まれる要素の集まり<br />
+		  集合Aかつ集合Bに含まれる元の集まり<br />
+		  集合Aと集合Bの交わり<br />
+		  集合Aと集合Bの交集<br />
+		  集合Aと集合Bの交叉<br />
+		  集合Aと集合Bの共有部分<br />
+		  </td>
+		  </td>
+		  <td><span>A &#x2229; B</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/cup.png"/></td>
+		  <td>&#x222A;</td>
+		  <td>\cup</td>
+		  <td>集合Aと集合Bの和集合<br />
+		  集合Aと集合Bのいずれかに含まれる要素の集まり<br />
+		  集合Aと集合Bのいずれかに含まれる元の集まり<br />
+		  集合Aまたは集合Bに含まれる要素の集まり<br />
+		  集合Aまたは集合Bに含まれる元の集まり<br />
+		  集合Aと集合Bの合併<br />
+		  集合Aと集合Bの連結<br />
+		  集合Aと集合Bの結合<br />
+		  </td>
+		  <td><span>A &#x222A; B</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/setminus.png"/></td>
+		  <td>&#x2216;</td>
+		  <td>\setminus</td>
+		  <td>集合Aから集合Bを除いた差集合<br />
+		  集合Aに含まれていて集合Bに含まれない要素の集まり<br />
+		  集合Aの要素のうち集合Bの要素と重ならない部分の集まり<br />
+		  集合Aと集合Bの共通部分を取り除いた集合Aの集まり<br />
+		  集合Aから集合Bを引いたもの<br />
+		  集合Aマイナス集合B<br />
+		  </td>
+		  <td><span>A &#x2216; B</span></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>-</td>
+		  <td>&#8722;</td>
+		  <td>-</td>
+		  <td>集合Aから集合Bを除いた差集合<br />
+		  集合Aに含まれていて集合Bに含まれない要素の集まり<br />
+		  集合Aの要素のうち集合Bの要素と重ならない部分の集まり<br />
+		  集合Aと集合Bの共通部分を取り除いた集合Aの集まり<br />
+		  集合Aから集合Bを引いたもの<br />
+		  集合Aマイナス集合B<br />
+		  ただし、差集合にマイナス記号(-)を使用するのは非推奨
+		  </td>
+		  <td><span>A &#8722; B</span></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>×</td>
+		  <td>&#215;</td>
+		  <td>\times</td>
+		  <td>集合Aと集合Bの要素を全て組み合わせた直積集合<br />
+		  集合Aと集合Bの要素を全て組み合わせたデカルト積<br />
+		  集合Aと集合Bの要素を全て組み合わせたペアの集合<br />
+		  集合Aと集合Bの要素を全て組み合わせて、新しい集合を作る操作<br />
+		  集合Aと集合Bのクロスジョイン<br />
+		  集合Aと集合Bの直積<br />
+		  集合Aと集合Bのデカルト積(Cartesian product)<br />
+		  集合Aと集合Bの積(product)<br />		  
+		  </td>
+		  <td><span>A &#215; B</span></td>
+		</tr>
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+  <caption class="text-2xl font-extrabold">
+    大きな集合演算子
+  </caption>
+  <tbody >
+    <tr>
+      <td colspan="2" width="10%">記号</td>
+      <td width="20%">LaTex</td>
+      <td width="40%">意味</td>
+      <td width="30%">例</td>
+    </tr>
+    
+    <!-- 大きな積集合 -->
+    <tr class="border-collapse border border-slate-400">
+      <td>⋂</td>
+      <td>&#x22C2;</td>
+      <td>\bigcap_{i=1}^n</td>
+      <td>
+        複数の集合の積集合をまとめて表す演算子<br />
+        
+複数の集合の積集合をまとめて表す演算子<br />
+
+複数の集合の全てに含まれる要素の集まり<br />
+複数の集合に含まれる要素の集まり<br />
+集合iから集合nまでに共通する要素の集まり<br /> 
+
+複数の集合の交わり部分を表す演算子<br />
+複数の集合の交集部分を表す演算子<br />
+複数の集合の交叉部分を表す演算子<br />
+複数の集合の共有部分を表す演算子<br />
+
+E_i=1からnまでの集合すべての共通部分<br />
+各集合に共通する要素全体の集まり
+      </td>
+      <td>
+        <img class="pr-2" src="img/equation_bigcap.png" alt="
+\displaystyle \bigcap_{i=1}^n E_i
+" />      
+      </td>
+    </tr>
+    
+    <!-- 大きな和集合 -->
+    <tr class="border-collapse border border-slate-400">
+      <td>⋃</td>
+      <td>&#x22C3;</td>
+      <td>\bigcup_{i=1}^n</td>
+      <td>
+複数の集合の和集合をまとめて表す演算子<br />
+
+複数の集合のいずれかに含まれる要素の集まり<br />
+集合iから集合nまでのいずれかの集合に含まれる要素の集まり<br /> 
+
+複数の集合の合併部分を表す演算子<br />
+複数の集合の連結部分を表す演算子<br />
+複数の集合の結合部分を表す演算子<br />
+
+E_i=1からnまでの集合すべての連結部分<br />
+各集合の要素をすべて含む集まり
+      </td>
+      <td>
+        <img class="pr-2" src="img/equation_bigcup.png" alt="
+\displaystyle \bigcup_{i=1}^n E_i       
+" />      
+      </td>
+    </tr>
+    
+    <!-- 大きな直積集合 -->
+    <tr class="border-collapse border border-slate-400">
+      <td>⨉</td>
+      <td>&#x2A09;</td>
+      <td>\bigotimes_{i=1}^n</td>
+      <td>
+複数の集合の直積をまとめて表す演算子<br />
+複数の集合のデカルト積をまとめて表す演算子<br />
+
+複数の測度の積を表す<br />
+複数の測度の積測度を表す<br />
+
+i=1からnまでの測度の積<br />         
+i=1からnまでの直積分布<br />         
+
+複数の測度の直積を表す演算子<br />
+複数の測度の積測度を表す演算子<br />
+
+i=1からnまでの集合の直積<br />
+i=1からnまでの集合のデカルト積<br />
+各集合から1つずつ要素を選んだ順序付き組の集まり<br />
+      </td>
+      <td>
+        <img class="pr-2" src="img/equation_bigotimes.png" alt="
+\displaystyle \bigotimes_{i=1}^n E_i     
+" />       
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		空集合
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td><img src="img/emptyset.png"/></td>
+		  <td>&#x2205;</td>
+		  <td>\emptyset</td>
+		  <td>空集合<br />
+		  何の要素も含まない集合<br />
+		  何の元も含まない集合<br />
+		  何の要素も属さない集合<br />
+		  何の元も属さない集合<br />
+		  </td>
+		  </td>
+		  <td><span>&#x2205;</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>Φ</td>
+		  <td>&#934;</td>
+		  <td>\phi</td>
+		  <td>空集合<br />
+		  何の要素も含まない集合<br />
+		  何の元も含まない集合<br />
+		  何の要素も属さない集合<br />
+		  何の元も属さない集合<br />
+		  ファイ<br />
+		  ただし、空集合にファイを使用するのは非推奨<br />
+		  </td>
+		  </td>
+		  <td><span>&#934;</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>{}</td>
+		  <td>{}</td>
+		  <td>\{\}</td>
+		  <td>空集合<br />
+		  何の要素も含まない集合<br />
+		  何の元も含まない集合<br />
+		  何の要素も属さない集合<br />
+		  何の元も属さない集合<br />
+		  </td>
+		  <td><span>{}</span></td>
+		</tr>
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		補集合
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td><img src="img/complement.png"/></td>
+		  <td>&#x2201;</td>
+		  <td>\complement</td>
+		  <td>Aの補集合<br />
+		  集合Aに含まれない全ての要素からなる集合<br />
+		  集合Aに含まれない全ての元からなる集合<br />
+		  集合Aに属さない要素の集合<br />
+		  集合Aに属さない元の集合<br />
+		  集合A以外のものからなる集合<br />
+		  命題Aの否定<br />
+		  何の元も属さない集合<br />
+		  </td>
+		  </td>
+		  <td><span>A&#x2201;</span></td>
+		</tr>
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		集合の内包的記法/内包表記
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>|</td>
+		  <td>|</td>
+		  <td>|</td>
+		  <td>
+		  条件Bを満たす要素Aの集合<br />
+		  条件Bを満たす全ての要素Aから成る集合<br />
+		  述語Bを満たすAの要素の集まり<br />
+		  述語Bを満たす要素Aを選び出した集合<br />
+		  Bのような全てのA<br />
+		  内包的集合表記<br />
+		  集合の内包表記<br />
+		  条件付き集合<br />
+		  </td>
+		  <td>{A|B}</td>
+		</tr>
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		冪(べき)集合
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>P</td>
+		  <td>P</td>
+		  <td>P</td>
+		  <td>べき集合 P(A)<br />
+		  ある集合 A のすべての部分集合を要素とする集合<br />
+		  Aがn個の要素を持つ場合、P(A)は2^n個の要素を持つ<br />
+		  A = {1, 2}の場合、 P(A) = {∅, {1}, {2}, {1,2}}
+		  <td>P(A)</td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>F</td>
+		  <td>F</td>
+		  <td>\mathcal{F}</td>
+		  <td>
+		    集合族 F<br/>
+			べき集合の任意の部分集合<br/>
+			あるべき集合の部分集合の集まり<br/>
+		</td>
+		  <td>F = { {1}, {2} } ⊆ P(A)</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>F</td>
+		  <td>F</td>
+		  <td>\mathcal{F}</td>
+		  <td>
+		    σ加法族 F<br/>
+			σ-加法族 F<br/>
+			シグマ加法族 F<br/>
+		  	べき集合の中で空集合と補集合と合併を含む集合族<br />
+			合併は A ∪ B<br />
+			べき集合の中で空集合と補集合と可算個の和を含む集合族<br />
+		  </td>
+		  <td>F = {∅, {1}, {2}, {1,2}} ⊆ P(A)</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>B</td>
+		  <td>B</td>
+		  <td>\mathcal{B}</td>
+		  <td>
+		    ボレルσ加法族<br/>
+			ボレルσ-加法族<br/>
+			ボレルシグマ加法族<br/>
+			実数の開集合から生成される最小のσ加法族<br/>
+			実数の開集合から生成される最小のσ-加法族<br/>
+			実数の開集合から生成される最小のシグマ加法族<br/>
+			開集合・閉集合・区間・可算和・交叉で作れる集合全体の集まり<br/>
+		    交叉は A ∩ B<br/>
+		  </td>
+		  <td>𝔅(ℝ) ⊆ P(ℝ)</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>B</td>
+		  <td>B</td>
+		  <td>\mathcal{B}</td>
+		  <td>
+		    ボレル集合 B<br/>
+			ボレルσ加法族に属する各集合<br/>
+			ボレルσ-加法族に属する各集合<br/>
+			ボレルシグマ加法族に属する各集合<br/>
+			B = [0,1]<br/>
+			B = (0,1)<br/>
+			B = ℚ<br/>
+			B = 有理数全体<br/>
+		  </td>
+		  <td>B = [0,1] ∈ 𝔅(ℝ)</td>
+		</tr>
+		
+		
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		写像
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>→</td>
+		  <td>→</td>
+		  <td>\to</td>
+		  <td>集合Aから 集合B への写像f を定義する<br />
+		  集合A の各要素に集合B の各要素を対応させる規則<br />
+		  集合A の各要素a に集合B の各要素b を対応させる規則<br />
+		  写像の定義域A と終域B を明示的に示す<br />
+		  写像の定義域A と終域B を明示する<br />
+		  写像のドメインA とコドメインB を明示的に示す<br />
+		  写像のドメインA とコドメインB を明示する<br />
+		  AからBへの写像<br />
+		  BはAの写像<br />
+		  → は論理演算子ではない<br />
+		  <td>f: A → B</td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>∘</td>
+		  <td>∘</td>
+		  <td>\circ</td>
+		  <td>写像の合成（Composition of mappings）<br />
+		  写像fと写像gを合成した写像を表す<br />
+		  写像fと写像gの合成写像<br />
+		  fとgの合成写像<br />
+		  写像は関数と同義<br />
+		  <td><img class="pr-2" src="img/equation_zzzzz.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>∘</td>
+		  <td>∘</td>
+		  <td>\circ</td>
+		  <td>関数の合成（Composition of functions）<br />
+		  関数fと関数gを合成した関数を表す<br />
+		  関数fと関数gの合成関数<br />
+		  fとgの合成関数<br />
+		  関数は写像と同義<br />
+		  <td><img class="pr-2" src="img/equation_zzzzz.png"/></td>
+		</tr>
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		同値関係
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>∼</td>
+		  <td>∼</td>
+		  <td>\sim</td>
+		  <td>任意の要素a が任意の要素bと同値であることを意味する<br />
+		  同値関係<br />
+		  <td>a ∼ b</td>
+		</tr>
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		区間
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>[a,b]</td>
+		  <td>[a,b]</td>
+		  <td class="py-4 pr-4">
+		  数直線上の区切りの数を含む間の数(実数)の集合<br />
+a ≦ x ≦ b の事<br />
+端点を含む閉じている区間のイメージ<br />
+閉区間<br />
+closed interval<br />
+<img src="img/closed-interval2.png"/>
+		  </td>
+		  <td>[a,b]</td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>(a,b)</td>
+		  <td>(a,b)</td>
+		  <td class="py-4 pr-4">
+		  数直線上の区切りの数を含まない間の数(実数)の集合<br />
+a < x < b の事<br />
+端点を含まない少し開いている区間のイメージ<br />
+開区間<br />
+open interval<br />
+<img src="img/open-interval2.png"/>
+		  </td>
+		  <td>(a,b)</td>
+		</tr>
+		
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		上限と下限
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>sup</td>
+		  <td>\sup</td>
+		  <td class="py-4 pr-4">
+		  上限<br />
+		  Supremum<br />
+		  集合の最小の上界<br />
+N(自然数)は{1,2,3,…,10}<br />
+上限は、集合内の値で最も大きいもの<br />
+上限は、集合を超えない範囲での最大の値<br />
+上限は集合内の最大の要素である「10」<br />
+自然数のうち10以下であるすべての要素の上限は10<br />
+		  </td>
+		  <td><img class="pr-4" src="img/equation (57).png"/></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>inf</td>
+		  <td>\inf</td>
+		  <td class="py-4 pr-4">
+		  下限<br />
+		  infimum<br />
+		  集合の最大の下界<br />
+N(自然数)は{1,2,3,…,10}<br />
+下限は、集合内の値で最も小さいもの<br />
+下限は、集合を超えない範囲での最小の値<br />
+下限は集合内の最小の要素である「1」<br />
+自然数のうち1以上であるすべての要素の下限は1<br />
+		  </td>
+		  <td><img class="pr-4" src="img/equation (58).png"/></td>
+		</tr>
+		
+		
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		上極限と下極限
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>limsup</td>
+		  <td>\limsup</td>
+		  <td class="py-4 pr-4">
+		  事象列の上極限を意味する<br />
+数列a_nの上限は1に収束する<br />
+数列a_nの部分列の中に1 に収束するものが存在する<br />
+数列a_nの項が実際に1になることもある<br />
+		  </td>
+		  <td><img src="img9/__equation (2).png"/></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>liminf</td>
+		  <td>\liminf</td>
+		  <td class="py-4 pr-4">
+		  事象列の下極限を意味する<br />
+数列a_nの下限は-1に収束する<br />
+数列a_nの部分列の中に-1 に収束するものが存在する<br />
+数列a_nの項が実際に-1になることもある<br />
+		  </td>
+		  <td><img src="img9/___equation (1).png"/></td>
+		</tr>
+		
+		
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		数の集合
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td colspan="2" width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td><img src="img/mathbb{N}.png"/></td>
+		  <td>&#8469;</td>
+		  <td>\mathbb{N}</td>
+		  <td>自然数の集合<br />
+		  0を含む正の整数の集合<br />
+		  {0,1,2,3,4,5....}<br />
+		  </td>
+		  <td><span>&#8469;</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/mathbb{Z}.png"/></td>
+		  <td>&#8484;</td>
+		  <td>\mathbb{Z}</td>
+		  <td>整数の集合<br />
+		  自然数に0と負の数を加えた数の集合<br />
+		  ドイツ語の "Zahlen"（数）の略<br />
+		  &#8469; + {...,-5,-4,-3,-2,-1}<br />
+		  </td>
+		  <td><span>&#8484;</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/mathbb{Q}.png"/></td>
+		  <td>&#8474;</td>
+		  <td>\mathbb{Q}</td>
+		  <td>有理数の集合<br />
+		  整数と整数の比で表される数の集合<br />
+		  イタリア語の "Quoziente"（分数）の略<br />
+		  &#8484; + {...,-1/5,-1/4,-1/3,-1/2,-1/1,1/1,1/2,1/3,1/4,1/5...}<br />
+		  </td>
+		  <td><span>&#8474;</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/mathbb{R}.png"/></td>
+		  <td>&#8477;</td>
+		  <td>\mathbb{R}</td>
+		  <td>実数の集合<br />
+		  有理数と無理数を加えた数の集合<br />
+		  数直線上の全ての点を表す数<br />
+		  ドイツ語の "Reelle Zahl"（実数）の略<br />
+		  無理数は無限小数や超越数を含む数の集合<br />
+		  無理数は分数で表すことのできない数の集合<br />
+		  &#8474; + {...√2,√3,√5,√6,√7,e,√8,π,√10,...}<br />
+		  e = 2.714...<br />
+		  π = 3.141...<br />
+		  </td>
+		  <td><span>&#8477;</span></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img/mathbb{C}.png"/></td>
+		  <td>&#8450;</td>
+		  <td>\mathbb{C}</td>
+		  <td>複素数の集合<br />
+		  実数部と虚数部から構成される数の集合<br />
+		  z=a+biと表すことのできる数の集合<br />
+		  フランス語の "Complexe"（複雑）の略<br />
+		  ℂ = {a + bi | a, b ∈ ℝ}<br />
+		  </td>
+		  <td><span>&#8450;</span></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td colspan="5"><img class="mx-auto"  width="45%" src="img/sets.jpg"/></td>
+		</tr>
+		
+	  </tbody>
+	</table>
+		
+</body>
+</html>

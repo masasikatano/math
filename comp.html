@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/cf9d868425.js" crossorigin="anonymous"></script>
+  <title>M // 計算理論 - 計算理論で使用する記号の一覧</title>
+</head>
+<body>
+	<h1 class="text-center mb-8 mt-2 text-2xl font-extrabold">M // 計算理論 <span class="text-xs font-extrabold underline"><a href="./index.html">計算機科学で使用する記号の一覧</a></span></h1>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		有限オートマトン
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		
+	    <tr class="border-collapse border border-slate-400">
+		  <td>M</td>
+		  <td class="text-xs">M</td>
+		  <td class="pr-4">
+		  有限オートマトンを表現<br />
+		  有限オートマトンの動作を記述<br />
+		  5タプル<br />
+		  決定性有限オートマトン<br />
+		  Deterministic Finite Automaton<br />
+		  DFA<br />
+		  非決定性有限オートマトン<br />
+		  Nondeterministic Finite Automaton<br />
+		  NFA<br />
+		  正規文法に対応する<br />
+		  Regular Grammarに対応する<br />
+		  RGに対応する<br />
+		  RGである正則言語に対応する<br />
+		  自動販売機<br />
+		  </td>
+		  <td><img src="img13/equation.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>< ></td>
+		  <td class="text-xs">< ></td>
+		  <td class="pr-4">タプル<br />
+		  アングルブラケット<br />
+		  山括弧<br />
+		  山かっこ<br />
+		  オートマトンを特徴づける要素が、この順序で並ぶ事を表す<br />
+		  オートマトンを構成する要素が、この順序で並ぶ事を表す<br />
+		  オートマトンを定義する要素が、この順序で並ぶ事を表す<br />
+		  </td>
+		  <td><img src="img13/equation.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>Q</td>
+		  <td class="text-xs">Q</td>
+		  <td class="pr-4">状態の集合<br />
+		  状態の有限集合<br />
+		  オートマトンが取りうるすべての状態を表す<br />
+		  オートマトンが存在できるすべての状態を含む<br />
+		  </td>
+		  <td><img src="img13/equation.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>Σ</td>
+		  <td class="text-xs">\Sigma</td>
+		  <td class="pr-4">入力アルファベット<br />
+		  入力記号の有限集合<br />
+		  オートマトンが受け取る可能性のある全ての入力記号の集合<br />
+		  </td>
+		  <td><img src="img13/equation.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>δ</td>
+		  <td class="text-xs">\delta</td>
+		  <td class="pr-4">遷移関数<br />
+		  現在の状態と入力記号から、次の状態を決定する関数<br />
+		  δ(q,a)=q_x<br />
+		  </td>
+		  <td><img src="img13/equation.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img13/equation_.png"/></td>
+		  <td class="text-xs">q_0</td>
+		  <td class="pr-4">初期状態<br />
+		  オートマトンの開始時の状態を表す<br />
+		  </td>
+		  <td><img src="img13/equation.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>F</td>
+		  <td class="text-xs">F</td>
+		  <td class="pr-4">受理状態の集合<br />
+		  最終的にオートマトンが受理状態で停止した場合、その入力が受理されたことを表す<br />
+		  </td>
+		  <td><img src="img13/equation.png"/></td>
+		</tr>
+	　 </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		プッシュダウンオートマトン
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		
+	    <tr class="border-collapse border border-slate-400">
+		  <td>M</td>
+		  <td class="text-xs">M</td>
+		  <td class="pr-4">プッシュダウンオートマトン<br />
+		  Pushdown Automaton<br />
+		  PDA<br />
+		  プッシュダウンオートマトンを表現<br />
+		  プッシュダウンオートマトンの動作を記述<br />
+		  7タプル<br />
+		  文脈自由文法に対応する<br />
+		  コンテキストフリー文法に対応する<br />
+		  Context-Free Grammarに対応する<br />
+		  CFGに対応する<br />
+		  CFGであるBNFに対応する<br />
+		  文脈自由文法であるバッカスナウア記法に対応する<br />
+		  CFGであるEBNFに対応する<br />
+		  文脈自由文法である拡張バッカスナウア記法に対応する<br />
+		  コンパイラ<br />
+		  パーサー(構文解析器)<br />
+		  </td>
+		  <td><img src="img13/equation (1).png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>Γ</td>
+		  <td class="text-xs">\Gamma</td>
+		  <td class="pr-4">スタックアルファベット<br />
+		  スタックに格納できる記号の有限集合<br />
+		  LIFOのスタックのみを扱う<br />
+		  Last In, First Outのスタックのみを扱う<br />
+		  先頭1,2,3最後の順番で入れた時に、出すときは3,2,1の順番になるスタック<br />
+		  現代ではプッシュポップオートマトンと呼ぶ方が適切<br />
+		  </td>
+		  <td><img src="img13/equation (1).png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img13/equation (2).png"/></td>
+		  <td class="text-xs">Z_0</td>
+		  <td class="pr-4">スタックの初期記号<br />
+		  初期スタック<br />
+		  スタックの最初の記号（スタックの底）を表す<br />
+		  開始時にスタックのトップにある記号を表す<br />
+		  </td>
+		  <td><img src="img13/equation (1).png"/></td>
+		</tr>
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		チューリングマシン/チューリング機械
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		
+	    <tr class="border-collapse border border-slate-400">
+		  <td>M</td>
+		  <td class="text-xs">M</td>
+		  <td class="pr-4">チューリングマシン<br />
+		  チューリング機械<br />
+		  チューリングマシンを表現<br />
+		  チューリングマシンの動作を記述<br />
+		  無制限文法に対応する<br />
+		  Unrestricted Grammarに対応する<br />
+		  UGに対応する<br />
+		  UGである自然言語に対応する<br />
+		  句構造文法に対応する<br />
+		  Phrase Structure Grammarに対応する<br />
+		  PSGに対応する<br />
+		  PSGである自然言語に対応する<br />
+		  再帰的可算言語に対応する<br />
+		  Recursively Enumerable Languagesに対応する<br />
+		  RELに対応する<br />
+		  ERLである自然言語に対応する<br />
+		  7タプル<br />
+		  翻訳機<br />
+		  通訳機<br />
+		  -<br />
+		  線形有界オートマトン<br />
+		  線形拘束オートマトン<br />
+		  LBA<br />
+		  Linear Bounded Automaton<br />
+		  文脈依存文法に対応する<br />
+		  Context-Sensitive Grammarに対応する<br />
+		  CSGに対応する<br />
+		  CSGである自然言語に対応する<br />
+		  Context-Dependent Grammarに対応する<br />
+		  CDGに対応する<br />
+		  CDGである自然言語に対応する<br />
+		  コンテキストチェッカー<br />
+		  </td>
+		  <td><img src="img13/equation (3).png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>B</td>
+		  <td class="text-xs">B</td>
+		  <td class="pr-4">ブランク記号<br />
+		  テープの未使用部分を表す<br />
+		  </td>
+		  <td><img src="img13/equation (3).png"/></td>
+		</tr>
+		
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		順序機械/有限状態機械
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		
+	    <tr class="border-collapse border border-slate-400">
+		  <td>M</td>
+		  <td class="text-xs">M</td>
+		  <td class="pr-4">順序機械<br />
+		  有限状態機械<br />
+		  Finite State Machine<br />
+		  FSM<br />
+		  有限オートマトンの一種<br />
+		  決定性有限オートマトンの一種<br />
+		  非決定性有限オートマトンの一種<br />
+		  入力と現在の状態に基づいて出力を生成し、次の状態に遷移する機械の動作を記述<br />
+		  正規文法に対応する<br />
+		  Regular Grammarに対応する<br />
+		  RGに対応する<br />
+		  RGである正則言語に対応する<br />
+		  6タプル<br />
+		  ムーア型機械 λ: Q → Y（出力は状態に依存）<br />
+		  ミーリー型機械 λ: Q×Σ →Y（出力は状態と入力に依存）<br />
+		  フリップフロップ<br />
+		  </td>
+		  <td><img src="img13/equation___.png"/></td>
+		</tr>
+		
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>X</td>
+		  <td class="text-xs">X</td>
+		  <td class="pr-4">入力アルファベット<br />
+		  入力記号の有限集合<br />
+		  機械が入力する可能性のある全ての出力記号の集合<br />
+		  </td>
+		  <td><img src="img13/equation____________.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>Y</td>
+		  <td class="text-xs">Y</td>
+		  <td class="pr-4">出力アルファベット<br />
+		  出力記号の有限集合<br />
+		  機械が出力する可能性のある全ての出力記号の集合<br />
+		  </td>
+		  <td><img src="img13/equation___.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>λ</td>
+		  <td class="text-xs">\lambda</td>
+		  <td class="pr-4">出力関数<br />
+		  現在の状態と入力シンボルから、出力シンボルを決定する関数<br />
+		  現在の状態と入力記号を次の状態にマッピングする関数<br />
+		  </td>
+		  <td><img src="img13/equation___.png"/></td>
+		</tr>
+		
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		状態遷移
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>q</td>
+		  <td class="text-xs">q</td>
+		  <td class="pr-4">初期状態<br />
+		  </td>
+		  <td><img src="img13/equation_______.png"/></td>
+		</tr>
+		
+		
+	    <tr class="border-collapse border border-slate-400">
+		  <td>a</td>
+		  <td class="text-xs">a</td>
+		  <td class="pr-4">入力アルファベット<br />
+		  入力記号<br />
+		  </td>
+		  <td><img src="img13/equation_______.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>x</td>
+		  <td class="text-xs">x</td>
+		  <td class="pr-4">入力アルファベット<br />
+		  入力記号<br />
+		  </td>
+		  <td><img src="img13/equation_______.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img13/equation__________.png"/></td>
+		  <td class="text-xs">\vdash_M</td>
+		  <td class="pr-4">オートマトン M の状態遷移を表す<br />
+		  オートマトンMにおける1ステップの遷移を表す<br />
+		  </td>
+		  <td><img src="img13/equation_______.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>p</td>
+		  <td class="text-xs">p</td>
+		  <td class="pr-4">状態遷移後の状態<br />
+		  </td>
+		  <td><img src="img13/equation_______.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>Y</td>
+		  <td class="text-xs">Y</td>
+		  <td class="pr-4">スタックの一番上の記号<br />
+		  </td>
+		  <td><img src="img13/equation_2.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img13/equation_3.png"/></td>
+		  <td class="text-xs">\gamma Z_0</td>
+		  <td class="pr-4">Yの下のスタックの内容を表す<br />
+		  </td>
+		  <td><img src="img13/equation_2.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>α</td>
+		  <td class="text-xs">\alpha</td>
+		  <td class="pr-4">遷移後の一番上のスタックの内容を表す<br />
+		  </td>
+		  <td><img src="img13/equation_2.png"/></td>
+		</tr>
+				
+				
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		言語
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img13/equation_5.png"/></td>
+		  <td class="text-xs">w^R</td>
+		  <td class="pr-4">逆順にした文字列<br />
+		  逆の順序で並べた文字列<br />
+		  逆順<br />
+		  Reverse<br />
+		  </td>
+		  <td><img src="img13/equation_4.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>#</td>
+		  <td class="text-xs">\#</td>
+		  <td class="pr-4">逆順にした文字列を生成<br />
+		  逆の順序で並べた文字列を生成<br />
+		  左右対称な文字列を生成<br />
+		  パリンドローム<br />
+		  </td>
+		  <td><img src="img13/equation_4.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img13/equation_7.png"/></td>
+		  <td class="text-xs">a^3n</td>
+		  <td class="pr-4">aが3nの回数だけ繰り返されることを意味する<br />
+		  aの3乗のn倍の数の連続したaからなる文字列<br />
+		  aが3の累乗（3^n）回繰り返されることを意味する<br />
+		  n=1 のとき: aaa （aが3回、3✕1 = 3)<br />
+		  n=2 のとき: aaaaaa （aが6回、3✕2 = 6）<br />
+		  n=3 のとき: aaaaaaaaa （aが9回、3✕3 = 9）<br />
+		  </td>
+		  <td><img src="img13/equation_11.png"/></td>
+		</tr>
+	　　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		文法
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="15%">記号</td>
+		  <td width="15%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>G</td>
+		  <td class="text-xs">G</td>
+		  <td class="pr-4">文法の形式的な定義<br />
+		  形式文法の表現<br />
+		  -<br />
+		  句構造文法の形式的な表現<br />
+		  Phrase Structure Grammarの形式的な定義<br />
+		  PSGの形式的な定義<br />
+		  PSGである自然言語の形式的な定義<br />
+		  -<br />
+		  無制限文法の形式的な表現<br />
+		  Unrestricted Grammarの形式的な定義<br />
+		  UGの形式的な定義<br />
+		  UGである自然言語の形式的な定義<br />
+		  -<br />
+		  再帰的可算言語の形式的な表現<br />
+		  Recursively Enumerable Languagesの形式的な表現<br />
+		  RELの形式的な表現<br />
+		  RELである自然言語の形式的な定義<br />
+		  -<br />
+		  文脈依存文法の形式的な表現<br />
+		  Context-Sensitive Grammarの形式的な定義<br />
+		  Context-Dependent Grammarの形式的な定義<br />
+		  CSGの形式的な定義<br />
+		  CSGである自然言語の形式的な定義<br />
+		  CDGの形式的な定義<br />
+		  CDGである自然言語の形式的な定義<br />
+		  -<br />
+		  文脈自由文法の形式的な表現<br />
+		  Context-Free Grammarの形式的な定義<br />
+		  CFGの形式的な定義<br />
+		  CFGであるBNFの形式的な定義<br />
+		  文脈自由文法であるバッカスナウア記法の形式的な定義<br />
+		  CFGであるEBNFの形式的な定義<br />
+		  文脈自由文法である拡張バッカスナウア記法の形式的な定義<br />
+		  -<br />
+		  正規文法の形式的な表現<br />
+		  Regular Grammarの形式的な定義<br />
+		  RGの形式的な定義<br />
+		  RGである正則言語の形式的な定義<br />
+		  </td>
+		  <td><img src="img13/equation_10.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>N</td>
+		  <td class="text-xs">N</td>
+		  <td class="pr-4">ノンターミナル記号の集合<br />
+		  非終端記号の集合<br />
+		  変数の集合<br />
+		  他の記号(終端記号や非終端記号)に置き換えられる記号<br />
+		  </td>
+		  <td><img src="img13/equation_10.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>Σ</td>
+		  <td class="text-xs">\Sigma</td>
+		  <td class="pr-4">ターミナル記号の集合<br />
+		  終端記号の集合<br />
+		  端記号の集合<br />
+		  文法が生成する言語の基本的な構成要素となる記号<br />
+		  </td>
+		  <td><img src="img13/equation_10.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td>P</td>
+		  <td class="text-xs">P</td>
+		  <td class="pr-4">生成規則の集合<br />
+		  生産規則の集合<br />
+		  非終端記号を終端記号または非終端記号の列に置き換える方法を定義<br />
+		  非終端記号をどのように他の記号の列に置き換えるかを指定<br />
+		  </td>
+		  <td><img src="img13/equation_10.png"/></td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img13/equation_12.png"/></td>
+		  <td class="text-xs">S_0</td>
+		  <td class="pr-4">開始記号<br />
+		  文法の開始記号<br />
+		  文法の初期記号<br />
+		  文の生成を開始する非終端記号<br />
+		  全ての有効な文（この文法が生成する言語に属する文字列）は、この記号から始まる導出によって生成<br />
+		  これらはNの要素<br />
+		  </td>
+		  <td><img src="img13/equation_10.png"/></td>
+		</tr>
+		
+	　　</tbody>
+	</table>
+	
+</body>
+</html>

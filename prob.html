@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/cf9d868425.js" crossorigin="anonymous"></script>
+  <title>P // 確率 - 確率論で使用する記号と分布の一覧</title>
+</head>
+<body>
+	<h1 class="text-center mb-8 mt-2 text-2xl font-extrabold">P // 確率 <span class="text-xs font-extrabold underline"><a href="./index.html">計算機科学で使用する記号の一覧</a></span></h1>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		順列
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img9/equation (1).png"/></td>
+		  <td>{_5}P{_3}</td>
+		  <td class="py-4 pr-4">5個から3個を選ぶ順列<br />
+		  5から順に3個の数字を掛けることを意味<br />
+		  順列とは、選んだ要素の順序が異なると異なる組み合わせとみなす場合の数<br />
+		  順列とは、ある集合の要素の並び順を考慮して数えた場合の数<br />
+		  順列とは、要素の順序が重要な組み合わせ<br />
+		  順列とは、順序付けられた組み合わせ<br />
+		  5の中から3を選ぶ順列<br />
+		  5は全体の要素数(集合の要素数)<br />
+		  3は選ばれる要素数<br />
+		  5個の要素から順序を考慮して、3個を選ぶ方法の数<br />
+		  PはPermutationの略<br />
+		  </td>
+		  <td class="py-4 pr-4"><img src="img9/equation (3).png"/><br />
+		  <img src="img9/equation (4).png"/><br />
+		  <img src="img9/equation (5).png"/><br />
+		  </td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td><img src="img9/equation (29).png"/></td>
+		  <td>{_n}P{_k}</td>
+		  <td class="py-4 pr-4">n個からk個を選ぶ順列<br />
+		  順列とは、選んだ要素の順序が異なると異なる組み合わせとみなす場合の数<br />
+		  順列とは、ある集合の要素の並び順を考慮して数えた場合の数<br />
+		  順列とは、要素の順序が重要な組み合わせ<br />
+		  順列とは、順序付けられた組み合わせ<br />
+		  nの中からkを選ぶ順列の数<br />
+		  nは全体の要素数(集合の要素数)<br />
+		  kは選ばれる要素数<br />
+		  n個の要素から順序を考慮して、k個を選ぶ方法の数<br />
+		  PはPermutationの略<br />
+		  </td>
+		  <td><img src="img9/equation.png"/></td>
+		</tr>
+		
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		組み合わせ
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td><img src="img9/equation (6).png"/></td>
+		  <td>{_5}C{_3}</td>
+		  <td class="py-4 pr-4">5個から3個を選ぶ組み合わせ<br />
+		  組み合わせとは、選んだ要素の順序が異なっても同じ組み合わせとみなす場合の数<br />
+		  組み合わせとは、ある集合の要素の並び順を考慮せず数えた場合の数<br />
+		  組み合わせとは、要素の順序が重要でない組み合わせ<br />
+		  組み合わせとは、順序付けられていない組み合わせ<br />
+		  5の中から3を選ぶ組み合わせ<br />
+		  5は全体の要素数(集合の要素数)<br />
+		  3は選ばれる要素数<br />
+		  5個の要素から順序を考慮せず、3個を選ぶ方法の数<br />
+		  CはCombinationの略<br />
+		  </td>
+		  <td class="py-4 pr-4"><img src="img9/equation (9).png"/><br />
+		  <img src="img9/equation (10).png"/><br />
+		  <img src="img9/equation (12).png"/><br />
+		  </td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td><img src="img9/equation (8).png"/></td>
+		  <td>{_n}C{_k}</td>
+		  <td class="py-4 pr-4">n個からk個を選ぶ組み合わせ<br />
+		  組み合わせとは、選んだ要素の順序が異なっても同じ組み合わせとみなす場合の数<br />
+		  組み合わせとは、ある集合の要素の並び順を考慮せず数えた場合の数<br />
+		  組み合わせとは、要素の順序が重要でない組み合わせ<br />
+		  組み合わせとは、順序付けられていない組み合わせ<br />
+		  nの中からkを選ぶ組み合わせの数<br />
+		  nは全体の要素数(集合の要素数)<br />
+		  kは選ばれる要素数<br />
+		  n個の要素から順序を考慮せず、k個を選ぶ方法の数<br />
+		  CはCombinationの略<br />
+		  </td>
+		  <td><img src="img9/equation (7).png"/></td>
+		</tr>
+		
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		条件付き確率
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>P(B|A)</td>
+		  <td>P(B|A)</td>
+		  <td class="py-4 pr-4">
+		  全体の事象の中で事象Aが起こったとき、その中で事象Bが起こる確率を表す<br />
+		  事象Aが起こったという条件のもとで、事象Bが起こる確率を表す<br />
+		  イベントA が起こった条件のもとで、イベントB が起こる確率を表す<br />
+		  P(A ∩ B)は、事象AとBが同時に起きる確率<br />
+		  P(A)は、事象Aが起きる確率<br />
+		  PはProbabilityの略<br />
+		  サイコロの目が偶数[2,4,6]の時(A)、出た目が4以上[4,5,6]である確率(B)<br />
+		  P(B|A) = (2/6) / (3/6) = (1/3) / (1/2) = 2/3<br />
+		  </td>
+		  <td><img src="img9/equation (13).png"/></td>
+		</tr>
+		
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		条件付き独立
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>X ⊥ Y</td>
+		  <td>X \perp Y</td>
+		  <td class="py-4 pr-4">
+		  条件付き独立（Conditional Independence）<br />
+		  Zが与えられたときに、XとYは無関係になることを表す<br />
+		  XとYは、Zを知っているならもう互いに影響を与えない<br />
+		  Zがわかっていれば、XからYを予測する意味はない<br />
+		  Zを固定した条件下では、XとYは独立にふるまう<br />
+		  Zが共通の原因で、Zが与えられたら、XとYは独立になる<br />
+		  Zが橋渡しや遮蔽になって、XとYを「切断する」構造<br />
+		  傘を差している人（X）と道の濡れ具合（Y）は大雨が降っている（Z）なら独立<br />
+		  </td>
+		  <td><img src="img9/equation (52).png"/></td>
+		</tr>
+		
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		ベイズの公式
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>P(A|B)</td>
+		  <td>P(A|B)</td>
+		  <td class="py-4 pr-4">
+		  ベイズの定理<br />
+ベイズの法則<br />
+ベイズ則<br />
+ベイズ統計<br />
+事後確率公式<br />
+ベイズ更新<br />
+		  事象Bが起こったという条件のもとで、事象Aが起こる確率を表し、事後確率とも呼ばれる<br />
+		  PはProbabilityの略<br />
+		  出た目が4以上[4,5,6]である条件(B)で、その目が偶数[2,4,6]である確率(A)<br />
+		  P(A|B) = (2/3) × (3/6) / (3/6) = (6/18) / (1/2) = (1/3) / (1/2) = 2/3<br />
+		  </td>
+		  <td><img src="img9/equation (14).png"/></td>
+		</tr>
+		
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		累積確率
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>φ</td>
+		  <td>\Phi</td>
+		  <td class="py-4 pr-4">
+		  標準正規分布において、確率変数Zが実現値z以下になる累積確率は、φ(z)<br />
+Zがz以下となる確率はφ(z)<br />
+
+		  </td>
+		  <td><img src="img9/equation (19).png"/></td>
+		</tr>
+		
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		確率分布<br />
+		確率変数が離散(Discrete)な確率分布<br/>
+		とりうる値が数えられる場合の分布<br/>
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">表記</td>
+		  <td width="20%">LaTeX</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (18).png"/></td>
+		  <td><small>\mathrm{Bin}(n, p)</small></td>
+		  <td class="py-4 pr-4">
+二項分布<br />
+Binomial distribution<br />
+n回のベルヌーイ試行の成功回数<br/>
+繰り返しコイン投げ</td>
+		  <td>
+			<img src="img9/ダウンロード (19).png"/>
+			<img src="img9/equation (35).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (17).png"/></td>
+		  <td><small>\mathrm{Bern}(p)</small></td>
+		  <td class="py-4 pr-4">
+ベルヌーイ分布<br />
+Bernoulli distribution<br />
+成功確率Pの1回試行（0/1）の分布<br />
+コイン投げの分布<br />
+Yes/No判定の分布<br />
+ヤコブ・ベルヌーイ(Jakob Bernoulli)の分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード_____________.png"/>
+			<img src="img9/equation (16).png"/>
+		  </td>
+		</tr>
+		
+		
+		
+		<!-- 非対称ベルヌーイ分布 -->
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (57).png"/></td>
+		  <td><small>\mathrm{Bernoulli}(p)</small></td>
+		  <td class="py-4 pr-4">
+			非対称ベルヌーイ分布<br />
+			Asymmetric Bernoulli distribution<br />
+			値が0と1を確率p, 1−pでとる分布<br />
+			p=0.5で対称、p≠0.5で非対称<br />
+			偏ったコイントスモデル<br />
+			試行成功モデル<br />
+			試行失敗モデル<br />
+		</td>
+		  <td>
+			<img src="img9/ダウンロード (6)aaaa.png"/>
+			<img src="img9/equation (58).png"/>
+		  </td>
+		</tr>
+		
+		<!-- 幾何分布 -->
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation_geo.png"/></td>
+		  <td><small>\mathrm{Geom}(p)</small></td>
+		  <td class="py-4 pr-4">
+		    幾何分布<br />
+		    Geometric distribution<br />
+		    kはnumber of trials<br />
+		    kは試行回数<br />
+		    最初の成功までに要する試行回数の分布<br />
+		    失敗がk-1回続いた後に初めて成功する確率の分布<br />
+(1-p)^{k-1} × p = p(k)<br />
+1000回の試行の内、最初の試行（k=1）で成功する回数が300回<br />
+0.7^0 × 0.3 = 0.3<br />
+1000回の試行の内、2回目の試行（k=2）で成功する回数が210回<br />
+0.7^1 × 0.3 = 0.21<br />
+1000回の試行の内、3回目の試行（k=3）で成功する回数が147回<br />
+0.7^2 × 0.3 = 0.147<br />
+1000回の試行の内、4回目の試行（k=4）で成功する回数が103回<br />
+0.7^3 × 0.3 = 0.1029<br />
+1000回の試行の内、5回目の試行（k=5）で成功する回数が72回<br />
+0.7^4 × 0.3 = 0.07203<br />
+1000回の試行の内、6回目の試行（k=6）で成功する回数が50回<br />
+0.7^5 × 0.3 = 0.05042<br />
+
+		    ベルヌーイ試行の初成功までのモデル<br />
+		    10面ダイスで初めて1~3が出るまで投げた回数の分布<br />
+		    pは成功確率<br />
+		    期待値は1/p<br />
+		  </td>
+		  <td>
+		    <img src="img9/geo.png"/><br />
+		    <img src="img9/equation_geo2.png"/>
+		  </td>
+		</tr>
+		
+		<!-- ラデマッハー分布 -->
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation________________.png"/></td>
+		  <td><small>\mathrm{Rademacher}(p)</small></td>
+		  <td class="py-4 pr-4">
+			ラデマッハー分布<br />
+			ラデマッハ分布<br />
+			Rademacher distribution<br />
+			+1と-1を同確率でとる分布<br />
+			ランダム符号化で利用される分布<br />
+			ベルヌーイ分布を±1に変換した分布<br />
+			ラデマッハー複雑度で利用される分布<br />
+			ラデマッハ複雑度で利用される分布<br />
+			ラデマッハー複雑度はデータ上で関数がどれくらいランダムなノイズにフィットできるかを測る指標<br />
+			ラデマッハ複雑度はデータ上で関数がどれくらいランダムなノイズにフィットできるかを測る指標<br />
+			ハンス・ラデマッハー(Hans Rademacher)の分布<br />
+			ハンス・ラデマッハ(Hans Rademacher)の分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (5)aaaa.png"/>
+			<img src="img9/equation (56).png"/>
+		  </td>
+		</tr>
+		
+		
+		
+		<!-- 経験分布 -->
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (61).png"/></td>
+		  <td><small>\hat{F}_n(x)</small></td>
+		  <td class="py-4 pr-4">
+			経験分布<br />
+			empirical distribution<br />
+			経験分布関数<br />
+			Empirical Distribution Function (EDF)<br />
+			観測データから作られる分布<br />
+			観測されたデータだけを使う分布<br />
+			訓練されたサンプルだけを使う分布<br />
+			データ点ごとの離散的な累積分布<br />
+			本当の分布が分からないとき実際のデータがどう分かれているかをそのまま使って作られた分布<br />
+			母集団分布が不明な時に実際のデータがどう分かれているかをそのまま使って作られた分布<br />
+			標本分布で利用される分布<br />
+			標本分布はサンプルから計算した統計量が何度もサンプルを取り直すことでどう分布するかの仮想的な分布<br />
+			標本分布は標本を何度も取り直した時にどんな分布をするかの理論的な分布<br />
+			ブートストラップ法で利用される分布<br />
+			ブートストラップ法は標本分布を近似的に再現しようとする方法<br />
+			サンプルx₁, ..., xₙに基づきP(X≤x)を推定する分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (7)aaaa.png"/>
+			<img src="img9/equation (62).png"/>
+		  </td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation1000.png"/></td>
+		  <td><small>\mathrm{Poi}(\lambda)</small></td>
+		  <td class="py-4 pr-4">
+ポアソン分布<br />
+Poisson distribution<br />
+単位時間あたり平均λ回発生する稀な事象の分布<br />
+電話の着信数の分布<br />
+シメオン・ポアソン(Siméon Poisson)の分布
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (11).png"/>
+			<img src="img9/equation (36).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (34).png"/></td>
+		  <td><small>\mathrm{Cat}(p_1, ..., p_K)</small></td>
+		  <td class="py-4 pr-4">
+カテゴリカル分布<br />
+Categorical distribution<br />
+K個のカテゴリのいずれかを確率的に出す分布<br />
+K個のラベルのいずれかを確率的に出す分布<br />
+多項分布のn=1特別ケースの分布<br />
+クラス分類の分布<br />
+ガチャの分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード5.png"/>
+			<img src="img9/equation (49).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (50).png"/></td>
+		  <td><small>\mathrm{Mult}(n, p_1,\ldots,p_K)</small></td>
+		  <td class="py-4 pr-4">
+多項分布<br />
+Multinomial distribution<br />
+n回の試行でK個のカテゴリに振り分けるときの各カテゴリの回数の分布<br />
+カテゴリカル分布のn回繰り返し<br />
+サイコロをn回振ったとき各目が出る回数の分布<br />
+確率ベクトルp1~pkカテゴリがある分布<br />
+合計回数がn、各カテゴリの回数x1~xkの組み合わせの分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (16).png"/>
+			<img src="img9/equation (51).png"/>
+		  </td>
+		</tr>
+		
+		
+		<!-- サブガウス分布（補足説明行） -->
+		<tr class="border-collapse border border-slate-400 ">
+		  <td class="pr-4">—</td>
+		  <td><small>Sub-Gaussian</small></td>
+		  <td class="py-4 pr-4">
+			サブガウス分布<br />
+			Sub-Gaussian Distribution<br />
+			ガウス分布よりも平均から大きく離れた値が出にくいという性質をもつ確率分布の総称<br />		
+			ガウス分布よりも端が出にくい性質をもつ確率分布の総称<br />
+			ガウス分布よりも尾が重くない分布族の総称<br />
+			ガウス分布が該当<br />
+			ラデマッハー分布が該当<br />
+			ベルヌーイ分布が該当<br />
+			厳密には分布族で、個別分布ではない<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (8)aaaa.png"/>
+			<img src="img9/equation (59).png"/>
+		  </td>
+		</tr>
+		
+
+		
+		
+	  </tbody>
+	</table>		
+		
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		確率変数が連続(Continuous)な確率分布<br />
+		とりうる値が数えられない場合の分布<br/>
+	  </caption>
+	  <tbody >		
+		<tr>
+		  <td width="10%">表記</td>
+		  <td width="20%">LaTeX</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>		
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (20).png"/></td>
+		  <td><small>\mathcal{N}(\mu, \sigma^2)</small></td>
+		  <td class="py-4 pr-4">
+正規分布<br />
+ガウス分布<br />
+Normal distribution<br />
+Gaussian distribution<br />
+平均μ, 分散Σ^2の連続分布<br />
+自然界や誤差の分布<br />
+カール・ガウス(Carl Gauss)の分布
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (10).png"/>
+			<img src="img9/equation (37).png"/>
+		  </td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (54).png"/></td>
+		  <td><small>\mathrm{LogNormal}(\mu, \sigma^2)</small></td>
+		  <td class="py-4 pr-4">
+対数正規分布<br />
+Log-normal distribution<br />
+対数が正規分布に従う連続分布<br />
+主に正の値を取る現象の分布<br />
+確率変数Xの対数log(X)が正規分布N(μ, σ²)に従う<br />
+株価のモデルに利用される分布<br />
+所得のモデルに利用される分布<br />
+生物体サイズのモデルに利用される分布<br />
+寿命のモデルに利用される分布<br />
+平均・分散はパラメータμ, σ²で決まる<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (18).png"/>
+			<img src="img9/equation (55).png"/>
+		  </td>
+		</tr>
+		
+
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (22).png"/></td>
+		  <td><small>U(a, b)</small></td>
+		  <td class="py-4 pr-4">
+一様分布<br />
+均等分布<br />
+Uniform distribution<br />
+区間[a, b]内での同じ確率の分布<br />
+乱数生成や理論的検証の分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (8).png"/>
+			<img src="img9/equation (38).png"/>
+		  </td>
+		</tr>		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (23).png"/></td>
+		  <td><small>\mathrm{Exp}(\lambda)</small></td>
+		  <td class="py-4 pr-4">
+指数分布<br />
+Exponential distribution<br />
+イベント間の待ち時間の分布<br />
+λは発生率<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (7).png"/>
+			<img src="img9/equation (39).png"/>
+		  </td>
+		</tr>
+		
+		
+		<!-- サブ指数分布（補足説明行） -->
+		<tr class="border-collapse border border-slate-400 ">
+		  <td class="pr-4">—</td>
+		  <td><small>Sub-Exponential</small></td>
+		  <td class="py-4 pr-4">
+		    サブ指数分布<br />
+		    Sub-Exponential Distribution<br />
+		    大きく外れる確率が指数関数的に減少する性質をもつ確率分布の総称<br />
+		    サブガウス分布の拡張概念として知られる分布族<br />
+		    サブガウス分布よりも尾が重いが、ポリノミアルテール（多項式的なテール）よりは尾が軽い分布<br />
+		    ポリノミアル（polynomial）は多項式のこと<br />
+		    ポリノミアルテールはサブガウス分布の尾より重い尾の事<br />
+		    ポリノミアルテールはサブ指数分布の尾より重い尾の事<br />
+		    ポリノミアルテールはパレート分布、コーシー分布、t分布の事<br />
+		    サブ指数分布はポアソン分布・幾何分布・指数分布・ワイブル分布・パレート分布・ボルツマン分布・ギブス分布・カノニカル分布が該当<br />
+		    
+		    厳密には分布族で、個別分布ではない<br />
+		  </td>
+		  <td>
+		    <img src="img9/Untitled_subex.png"/>
+		    <img src="img9/equation_subex.png"/>
+		  </td>
+		</tr>
+		
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (24).png"/></td>
+		  <td><small>\mathrm{Gamma}(\alpha, \beta)</small></td>
+		  <td class="py-4 pr-4">
+ガンマ分布<br />
+Gamma distribution<br />
+ガンマ関数(階乗の一般化)を元にする分布<br />
+連続正の変数の分布<br />
+待ち行列の分布<br />
+ベイズ推定の分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (6).png"/>
+			<img src="img9/equation (41).png"/>
+		  </td>
+		</tr>
+
+		<!-- サブガンマ分布（補足説明行） -->
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4">—</td>
+		  <td><small>Sub-Gamma</small></td>
+		  <td class="py-4 pr-4" >
+			サブガンマ分布<br />
+			Sub-Gamma Distribution<br />
+			ガンマ分布の尾の重さを一般化した確率分布の総称<br />
+			ガウス分布よりも平均から大きく離れた値が出やすい性質をもつ確率分布の総称<br />		
+			サブガウス分布の拡張として知られる確率分布の総称<br />
+			ガンマ分布に似た尾の重さを持つ分布を一般的に表す数学的なクラス<br />
+			ガンマ分布に似た端っこの重さを持つ分布を一般的に表す数学的なクラス<br />
+			一様分布が該当<br />
+			指数分布が該当<br />
+			ガンマ分布が該当<br />
+			カイ二乗分布が該当<br />
+			ベータ分布が該当<br />
+			ラプラス分布が該当<br />
+			ロジスティック分布が該当<br />
+			t分布が該当<br />
+			ワイブル分布が該当<br />
+			厳密には分布族で、個別分布ではない<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (4)aaaa.png"/>
+			<img src="img9/equation (60).png"/>
+		  </td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/eqdddsdfasdfauation.png"/></td>
+		  <td><small>\chi^2(k)</small></td>
+		  <td class="py-4 pr-4">
+カイ二乗分布<br />
+カイ二乗型分布<br />
+カイ二乗法の分布<br />
+χ²分布<br />
+χ2乗分布<br />
+Chi-square distribution<br />
+自由度kの独立な標準正規分布の二乗和の分布<br />
+統計検定の分布<br />
+適合度検定の分布<br />
+分散分析の分布<br />
+カール・ピアソン(Karl Pearson)の分布
+		  </td>
+		  <td>
+			<img src="img9/ダウンローsssssssssssdfsdafド.png"/>
+			<img src="img9/esssssssssssssdfdsfsdquation.png"/>
+		  </td>
+		</tr>
+		
+		<td class="pr-4">
+    <img src="img9/equation_fisher.png"
+         alt="f(x\mid d_1,d_2)=\frac{\Gamma\!\left(\frac{d_1+d_2}{2}\right)}{\Gamma\!\left(\frac{d_1}{2}\right)\Gamma\!\left(\frac{d_2}{2}\right)}
+               \left(\frac{d_1}{d_2}\right)^{\!d_1/2}\!
+               \frac{x^{d_1/2-1}}{\left(1+\frac{d_1}{d_2}x\right)^{(d_1+d_2)/2}}"/>
+  </td>
+  <td><small>F(d_1, d_2)</small></td>
+  <td class="py-4 pr-4">
+    フィッシャー分布<br />
+    F 分布<br />
+    F 統計量<br />
+    
+    Fisher–Snedecor distribution<br />
+    F distribution<br />
+    自由度 d_1, d_2 をパラメータに持つ連続分布<br />
+    2つの独立なカイ二乗分布の比を表す分布<br />
+    2つの独立なカイ二乗分布の比で定義される分布<br />
+    右裾が重い非対称な形状<br />
+    ロナルド・フィッシャー(Ronald Fisher)とジョージ・スネデカー(George Snedecor) の分布<br />
+  </td>
+  <td>
+    <img src="img9/fisher_plot.png" alt="F-distribution curves for various degrees of freedom"/><br />
+    <img src="img9/equation_fisher_ratio.png" alt="F=(X/d1)/(Y/d2)"/>
+  </td>
+</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (25).png"/></td>
+		  <td><small>\mathrm{Beta}(\alpha, \beta)</small></td>
+		  <td class="py-4 pr-4">
+ベータ分布<br />
+Beta distribution<br />
+ベータ関数(積分の一般化)を元にする分布<br />
+0～1区間での確率の事前分布<br/>
+ベイズ推定の分布<br/>
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (5).png"/>
+			<img src="img9/equation1111111.png"/>
+		  </td>
+		</tr>
+		
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (21).png"/></td>
+		  <td><small>\mathcal{N}(\mu, \Sigma)</small></td>
+		  <td class="py-4 pr-4">
+多変量正規分布<br />
+Multivariate Gaussian distribution<br />
+平均ベクトルμ、共分散行列Σの分布<br />
+多次元データの分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (9).png"/>
+			<img src="img9/equation (40).png"/>
+		  </td>
+		</tr>
+		
+<tr class="border-collapse border border-slate-400">
+  <td class="pr-4"><img src="img9/equation_wishart.png" alt="\mathcal{W}_p(\nu, \Sigma)" /></td>
+  <td><small>\mathcal{W}_p(\nu, \Sigma)</small></td>
+  <td class="py-4 pr-4">
+    ウィシャート分布<br />
+    Wishart distribution<br />
+    p次元の対称正定値行列（SPD）上の連続分布<br />
+    p次元は行列の行と列の数を表す<br />
+    p次元は行列の次元を表す<br />
+    対称行列はSymmetric Matrix<br />
+    正定値行列はPositive Definite Matrix (PD）<br />
+    対称正定値行列はSymmetric Positive Definite Matrix (SPD）<br/>
+
+    <br/>
+多変量正規分布の標本共分散行列が従う分布<br />
+自由度 ν とスケール行列 Σ をパラメータに持つ<br />
+期待値は E[W] = νΣ<br />
+p=1 の場合はカイ二乗分布になる<br />
+ベイズ推定の事前分布として利用される分布<br />
+多次元のばらつきの構造を行列でモデル化したいときに利用される分布<br />
+John Wishartの分布<br />
+  </td>
+  <td>
+    <img src="img9/graph_wishart.png" alt="Eigenvalue distribution of Wishart samples (p=2)"/><br />
+    <img src="img9/equation_wishart.png" alt="\mathcal{W}_p(\nu, \Sigma)" />
+  </td>
+</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+  <td class="pr-4"><img src="img9/equation_vonmises.png" alt="f(\theta\mid\mu,\kappa)=\frac{1}{2\pi I_0(\kappa)}e^{\kappa\cos(\theta-\mu)}"/></td>
+  <td><small>\mathrm{vM}(\mu,\kappa)</small></td>
+  <td class="py-4 pr-4">
+    von Mises 分布<br />
+    フォン・ミーゼス分布<br />
+    von Mises distribution<br />
+    円周正規分布<br />
+    circular normal distribution<br />
+    角度（円周）上の連続分布<br />
+    位置（平均角）μ と、集中度κ をパラメータに持つ分布<br />
+    κはサンプルの集中度から推定される<br />
+    κ=0 で一様分布、κが大きいほど μ付近に集中する分布<br />
+    κ=∞ で通常の正規分布に近似する分布<br />
+    規格化定数に修正ベッセル関数を用いる分布<br />
+    修正ベッセル関数は通常のベッセル関数を虚数引数に拡張した特殊関数<br />
+    ベッセル関数は振動する形を持ち、波動現象に登場する関数<br />
+    リヒャルト・フォン・ミーゼス (Richard von Mises) の分布<br />
+  </td>
+  <td>
+    <img src="img9/vonmises_plot.png" alt="von Mises PDF examples for different κ"/><br />
+    <img src="img9/equation_vonmises_latex.png" alt="\frac{1}{2\pi I_0(\kappa)}e^{\kappa\cos(\theta-\mu)}"/>
+  </td>
+</tr>
+
+		
+		
+		<tr class="border-collapse border border-slate-400">
+  <td class="pr-4">
+    <img src="img9/equation_vmf.png" alt="\mathrm{vMF}_p(\mu,\kappa)"/>
+  </td>
+  <td><small>\mathrm{vMF}_p(\mu,\kappa)</small></td>
+  <td class="py-4 pr-4">
+    von Mises–Fisher 分布<br />
+    vMF分布<br />
+    von Mises–Fisher distribution<br />
+    vMF distribution<br />
+    
+    von Mises 分布を高次元球面に拡張した分布<br />
+    Fisher 分布の1次元円上に von Mises 分布を対応づけた分布<br />
+    Fisher 分布の低次元版上に von Mises 分布を対応づけた分布<br />
+
+    von Mises 分布に Fisher 分布を高次元に一般化して組み合わせた分布<br />
+    Fisher 分布に von Mises 分布を1次元円上の特別な場合として組み込んだ分布<br />
+    
+    単位球面 <em>S<sup>p-1</sup></em>（ノルム1のベクトル）上の連続分布<br />
+    平均方向ベクトル μ と集中度 κ で決まる分布<br />
+    
+    Richard von Mises と Ronald Fisher の分布<br />
+  </td>
+  <td>
+    <img src="img9/vmf_example.png" alt="vMF samples on S^{2} with different \kappa"/><br />
+    <img src="img9/equation_vmf2.png" alt="C_p(\kappa)\exp(\kappa\mu^\top x) and C_p(\kappa)"/>
+  </td>
+</tr>
+
+		
+		
+
+		
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (26).png"/></td>
+		  <td><small>\mathrm{Dir}(\alpha_1, ..., \alpha_K)</small></td>
+		  <td class="py-4 pr-4">
+ディリクレ分布<br />
+Dirichlet distribution<br />
+多項分布の事前分布<br />
+トピックモデルの分布<br />
+ピーター・ディリクレ(Peter Dirichlet)の分布
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (4).png"/>
+			<img src="img9/equation (42).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (27).png"/></td>
+		  <td><small>\mathrm{Laplace}(\mu, b)</small></td>
+		  <td class="py-4 pr-4">
+ラプラス分布<br />
+Laplace distribution<br />
+尖った形状の分布<br />
+尖度が高い分布<br />
+kurtosisが高い分布<br />
+カータシスが高い分布<br />
+裾が重い分布<br />
+裾が平たい分布<br />
+信号処理の分布<br />
+独立成分分析の分布<br />
+ピエール・ラプラス(Pierre Laplace)の分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (3).png"/>
+			<img src="img9/equation (43).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (28).png"/></td>
+		  <td><small>\mathrm{Logistic}(\mu, s)</small></td>
+		  <td class="py-4 pr-4">
+ロジスティック分布<br/>
+Logistic distribution<br/>
+ロジスティック回帰モデルのシグモイド関数由来の分布<br/>
+確率変数が-∞から+∞まで取りうる連続分布<br/>
+耐久性解析の分布<br/>
+ロジスティック回帰の分布<br/>
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (2).png"/>
+			<img src="img9/equation (44).png"/>
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (30).png"/></td>
+		  <td><small>t(\nu)</td>
+		  <td class="py-4 pr-4">
+t分布<br />
+スチューデントのt分布<br />
+t-distribution<br />
+t distribution<br />
+Student’s t-distribution<br />
+Student’s t distribution<br />
+小サンプルの平均値分布<br/>
+小標本の平均値の分布<br/>
+外れ値に強い分布<br />
+統計検定の分布<br/>
+回帰分析の信頼区間の分布<br />
+t値(2つのグループ間の違いの値)の分布<br/>
+ウィリアム・ゴセット(William Gosset)の分布
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (1).png"/>
+			<img src="img9/equation (45).png"/>
+		  </td>
+		</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equsssssssssssssssssssssssation (2).png"/></td>
+		  <td><small>\mathrm{Cauchy}(x_0, \gamma)</small></td>
+		  <td class="py-4 pr-4">
+コーシー分布<br />
+Cauchy distribution<br />
+ローレンツ分布<br />
+Lorentz distribution<br />
+極端な値が現れやすい特徴を持つ分布<br />
+外れ値が現れやすい特徴を持つ分布<br />
+重い尾を持つ分布<br />
+中央値や平均が定義できない特異な分布<br />
+位置母数x₀、スケール母数γの連続分布<br />
+確率変数が-∞から+∞まで連続的にとる分布<br />
+物理学の共鳴現象や統計的外れ値モデルなどで利用される分布<br />
+
+ヘンドリック・ローレンツ（Hendrik Lorentz）の分布<br />
+オーギュスタン・コーシー（Augustin-Louis Cauchy）の分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (17).png"/>
+			<img src="img9/equation (53).png"/>
+		  </td>
+		</tr>
+
+<tr class="border-collapse border border-slate-400">
+  <td class="pr-4">
+      <img src="img9/equation_gev.png" alt="mathrm{GEV}(\mu,\sigma,\xi)"/>
+  </td>
+  <td><small>\mathrm{GEV}(\mu,\sigma,\xi)</small></td>
+  <td class="py-4 pr-4">
+    極値分布族<br />
+    Extreme Value Family<br />
+    一般化極値分布<br />
+    Generalized Extreme Value (GEV)<br />
+    独立同分布データ列の最大値/最小値の極限分布を記述する分布族<br />
+    独立同分布（i.i.d.）データ列の最大値／最小値の極限分布を記述する分布族<br />
+    独立同分布はi.i.d.のこと<br />
+    i.i.d.はIndependent and Identically Distributed<br />
+i.i.d.は離散型でも連続型でも使える確率分布<br />
+i.i.d.は確率変数の列が、それぞれ他の確率変数と同じ確率分布を持ち、それぞれ互いに独立している場合<br />
+i.i.d.はサイコロの出目（離散的なi.i.d.）<br />
+i.i.d.はコイン投げの結果（離散的なi.i.d.）<br />
+i.i.d.は身長データ（連続的なi.i.d.）<br />
+i.i.d.は待ち時間データ（連続的なi.i.d.）<br />
+    <br />
+    一般化極値分布（GEV）は位置母数 μ, 尺度母数 σ, 形状母数 ξ で定義<br />
+    形状母数 ξ により3型に分岐：<br />
+    ・ξ=0：ガンベル分布（Gumbel, Type I／指数型テール）<br />
+    ・ξ&gt;0：フレーシェ分布（Fréchet, Type II／重い尾）<br />
+    ・ξ&lt;0：ワイブル分布（Weibull, Type III／上限あり）<br />
+  </td>
+  <td>
+    <img src="img9/gev_plot.png" alt="GEV PDFs for different shape ξ"/><br />
+    <img src="img9/equation_gev_ex.png" alt="F(x)=\exp\{-[1+\xi((x-\mu)/\sigma)]^{-1/\xi}\}"/>
+  </td>
+</tr>
+
+		<tr class="border-collapse border border-slate-400">
+  <td class="pr-4">
+    <img src="img9/equation_gumbel.png" alt="f(x\mid \mu,\beta)=\frac{1}{\beta}\exp\!\left(-\left(z+e^{-z}\right)\right),\; z=\frac{x-\mu}{\beta}"/>
+  </td>
+  <td><small>\mathrm{Gumbel}(\mu, \beta)</small></td>
+  <td class="py-4 pr-4">
+    ガンベル分布<br />
+    Gumbel distribution<br />
+    極値分布I型<br />
+    Extreme Value Type I<br />
+    位置母数 μ, 尺度母数 σ, 形状母数 ξ=0 の分布<br />
+    独立同分布データの最大値（または最小値）をモデル化／近似する分布<br />
+    独立同分布はi.i.d.のこと<br />
+    i.i.d.はIndependent and Identically Distributed<br />
+i.i.d.は離散型でも連続型でも使える確率分布<br />
+i.i.d.は確率変数の列が、それぞれ他の確率変数と同じ確率分布を持ち、それぞれ互いに独立している場合<br />
+i.i.d.はサイコロの出目（離散的なi.i.d.）<br />
+i.i.d.はコイン投げの結果（離散的なi.i.d.）<br />
+i.i.d.は身長データ（連続的なi.i.d.）<br />
+i.i.d.は待ち時間データ（連続的なi.i.d.）<br />    
+    
+    指数型テールをもつ母集団の最大値の極限分布<br />
+    エミール・ガンベル(Emil Gumbel)の分布
+    
+  </td>
+  <td>
+    <img src="img9/gumbel_plot.png" alt="Gumbel PDFs for different \beta, same \mu"/><br />
+    <img src="img9/equation_gumbel_cdf.png" alt="F(x)=\exp\!\left(-e^{-z}\right),\; z=\frac{x-\mu}{\beta}"/>
+  </td>
+</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+  <td class="pr-4">
+    <img src="img9/equation_frechet.png"
+         alt="f(x\mid \alpha,s,m)=\frac{\alpha}{s}\left(\frac{x-m}{s}\right)^{-1-\alpha}
+         \exp\!\left[-\left(\frac{x-m}{s}\right)^{-\alpha}\right],\; x>m" />
+  </td>
+  <td><small>\mathrm{Fr\acute{e}chet}(\alpha, s, m)</small></td>
+  <td class="py-4 pr-4">
+    フレーシェ分布<br />
+    フレシェ分布<br />
+    Fréchet distribution<br />
+    極値分布Ⅱ型<br />
+    Extreme Value Type Ⅱ<br />
+    位置母数 μ, 尺度母数 σ, 形状母数 ξ>0 の分布<br />
+    独立同分布データの最大値（または最小値）をモデル化／近似する分布<br />
+    独立同分布はi.i.d.のこと<br />
+    i.i.d.はIndependent and Identically Distributed<br />
+i.i.d.は離散型でも連続型でも使える確率分布<br />
+i.i.d.は確率変数の列が、それぞれ他の確率変数と同じ確率分布を持ち、それぞれ互いに独立している場合<br />
+i.i.d.はサイコロの出目（離散的なi.i.d.）<br />
+i.i.d.はコイン投げの結果（離散的なi.i.d.）<br />
+i.i.d.は身長データ（連続的なi.i.d.）<br />
+i.i.d.は待ち時間データ（連続的なi.i.d.）<br />  
+<br />  
+    独立同分布データの最大値の極限分布の一つ<br />
+    尾が非常に重い（heavy tail）分布で、大きな値が出やすい特徴を持つ<br />
+    パレート分布と同様に<strong>ポリノミアルテール</strong>を持つ<br />
+    指数型母集団の「重い尾」ケースを表す代表的な分布<br />
+    モーリス・フレーシェ（Maurice Fréchet）の分布<br />
+  </td>
+  <td>
+    <img src="img9/frechet_plot.png" alt="Fréchet PDFs for various α"/><br />
+    <img src="img9/equation_frechet_cdf.png" alt="F(x)=\exp[-((x-m)/s)^{-\alpha}]"/>
+  </td>
+</tr>
+
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (31).png"/></td>
+		  <td><small>\mathrm{Weibull}(k, \lambda)</small></td>
+		  <td class="py-4 pr-4">
+ワイブル分布<br>
+Weibull distribution<br>
+
+極値分布Ⅲ型<br />
+    Extreme Value Type Ⅲ<br />
+    位置母数 μ, 尺度母数 σ, 形状母数 ξ<0 の分布<br />
+    独立同分布データの最大値（または最小値）をモデル化／近似する分布<br />
+    独立同分布はi.i.d.のこと<br />
+    i.i.d.はIndependent and Identically Distributed<br />
+i.i.d.は離散型でも連続型でも使える確率分布<br />
+i.i.d.は確率変数の列が、それぞれ他の確率変数と同じ確率分布を持ち、それぞれ互いに独立している場合<br />
+i.i.d.はサイコロの出目（離散的なi.i.d.）<br />
+i.i.d.はコイン投げの結果（離散的なi.i.d.）<br />
+i.i.d.は身長データ（連続的なi.i.d.）<br />
+i.i.d.は待ち時間データ（連続的なi.i.d.）<br />  
+<br />  
+信頼性工学の分布<br>
+寿命の分布<br>
+形状パラメータkの分布<br>
+形状母数kの分布<br>
+ウォルドマー・ワイブル(Waloddi Weibull)の分布<br>
+		  </td>
+		  <td>
+			<img src="img9/Weibull_plot.png"/>
+			<img src="img9/equation (46).png"/>
+		  </td>
+		</tr>
+		
+
+		
+		<tr class="border-collapse border border-slate-400">
+  <td class="pr-4"><img src="img9/equation_pareto.png"/></td>
+  <td><small>\mathrm{Pareto}(x_m, \alpha)</small></td>
+  <td class="py-4 pr-4">
+パレート分布<br />
+Pareto distribution<br />
+ポリノミアルテールをもつ代表的な分布<br />
+ポリノミアル（polynomial）は多項式のこと<br />
+ポリノミアルテールはサブガウス分布の尾より重い尾の事<br />
+ポリノミアルテールはサブ指数分布の尾より重い尾の事<br />
+ポリノミアルテールはパレート分布、コーシー分布、t分布の事<br />
+所得・都市人口・ファイルサイズ分布など実社会のごく一部が非常に大きい現象で現れる分布<br />
+ヴィルフレド・パレート(Vilfredo Pareto)の分布<br />
+  </td>
+  <td>
+    <img src="img9/pareto_example.png"/>
+    <img src="img9/equation_pareto2.png"/>
+  </td>
+</tr>
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation_boltzmann.png"/></td>
+		  <td><small>p_i = \frac{e^{-E_i / k_B T}}{Z}</small></td>
+		  <td class="py-4 pr-4">
+		    ボルツマン分布<br />
+		    Boltzmann distribution<br />
+		    ギブス分布<br />
+		    Gibbs distribution<br />
+		    カノニカル分布<br />
+		    Canonical distribution<br />
+		    エネルギー状態E<sub>i</sub>を持つ粒子が、温度Tの熱平衡状態でその状態にある確率を表す分布<br />
+		    状態の確率はエネルギーが低いほど高く、エネルギーが高いほど指数的に減少<br />
+		    統計力学・熱力学・確率論で広く使われる分布<br />
+		    Zは分配関数（partition function）で、全確率の正規化に使う<br />
+		    k<sub>B</sub>はボルツマン定数<br />
+		    気体分子の速度分布<br />
+		    エネルギー準位の占有確率となる分布<br />
+		    機械学習のソフトマックス関数の基礎となる分布<br />
+		    
+		    ルートヴィッヒ・ボルツマン(Ludwig Boltzmann)の分布<br />
+		    ジョサイア・ギブス(Josiah Gibbs)の分布<br />
+		    
+		  </td>
+		  <td>
+		    <img src="img9/boltzmann_example.png"/>
+		    <img src="img9/equation_boltzmann2.png"/>
+		  </td>
+		</tr>
+
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (32).png"/></td>
+		  <td><small>\sum_k \pi_k \mathcal{N}(\mu_k, \sigma_k^2)</small></td>
+		  <td class="py-4 pr-4">
+混合ガウス分布<br />
+Gaussian Mixture Model<br />
+GMM<br />
+複数のガウス分布の重ね合わせ<br />
+分類の分布<br />
+クラスタリングの分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード.png"/>
+			<img src="img9/equation (47).png"/>
+		  </td>
+		</tr>
+		
+		
+		
+		<tr class="border-collapse border border-slate-400">
+		  <td class="pr-4"><img src="img9/equation (33).png"/></td>
+		  <td><small>\sum_k \pi_k f_k(x)</small></td>
+		  <td class="py-4 pr-4">
+混合分布<br />
+重み付き和分布<br />
+Mixture distribution<br />
+複数の分布f_k(x)を重み(π_k)で足し合わせた分布<br />
+クラスタリングの分布<br />
+生成モデルの分布<br />
+		  </td>
+		  <td>
+			<img src="img9/ダウンロード (15).png"/>
+			<img src="img9/equation (48).png"/>
+		  </td>
+		</tr>
+		
+		
+		
+	  </tbody>
+	</table>
+
+	
+</body>
+</html>
