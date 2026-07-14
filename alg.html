@@ -51,11 +51,8 @@
 		  <td>\succ</td>
 		  <td>
 			AはBより大きい<br>
-			AはBを厳密に含む<br>
-			AはBを上回る<br>
 			AはBを順序で上回る<br>
 			AはBを2次形式で上回る<br>
-			行列の2次形式の2次は多項式の次数<br>
 			行列の2次形式は行列がベクトルに与える作用をそのベクトルとの内積で測ったもの<br>
 			行列の2次形式は行列の性質をベクトルの二乗量として表すもの<br>
 			A サクシード B<br>
@@ -75,7 +72,6 @@
 			AはBを含む<br>
 			AはBを順序で上回るまたは等しい<br>
 			AはBを2次形式で上回るまたは等しい<br>
-			行列の2次形式の2次は多項式の次数<br>
 			行列の2次形式は行列がベクトルに与える作用をそのベクトルとの内積で測ったもの<br>
 			行列の2次形式は行列の性質をベクトルの二乗量として表すもの<br>
 			A サクシードオアイコール B<br>
@@ -89,6 +85,84 @@
 		</tr>
 		<!-- 追加ここまで -->
 	　</tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		直積
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>×</td>
+		  <td>\times</td>
+		  <td>直積（direct product）<br />
+		  デカルト積（Cartesian Product）<br />
+		  2つの集合から、それぞれの要素を組み合わせて作る新しい集合<br />
+		  順序対 (a, b) 全体の集合<br />
+		  集合 A と集合 B の要素をすべてペアにしたもの<br />
+		  ベクトル空間の直積にも使われる<br />
+		  </td>
+		  <td>
+		  <img src="img17/equation_cartesian.png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+	  </tbody>
+	</table>
+	
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		直和
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+	    <tr class="border-collapse border border-slate-400">
+		  <td>⊕</td>
+		  <td>\oplus</td>
+		  <td>直和（Direct Sum）<br />
+		  2つの空間を互いに重ならないように組み合わせた空間<br />
+		  共通部分がゼロベクトルのみである和<br />
+		  直交和（⊕ で表される場合もある）との関係は文脈による<br />
+		  </td>
+		  <td>
+		  <img src="img17/equation_directsum.png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>V ⊕ W</td>
+		  <td>V \oplus W</td>
+		  <td>外部直和（External Direct Sum）<br />
+		  2つのベクトル空間の要素を組み合わせて作る新しい空間<br />
+		  直積集合 V × W と集合として同じ<br />
+		  和とスカラー倍を成分ごとに定義する<br />
+		  </td>
+		  <td>
+		  <img src="img17/equation_directsum.png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>V = U ⊕ W</td>
+		  <td>V = U \oplus W</td>
+		  <td>内部直和（Internal Direct Sum）<br />
+		  空間 V を部分空間 U と W の和で表すこと<br />
+		  V = U + W かつ U ∩ W = {0} のとき成立する<br />
+		  任意の v ∈ V が u ∈ U と w ∈ W を使って一意に v = u + w と表せる<br />
+		  </td>
+		  <td>
+		  <img src="img17/equation_directsum_internal.png"/ class="py-4 pr-4">
+		  </td>
+		</tr>
+	  </tbody>
 	</table>
 	
 	<table class="w-full mb-4" >
@@ -125,9 +199,7 @@
 		<tr class="border-collapse border border-slate-400">
 		  <td>⊕</td>
 		  <td>\oplus</td>
-		  <td>直交和<br />
-		  直和<br />
-		  direct sum<br />
+		  <td>直交和（Orthogonal direct sum）<br />
 		  二つの空間が互いに独立（直交）していて、それらが重ならずに全体を構成する事<br />
 		  複数の部分空間が互いに重ならず、それらのベクトルの和で空間全体を張る場合の事<br />
 		  生成するベクトルが一意に表され、交わりがゼロベクトルのみである事<br />
@@ -199,12 +271,11 @@
 		<tr class="border-collapse border border-slate-400">
 		  <td>+</td>
 		  <td>+</td>
-		  <td>ベクトルの線形結合（Linear combination of vectors）<br />
-		  複数のベクトルにスカラー（数）を掛けて、それらを足し合わせる操作<br />
+		  <td>ベクトルの加法（Vector Addition）<br />
+		  複数のベクトルを足し合わせる操作<br />
 		  新しいベクトルを作る操作<br />
 		  </td>
 		  <td><img src="img17/equation - 2025-02-22T202741.646.png"/ class="py-4 px-4"></td>
-		</tr>
 		</tr>
 	　</tbody>
 	</table>
@@ -223,7 +294,7 @@
 		<tr class="border-collapse border border-slate-400">
 		  <td>・</td>
 		  <td>\cdot</td>
-		  <td>ベクトルの内積（Dot Product of a Matrix）<br />
+		  <td>ベクトルの内積（Dot Product of Vectors）<br />
 		  ベクトルのドット積<br />
 		  ベクトルの要素同士を掛け合わせてその和を取る操作<br />
 		  ベクトルのスカラー値（1つの数値）を表す<br />
@@ -233,8 +304,8 @@
 		<tr class="border-collapse border border-slate-400">
 		  <td>×</td>
 		  <td>\times</td>
-		  <td>ベクトルの外積（Cross Product of a Matrix）<br />
-		  ベクトルのクロス積（Cross Product of a Matrix）<br />
+		  <td>ベクトルの外積（Cross Product of Vectors）<br />
+		  ベクトルのクロス積（Cross Product of Vectors）<br />
 		  二つのベクトルから新しいベクトルを生成する操作<br />
 		  </td>
 		  <td><img src="img17/equation (11).png"/ class="py-4 pr-4"></td>
@@ -277,15 +348,14 @@
 		  <td>行列のテンソル積（Tensor Product）<br />
 		  行列のクロネッカー積（Kronecker Product）<br />
 		  行列の直積（Direct Product）<br />
-	      行列のデカルト積（Cartesian Product）<br />
-		  2つの行列を組み合わせて、新しい大きな行列を生成する操作<br />
+	      2つの行列を組み合わせて、新しい大きな行列を生成する操作<br />
 		  
 		  </td>
 		  <td><img src="img17/equation (8)___.png"/ class="py-4 pr-4"></td>
 		</tr>
 		<tr class="border-collapse border border-slate-400">
-		  <td>Det</td>
-		  <td>Det</td>
+		  <td>det</td>
+		  <td>\det</td>
 		  <td>行列式（Determinant）<br />
 		  行列Aの特定の数値を表す<br />
 		  行列Aの行列式が0でない場合、行列Aには逆行列が存在する<br />
@@ -566,14 +636,15 @@ RはRow<br />
 		  <td>\Sigma</td>
 		  <td>対角行列（Diagonal Matrix）<br />
 		  正方行列で、対角成分が0以外、それ以外がすべて0<br />
+		  </td>
 		  <td>
 		  <img src="img17/equation_diagonal.png"/ class="py-4 pr-4">
 		  </td>
 		</tr>
 		<tr class="border-collapse border border-slate-400">
-		  <td>A</td>
+		  <td>A⁻¹</td>
 		  <td>A^{-1}</td>
-		  <td>逆行列（inverse matrix）<br />
+		  <td>逆行列（Inverse Matrix）<br />
 		  正則行列を単位行列に変える行列<br />
 		  正則行列と掛けると単位行列になる行列<br />
 		  正則行列を掛けると単位行列(I)になる行列の事<br />
@@ -621,12 +692,13 @@ RはRow<br />
 		<tr class="border-collapse border border-slate-400">
 		  <td>Aᵀ</td>
 		  <td>A^\top<br />A^T</td>
-		  <td>転置行列（Transport of Matrix）<br />
+		  <td>転置行列（Transpose of Matrix）<br />
 		  行列の「行」と「列」を入れ替えた行列<br />
 		  横に並んでいた数字を縦に、縦に並んでいた数字を横に並べた行列<br />
 		  90度回転させた行列<br />
 		  <br />
 		  論理定数の⊤(\top、トップ、トートロジー、恒真)も同じ記号を使うが無関係<br />
+		  </td>
 		  <td>
 		  <img src="img17/equation (2).png"/ class="py-4 pr-4">
 		  </td>
@@ -638,7 +710,7 @@ RはRow<br />
 		  A^*は共役転置行列(Conjugate Transpose of a matrix)<br />
 		  A^*は随伴行列(Adjoint of a matrix)<br />
 		  共役転置行列は転置して複素数があれば符号も変える操作をした行列<br />
-		  A^*は行列Aと掛け算する順番を変えても結果が変わらない行列<br />
+		  A^*A や AA^* はエルミート行列となる<br />
 		  </td>
 		  <td>
 			  <img src="img17/equation (3)__.png"/ class="py-4 pr-4">
@@ -688,7 +760,7 @@ RはRow<br />
 		  <td>-A^T</td>
 		  <td>歪対称行列（skew-symmetric matrix）<br />
 		  歪シンメトリック行列<br />
-		  交代行列（symmetric matrix）<br />
+		  交代行列（alternating matrix / skew-symmetric matrix）<br />
 		  行列の「行」と「列」を入れ替えて行列の符号がすべて反転する行列<br />
 		  横に並んでいた数字を縦に、縦に並んでいた数字を横に並べて行列の符号がすべて反転する行列<br />
 		  90度回転させて行列の符号がすべて反転する行列<br />
@@ -825,7 +897,7 @@ U=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\-1&1\end{pmatrix}
     ヤコビアン行列<br />
     1階導関数を成分に持つ行列<br />
     1階微分関数を成分に持つ行列<br />
-    J_fのfは特定の関数空間の事<br />
+    J_fのfは写像（関数）の名前<br />
     Carl Jacobiの行列<br />
   </td>
   <td>
@@ -912,7 +984,7 @@ e^{-\|x_3-x_1\|^2/(2\sigma^2)} & e^{-\|x_3-x_2\|^2/(2\sigma^2)} & 1
     複数のベクトル同士の内積を集めて作った行列<br />
     必ず対称行列になる<br />
     必ず半正定値行列になる<br />
-    対角要素は各ベクトルの二乗ノルム||v{_i}^2||になる<br />
+    対角要素は各ベクトルの二乗ノルム||v_i||^2になる<br />
     対角の部分はそれぞれのベクトルの長さ（二乗ノルム）になる<br />
     線形カーネルのカーネル行列と一致する行列<br />
    Jørgen Gramの行列
