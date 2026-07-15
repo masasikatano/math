@@ -9,7 +9,92 @@
 </head>
 <body>
 	<h1 class="text-center mb-8 mt-2 text-2xl font-extrabold">det(A) // 線形代数 <span class="text-xs font-extrabold underline"><a href="./index.html">計算機科学で使用する記号の一覧</a></span></h1>
-	
+
+	<table class="w-full mb-4" >
+			<caption class="text-2xl font-extrabold">
+			  演算の対象別一覧
+			</caption>
+			<tbody >
+			  <tr>
+				<td width="10%">記号</td>
+				<td width="20%">LaTex</td>
+				<td width="40%">意味</td>
+				<td width="30%">例</td>
+			  </tr>
+			  <tr class="border-collapse border border-slate-400">
+				<td></td>
+				<td>+</td>
+				<td>加法 (Addition)<br />
+					同じサイズ・形状のもの同士で要素ごとの和</td>
+				<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
+			  </tr>
+			  <tr class="border-collapse border border-slate-400">
+				<td></td>
+				<td>\sum_{i} a_i v_i</td>
+				<td>線形結合 (Linear Combination)<br />
+					スカラー倍と加法の組み合わせ。いずれもベクトル空間を形成する</td>
+				<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
+			  </tr>
+			  <tr class="border-collapse border border-slate-400">
+				<td></td>
+				<td>\oplus</td>
+				<td>直和 (Direct Sum)<br />
+					空間の構造として定義される</td>
+				<td>ベクトル △ / 行列 ○ / テンソル △</td>
+			  </tr>
+			  <tr class="border-collapse border border-slate-400">
+				<td></td>
+				<td>T: V \to W</td>
+				<td>線形変換 (Linear Transformation)<br />
+					ベクトル空間間の写像</td>
+				<td>ベクトル ✕ / 行列 ○ / テンソル △</td>
+			  </tr>
+			  <tr class="border-collapse border border-slate-400">
+				<td></td>
+				<td>\cdot</td>
+				<td>内積 (Dot Product)<br />
+					ベクトル同士の対応をスカラー値で測る演算</td>
+				<td>ベクトル ◎ / 行列 ○ / テンソル ○</td>
+			  </tr>
+			  <tr class="border-collapse border border-slate-400">
+				<td></td>
+				<td>\times</td>
+				<td>外積 (Cross Product)<br />
+					3次元ベクトル専用の演算</td>
+				<td>ベクトル ○ / 行列 ✕ / テンソル ✕</td>
+			  </tr>
+			  <tr class="border-collapse border border-slate-400">
+				<td></td>
+				<td>u \otimes v</td>
+				<td>アウター積 (Outer Product)<br />
+					2つのベクトルから行列（または高階テンソル）を生成する演算</td>
+				<td>ベクトル ◎ / 行列 ○ / テンソル ○</td>
+			  </tr>
+			  <tr class="border-collapse border border-slate-400">
+				<td></td>
+				<td>\otimes</td>
+				<td>直積 (Direct Product)<br />
+					空間・群・テンソルの構造として定義される積</td>
+				<td>ベクトル △ / 行列 △ / テンソル △</td>
+			  </tr>
+			  <tr class="border-collapse border border-slate-400">
+				<td></td>
+				<td>\odot</td>
+				<td>アダマール積 (Hadamard Product)<br />
+					同じサイズの要素ごとの積</td>
+				<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
+			  </tr>
+			  <tr class="border-collapse border border-slate-400">
+				<td></td>
+				<td>\times</td>
+				<td>積 (Multiplication)<br />
+					対象によって定義が異なる積（スカラー倍・行列積・テンソル積など）</td>
+				<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
+			  </tr>
+			</tbody>
+		  </table>
+
+
 	<table class="w-full mb-4" >
 	  <caption class="text-2xl font-extrabold">
 		関係演算子
@@ -21,7 +106,7 @@
 		  <td width="40%">意味</td>
 		  <td width="30%">例</td>
 		</tr>
-	    <tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
 		  <td>&prop;</td>
 		  <td>\propto</td>
 		  <td>A が B に比例する<br />
@@ -45,7 +130,6 @@
 		  </td>
 		  <td><span>A &prop; B</span></td>
 		</tr>
-		<!-- ここから追加 -->
 		<tr class="border-collapse border border-slate-400">
 		  <td>&succ;</td>
 		  <td>\succ</td>
@@ -82,13 +166,14 @@
 		  </td>
 		  <td><img src="img17/equation (35).png" class="py-4 pr-4"></td>
 		</tr>
-		<!-- 追加ここまで -->
-	　</tbody>
+	  </tbody>
 	</table>
+
 	
+  
 	<table class="w-full mb-4" >
 	  <caption class="text-2xl font-extrabold">
-		直和
+		和と線形結合
 	  </caption>
 	  <tbody >
 		<tr>
@@ -97,13 +182,55 @@
 		  <td width="40%">意味</td>
 		  <td width="30%">例</td>
 		</tr>
-	    <tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
+		  <td>+</td>
+		  <td>+</td>
+		  <td>ベクトルの和<br />
+		  ベクトルの加法<br />
+		  Vector Addition<br /> 
+		  複数のベクトルを足し合わせる操作<br />
+		  新しいベクトルを作る操作<br />
+		  同じサイズのベクトル・行列・テンソルに対して要素ごとの和として定義される<br />
+		  </td>
+		  <td><img src="img17/equation - 2025-02-22T202741.646.png" class="py-4 px-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>∑aᵢvᵢ</td>
+		  <td>\sum_{i} a_i v_i</td>
+		  <td>線形結合（Linear Combination）<br />
+		  複数のベクトルにスカラー（数）を掛けて、それらを足し合わせて作るベクトル<br />
+		  スカラー倍とベクトル加法の操作<br />
+		  係数を変えることで、張られる空間のさまざまなベクトルを表せる<br />
+		  ベクトル・行列・テンソルのいずれもスカラー倍と加法の組み合わせで、ベクトル空間を形成する<br />
+		  </td>
+		  <td>
+		  <img src="img17/equation_linear_combination.png" class="py-4 px-4">
+		  </td>
+		</tr>
+	  </tbody>
+	</table>
+
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		直和・直交和
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
 		  <td>⊕</td>
 		  <td>\oplus</td>
 		  <td>直和（Direct Sum）<br />
 		  2つの空間を互いに重ならないように組み合わせた空間<br />
 		  共通部分がゼロベクトルのみである和<br />
 		  直交和（⊕ で表される場合もある）との関係は文脈による<br />
+		  ベクトル空間・部分空間の和として間接的に存在<br />
+		  行列ではブロック対角化として明確に定義される<br />
+		  テンソル空間の直和として間接的に存在<br />
 		  </td>
 		  <td>
 		  <img src="img17/equation_directsum.png" class="py-4 pr-4">
@@ -133,21 +260,7 @@
 		  <img src="img17/equation_directsum_internal.png" class="py-4 pr-4">
 		  </td>
 		</tr>
-	  </tbody>
-	</table>
-	
-	<table class="w-full mb-4" >
-	  <caption class="text-2xl font-extrabold">
-		直交和
-	  </caption>
-	  <tbody >
-		<tr>
-		  <td width="10%">記号</td>
-		  <td width="20%">LaTex</td>
-		  <td width="40%">意味</td>
-		  <td width="30%">例</td>
-		</tr>
-	    <tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
 		  <td>H</td>
 		  <td>H</td>
 		  <td>空間 ( H ) <br />
@@ -190,12 +303,12 @@
 		  </td>
 		  <td><img src="img17/equation - 2024-11-08T233341.632.png" class="py-4 pr-4"></td>
 		</tr>
-	　</tbody>
+	  </tbody>
 	</table>
-	
+
 	<table class="w-full mb-4" >
 	  <caption class="text-2xl font-extrabold">
-		合成写像・合成関数
+		写像と線形変換
 	  </caption>
 	  <tbody >
 		<tr>
@@ -230,27 +343,16 @@
 		  </td>
 		  <td><img src="img17/equation (36).png" class="py-4 px-4"></td>
 		</tr>
-	　</tbody>
-	</table>
-	
-	<table class="w-full mb-4" >
-	  <caption class="text-2xl font-extrabold">
-		線形変換
-	  </caption>
-	  <tbody >
-		<tr>
-		  <td width="10%">記号</td>
-		  <td width="20%">LaTex</td>
-		  <td width="40%">意味</td>
-		  <td width="30%">例</td>
-		</tr>
-	    <tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
 		  <td>T</td>
 		  <td>T: V \to W</td>
 		  <td>線形変換（Linear Transformation）<br />
 		  ベクトル空間 V から W への写像で、和とスカラー倍を保つもの<br />
 		  T(u + v) = T(u) + T(v)<br />
 		  T(av) = aT(v)<br />
+		  ベクトルそのものの演算ではなく、ベクトル空間間の対応関係として定義される<br />
+		  行列は線形変換の表現として自然に定義される<br />
+		  テンソルは多線形写像への一般化として間接的に存在<br />
 		  行列の積（乗算, Matrix Multiplication）は複数の線形変換の事<br />
 		  </td>
 		  <td>
@@ -259,45 +361,10 @@
 		</tr>
 	  </tbody>
 	</table>
-	
+
 	<table class="w-full mb-4" >
 	  <caption class="text-2xl font-extrabold">
-		ベクトルの計算
-	  </caption>
-	  <tbody >
-		<tr>
-		  <td width="10%">記号</td>
-		  <td width="20%">LaTex</td>
-		  <td width="40%">意味</td>
-		  <td width="30%">例</td>
-		</tr>
-		<tr class="border-collapse border border-slate-400">
-		  <td>+</td>
-		  <td>+</td>
-		  <td>ベクトルの加法（Vector Addition）<br />
-		  複数のベクトルを足し合わせる操作<br />
-		  新しいベクトルを作る操作<br />
-		  </td>
-		  <td><img src="img17/equation - 2025-02-22T202741.646.png" class="py-4 px-4"></td>
-		</tr>
-		<tr class="border-collapse border border-slate-400">
-		  <td>∑aᵢvᵢ</td>
-		  <td>\sum_{i} a_i v_i</td>
-		  <td>線形結合（Linear Combination）<br />
-		  複数のベクトルにスカラー（数）を掛けて、それらを足し合わせて作るベクトル<br />
-		  スカラー倍とベクトル加法の操作<br />
-		  係数を変えることで、張られる空間のさまざまなベクトルを表せる<br />
-		  </td>
-		  <td>
-		  <img src="img17/equation_linear_combination.png" class="py-4 px-4">
-		  </td>
-		</tr>
-	　</tbody>
-	</table>
-	
-	<table class="w-full mb-4" >
-	  <caption class="text-2xl font-extrabold">
-		行列の計算
+		内積と外積
 	  </caption>
 	  <tbody >
 		<tr>
@@ -314,8 +381,21 @@
 		  Dot Product of Vectors<br />
 		  ベクトルの要素同士を掛け合わせてその和を取る操作<br />
 		  ベクトルのスカラー値（1つの数値）を表す<br />
+		  ベクトルに対して最も自然に定義される<br />
+		  行列に対しては Frobenius 内積として制限付きで定義される<br />
+		  テンソルに対しても高階テンソル内積として一般化可能<br />
 		  </td>
 		  <td><img src="img17/equation (10).png" class="py-4 pr-4"></td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>⊗</td>
+		  <td>u \otimes v<br />u v^{\top}</td>
+		  <td>ベクトルのアウター積（Outer Product）<br />
+		  2つのベクトルから行列を生成する演算<br />
+		  内積と対をなす操作（内積はランクを下げる、アウター積はランクを上げる）<br />
+		  行列・テンソルへの一般化としてテンソル積と関連する<br />
+		  </td>
+		  <td><span>u ⊗ v = u v<sup>⊤</sup></span></td>
 		</tr>
 		<tr class="border-collapse border border-slate-400">
 		  <td>×</td>
@@ -324,13 +404,30 @@
 		  ベクトルのクロス積<br />
 		  Cross Product of Vectors<br />
 		  二つのベクトルから新しいベクトルを生成する操作<br />
+		  3次元ベクトルに対して定義される<br />
+		  行列・テンソルに対しては演算として定義されない<br />
 		  </td>
 		  <td><img src="img17/equation (11).png" class="py-4 pr-4"></td>
+		</tr>
+	  </tbody>
+	</table>
+
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		積（行列積・アダマール積・テンソル積）
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
 		</tr>
 		<tr class="border-collapse border border-slate-400">
 		  <td>×</td>
 		  <td>\times</td>
-		  <td>行列の積<br />
+		  <td>行列積<br />
+		  行列の積<br />
 		  行列の乗算<br />
 		  Matrix Multiplication<br />
 		  複数の線形変換（Linear Transformation）を連続して行う操作<br />
@@ -339,10 +436,10 @@
 		  デカルト積（Cartesian Product）とは無関係<br />
 		  直積（direct product）とは無関係<br />
 		  直積は2つの行列を組み合わせて、新しい大きな行列を生成する操作<br />
+		  積は対象によって定義が異なる（ベクトルのスカラー倍、行列積、テンソル積など）<br />
 		  </td>
 		  <td><img src="img17/equation (9).png" class="py-4 pr-4"></td>
 		</tr>
-		
 		<tr class="border-collapse border border-slate-400">
   <td>⊙</td>
   <td>\odot</td>
@@ -351,7 +448,8 @@
     ハダマール積<br />
 	Hadamard Product<br />
     要素積<br />
-	行列の要素ごとの積<br />
+	ベクトル・行列・テンソルの要素ごとの積<br />
+    同じサイズのベクトル・行列・テンソルに対して要素ごとに定義される<br />
     同じ形の行列同士で，各要素を掛け合わせて得られる行列<br />
     行列積（×,\times,Matrix Multiplication）とは別物<br />
     線形変換の合成ではない<br />
@@ -364,18 +462,32 @@
 " class="py-4 pr-4" />
   </td>
 </tr>
-
-		
 		<tr class="border-collapse border border-slate-400">
 		  <td>⊗</td>
 		  <td>\otimes</td>
 		  <td>行列の直積（Direct Product）<br />
 		  行列のクロネッカー積（Kronecker Product）<br />
 		  行列のテンソル積（Tensor Product）<br />
-	      2つの行列を組み合わせて、新しい大きな行列を生成する操作<br />
+		  2つの行列を組み合わせて、新しい大きな行列を生成する操作<br />
+		  空間・群・テンソルの構造として間接的に存在<br />
+		  行列の場合はクロネッカー積・テンソル積として定義される<br />
 		  
 		  </td>
 		  <td><img src="img17/equation (8)___.png" class="py-4 pr-4"></td>
+		</tr>
+	  </tbody>
+	</table>
+
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		行列式・トレース・ランク
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
 		</tr>
 		<tr class="border-collapse border border-slate-400">
 		  <td>det</td>
@@ -392,7 +504,6 @@
 		  <img src="img17/equation (5).png" class="py-4 pr-4">
 		  </td>
 		</tr>
-		
 		<tr class="border-collapse border border-slate-400">
   <td>Tr</td>
   <td>Tr</td>
@@ -408,94 +519,7 @@
     <img src="img17/equation_tr2.png" class="py-4 pr-4">
   </td>
 </tr>
-
-		
 		<tr class="border-collapse border border-slate-400">
-		  <td>λ</td>
-		  <td>\lambda</td>
-		  <td>固有値（Eigenvalues）<br />
-		  行列がどのような性質を持っているかを示す数<br />
-		  行列が方向を変えずにどう変化するかを示す数<br />
-		  
-スペクトルノルムは固有値の絶対値<br />
-フロベニウスノルムは固有値の二乗和の平方根<br />
-核ノルムは固有値の絶対値の総和<br />
-		  </td>
-		  <td>
-			  <img src="img17/equation (8).png" class="py-4 pr-4">
-			  <img src="img17/equation (12).png" class="py-4 pr-4">
-		  </td>
-		</tr>
-		
-		<tr class="border-collapse border border-slate-400">
-      <td>σ<sub>i</sub>(A)</td>
-      <td class="text-xs">\sigma_i(A)</td>
-      <td class="pr-4">
-        特異値（Singular Values）<br />
-       σ_i(A)は行列Aのi番目の特異値<br />
-       σ(特異値)は A^* A の固有値の平方根を並べたもので、その集合全体を指す<br />
-       A^* Aは常に半正定値エルミート行列<br />
-        エルミート行列のときは特異値は固有値の絶対値となる<br />
-        実対称行列のときは特異値は固有値の絶対値となる<br />
-        行列の伸びの強さを方向ごとに表す量のこと<br />
-        行列のスケーリングの強さを方向ごとに表す量のこと<br />
-        行列が方向を問わずにどれくらい伸び縮みするかを示す数の集合<br />
-        特異値は非負の実数<br />
-        <br />
-        スペクトルノルムは特異値の集合の最大値<br />
-       Spectralノルムは特異値の集合の最大値<br />
-        <br />
-        フロベニウスノルムは全ての特異値の二乗和の平方根<br />
-       Frobeniusノルムは全ての特異値の二乗和の平方根<br />
-        <br />
-        核ノルムは特異値の総和<br />
-        Nuclearノルムは特異値の総和<br />
-      </td>
-      <td class="py-4 pr-4 text-xs">
-        <img src="img17/equation_sv1.png" class="py-4 pr-4" alt="\sigma_i(A) \quad (i=1,\dots,r)" />
-        <img src="img17/equation_sv.png" class="py-4 pr-4" alt="\sigma_i(A) = \sqrt{\lambda_i(A^{*}A)}" />
-      </td>
-    </tr>
-
-    <!-- SVD 本体 -->
-    <tr class="border-collapse border border-slate-400">
-      <td>A=UΣV<sup>*</sup></td>
-      <td class="text-xs">A=U\,\Sigma\,V^{*}</td>
-      <td class="pr-4">
-        特異値分解（Singular Value Decomposition）<br />
-        行列を，U(左ユニタリ行列)・Σ(対角行列）・V(右ユニタリ行列) に分解する事<br />
-       Σ(対角行列）は特異値行列<br />
-      </td>
-      <td class="py-4 pr-4 text-xs">
-        <img src="img17/equation_svd.png" class="py-4 pr-4" alt="\sigma_i(A) \quad (i=1,\dots,r)" />
-      </td>
-    </tr>
-		
-		<!-- 基底（一般） -->
-    <tr class="border-collapse border border-slate-400">
-      <td>𝓑={v_1,v_2...,v_k}</td>
-      <td class="text-xs">\mathcal{B}=\{v_1,\dots,v_k\}</td>
-      <td>
-基底（Basis）<br />
-あるベクトル空間を最小限の独立なベクトルで表す集合<br />
-線形独立かつ空間を張るベクトル集合<br />
-任意のベクトルが基底の一意な線形結合で表せる<br />
-行列Aのランクは行列Aの列空間(C)の次元の事<br />
-CはColumn<br />
-行列Aのランクは行列Aの行空間(R)の次元の事<br />
-RはRow<br />
-行列の基底の列空間(C)の本数は行列の列空間(C)の次元の事<br />
-行列の基底の行空間(R)の本数は行列の行空間(R)の次元の事<br />
-      </td>
-      <td>
-        <span class="text-xs">
-          <img src="img17/equation_basis.png" class="py-4 pr-4">
-        </span>
-      </td>
-    </tr>
-		
-		<!-- 行列のランク -->
-<tr class="border-collapse border border-slate-400">
   <td>rank(A)</td>
   <td>\operatorname{rank}(A)</td>
   <td>
@@ -549,8 +573,99 @@ RはRow<br />
 
   </td>
 </tr>
+	  </tbody>
+	</table>
 
-<tr class="border-collapse border border-slate-400">
+	<table class="w-full mb-4" >
+	  <caption class="text-2xl font-extrabold">
+		固有値・特異値・分解
+	  </caption>
+	  <tbody >
+		<tr>
+		  <td width="10%">記号</td>
+		  <td width="20%">LaTex</td>
+		  <td width="40%">意味</td>
+		  <td width="30%">例</td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+		  <td>λ</td>
+		  <td>\lambda</td>
+		  <td>固有値（Eigenvalues）<br />
+		  行列がどのような性質を持っているかを示す数<br />
+		  行列が方向を変えずにどう変化するかを示す数<br />
+		  
+スペクトルノルムは固有値の絶対値<br />
+フロベニウスノルムは固有値の二乗和の平方根<br />
+核ノルムは固有値の絶対値の総和<br />
+		  </td>
+		  <td>
+			  <img src="img17/equation (8).png" class="py-4 pr-4">
+			  <img src="img17/equation (12).png" class="py-4 pr-4">
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
+      <td>σ<sub>i</sub>(A)</td>
+      <td class="text-xs">\sigma_i(A)</td>
+      <td class="pr-4">
+        特異値（Singular Values）<br />
+       σ_i(A)は行列Aのi番目の特異値<br />
+       σ(特異値)は A^* A の固有値の平方根を並べたもので、その集合全体を指す<br />
+       A^* Aは常に半正定値エルミート行列<br />
+        エルミート行列のときは特異値は固有値の絶対値となる<br />
+        実対称行列のときは特異値は固有値の絶対値となる<br />
+        行列の伸びの強さを方向ごとに表す量のこと<br />
+        行列のスケーリングの強さを方向ごとに表す量のこと<br />
+        行列が方向を問わずにどれくらい伸び縮みするかを示す数の集合<br />
+        特異値は非負の実数<br />
+        <br />
+        スペクトルノルムは特異値の集合の最大値<br />
+       Spectralノルムは特異値の集合の最大値<br />
+        <br />
+        フロベニウスノルムは全ての特異値の二乗和の平方根<br />
+       Frobeniusノルムは全ての特異値の二乗和の平方根<br />
+        <br />
+        核ノルムは特異値の総和<br />
+        Nuclearノルムは特異値の総和<br />
+      </td>
+      <td class="py-4 pr-4 text-xs">
+        <img src="img17/equation_sv1.png" class="py-4 pr-4" alt="\sigma_i(A) \quad (i=1,\dots,r)" />
+        <img src="img17/equation_sv.png" class="py-4 pr-4" alt="\sigma_i(A) = \sqrt{\lambda_i(A^{*}A)}" />
+      </td>
+    </tr>
+		<tr class="border-collapse border border-slate-400">
+      <td>A=UΣV<sup>*</sup></td>
+      <td class="text-xs">A=U\,\Sigma\,V^{*}</td>
+      <td class="pr-4">
+        特異値分解（Singular Value Decomposition）<br />
+        行列を，U(左ユニタリ行列)・Σ(対角行列）・V(右ユニタリ行列) に分解する事<br />
+       Σ(対角行列）は特異値行列<br />
+      </td>
+      <td class="py-4 pr-4 text-xs">
+        <img src="img17/equation_svd.png" class="py-4 pr-4" alt="\sigma_i(A) \quad (i=1,\dots,r)" />
+      </td>
+    </tr>
+		<tr class="border-collapse border border-slate-400">
+      <td>𝓑={v_1,v_2...,v_k}</td>
+      <td class="text-xs">\mathcal{B}=\{v_1,\dots,v_k\}</td>
+      <td>
+基底（Basis）<br />
+あるベクトル空間を最小限の独立なベクトルで表す集合<br />
+線形独立かつ空間を張るベクトル集合<br />
+任意のベクトルが基底の一意な線形結合で表せる<br />
+行列Aのランクは行列Aの列空間(C)の次元の事<br />
+CはColumn<br />
+行列Aのランクは行列Aの行空間(R)の次元の事<br />
+RはRow<br />
+行列の基底の列空間(C)の本数は行列の列空間(C)の次元の事<br />
+行列の基底の行空間(R)の本数は行列の行空間(R)の次元の事<br />
+      </td>
+      <td>
+        <span class="text-xs">
+          <img src="img17/equation_basis.png" class="py-4 pr-4">
+        </span>
+      </td>
+    </tr>
+		<tr class="border-collapse border border-slate-400">
   <td>A=LU</td>
   <td class="text-xs">
     A = LU
@@ -581,9 +696,7 @@ RはRow<br />
 " class="py-4 pr-4" />
   </td>
 </tr>
-
-
-<tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
   <td>
   A=LLᵀ
   </td>
@@ -623,13 +736,9 @@ RはRow<br />
 " class="py-4 pr-4" />
   </td>
 </tr>
-
-
-
-	　</tbody>
+	  </tbody>
 	</table>
-	
-	
+
 	<table class="w-full mb-4" >
 	  <caption class="text-2xl font-extrabold">
 		ネームド行列
@@ -641,7 +750,7 @@ RはRow<br />
 		  <td width="40%">意味</td>
 		  <td width="30%">例</td>
 		</tr>
-	    <tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
 		  <td>I</td>
 		  <td>I</td>
 		  <td>単位行列（Identity Matrix）<br />
@@ -740,7 +849,6 @@ RはRow<br />
 			  <img src="img17/equation (4).png" class="py-4 pr-4">
 		  </td>
 		</tr>
-		
 		<tr class="border-collapse border border-slate-400">
 		  <td>A</td>
 		  <td>A</td>
@@ -761,7 +869,6 @@ RはRow<br />
 			  <img src="img17/equation (4).png" class="py-4 pr-4">
 		  </td>
 		</tr>
-
 		<tr class="border-collapse border border-slate-400">
 		  <td>A</td>
 		  <td>A^T</td>
@@ -797,13 +904,7 @@ RはRow<br />
 			<img src="img17/equation (7).png" class="py-4 pr-4">
 		  </td>
 		</tr>
-		
-
-
-		
-		
-		<!-- エルミート行列 -->
-<tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
   <td>A</td>
   <td>A=A^{*}</td>
   <td>
@@ -822,13 +923,7 @@ A=\begin{pmatrix}2&1+i\\1-i&3\end{pmatrix}=A^*
  
   </td>
 </tr>
-	
-		
-		
-		
-		
-		<!-- ユニタリ行列 -->
-<tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
   <td>U</td>
   <td>U^{*}U=I</td>
   <td>
@@ -850,14 +945,7 @@ U=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\-1&1\end{pmatrix}
 
   </td>
 </tr>
-		
-
-		
-		
-		
-		
-		<!-- 正定値行列 -->
-<tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
   <td>A ≻ 0</td>
   <td>A \succ 0</td>
   <td>
@@ -873,9 +961,7 @@ U=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\-1&1\end{pmatrix}
 ">
   </td>
 </tr>
-
-<!-- 半正定値行列 -->
-<tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
   <td>A ⪰ 0</td>
   <td>A \succeq 0</td>
   <td>
@@ -892,10 +978,7 @@ U=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\-1&1\end{pmatrix}
 ">
   </td>
 </tr>
-
-
-<!-- ヘッセ行列 -->
-<tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
   <td>∇² f(x)</td>
   <td>\nabla^{2} f(x)</td>
   <td>
@@ -909,9 +992,7 @@ U=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\-1&1\end{pmatrix}
     <img src="img17/equation_hessian.png" class="py-4 pr-4" alt="">
   </td>
 </tr>
-
-<!-- ヤコビ行列 -->
-<tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
   <td>J_f(x)</td>
   <td>J_f(x)</td>
   <td>
@@ -935,9 +1016,7 @@ J_F(x) =
 
   </td>
 </tr>
-
-<!-- ラプラシアン行列 -->
-<tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
   <td>L</td>
   <td class="text-xs">
     L
@@ -965,9 +1044,7 @@ L=D-A=\begin{pmatrix}1&-1&0\\-1&2&-1\\0&-1&1\end{pmatrix}
 ">
   </td>
 </tr>
-
-<!-- カーネル行列 -->
-<tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
   <td>K</td>
   <td class="text-xs">K</td>
   <td>
@@ -993,9 +1070,7 @@ e^{-\|x_3-x_1\|^2/(2\sigma^2)} & e^{-\|x_3-x_2\|^2/(2\sigma^2)} & 1
 ">
   </td>
 </tr>
-
-<!-- グラム行列 -->
-<tr class="border-collapse border border-slate-400">
+		<tr class="border-collapse border border-slate-400">
   <td>G</td>
   <td class="text-xs">
     G
@@ -1020,9 +1095,8 @@ G=\begin{pmatrix}\langle v_1,v_1\rangle & \langle v_1,v_2\rangle\\
 ">
   </td>
 </tr>
-
 	  </tbody>
 	</table>
-	
+
 </body>
 </html>
