@@ -11,91 +11,6 @@
 	<h1 class="text-center mb-8 mt-2 text-2xl font-extrabold">det(A) // 線形代数 <span class="text-xs font-extrabold underline"><a href="./index.html">計算機科学で使用する記号の一覧</a></span></h1>
 
 	<table class="w-full mb-4" >
-			<caption class="text-2xl font-extrabold">
-			  演算の対象別一覧
-			</caption>
-			<tbody >
-			  <tr>
-				<td width="10%">記号</td>
-				<td width="20%">LaTex</td>
-				<td width="40%">意味</td>
-				<td width="30%">例</td>
-			  </tr>
-			  <tr class="border-collapse border border-slate-400">
-				<td>+</td>
-				<td>+</td>
-				<td>加法 (Addition)<br />
-					同じサイズ・形状のもの同士で要素ごとの和</td>
-				<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
-			  </tr>
-			  <tr class="border-collapse border border-slate-400">
-				<td>∑aᵢvᵢ</td>
-				<td>\sum_{i} a_i v_i</td>
-				<td>線形結合 (Linear Combination)<br />
-					スカラー倍と加法の組み合わせ。いずれもベクトル空間を形成する</td>
-				<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
-			  </tr>
-			  <tr class="border-collapse border border-slate-400">
-				<td>⊕</td>
-				<td>\oplus</td>
-				<td>直和 (Direct Sum)<br />
-					空間の構造として定義される</td>
-				<td>ベクトル △ / 行列 ○ / テンソル △</td>
-			  </tr>
-			  <tr class="border-collapse border border-slate-400">
-				<td>T</td>
-				<td>T: V \to W</td>
-				<td>線形変換 (Linear Transformation)<br />
-					ベクトル空間間の写像</td>
-				<td>ベクトル ✕ / 行列 ○ / テンソル △</td>
-			  </tr>
-			  <tr class="border-collapse border border-slate-400">
-				<td>⋅</td>
-				<td>\cdot</td>
-				<td>内積 (Dot Product)<br />
-					ベクトル同士の対応をスカラー値で測る演算</td>
-				<td>ベクトル ◎ / 行列 ○ / テンソル ○</td>
-			  </tr>
-			  <tr class="border-collapse border border-slate-400">
-				<td>×</td>
-				<td>\times</td>
-				<td>外積 (Cross Product)<br />
-					3次元ベクトル専用の演算</td>
-				<td>ベクトル ○ / 行列 ✕ / テンソル ✕</td>
-			  </tr>
-			  <tr class="border-collapse border border-slate-400">
-				<td>⊗</td>
-				<td>u \otimes v</td>
-				<td>アウター積 (Outer Product)<br />
-					2つのベクトルから行列（または高階テンソル）を生成する演算</td>
-				<td>ベクトル ◎ / 行列 ○ / テンソル ○</td>
-			  </tr>
-			  <tr class="border-collapse border border-slate-400">
-				<td>⊗</td>
-				<td>\otimes</td>
-				<td>直積 (Direct Product)<br />
-					空間・群・テンソルの構造として定義される積</td>
-				<td>ベクトル △ / 行列 △ / テンソル △</td>
-			  </tr>
-			  <tr class="border-collapse border border-slate-400">
-				<td>⊙</td>
-				<td>\odot</td>
-				<td>アダマール積 (Hadamard Product)<br />
-					同じサイズの要素ごとの積</td>
-				<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
-			  </tr>
-			  <tr class="border-collapse border border-slate-400">
-				<td>×</td>
-				<td>\times</td>
-				<td>積 (Multiplication)<br />
-					対象によって定義が異なる積（スカラー倍・行列積・テンソル積など）</td>
-				<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
-			  </tr>
-			</tbody>
-		  </table>
-
-
-	<table class="w-full mb-4" >
 	  <caption class="text-2xl font-extrabold">
 		関係演算子
 	  </caption>
@@ -134,17 +49,16 @@
 		  <td>&succ;</td>
 		  <td>\succ</td>
 		  <td>
-			AはBより大きい<br>
-			AはBを順序で上回る<br>
+			行列の順序（Loewner順序）で A が B を上回る<br>
 			AはBを2次形式で上回る<br>
+			要素ごとの大小比較とは別物<br>
 			行列の2次形式は行列がベクトルに与える作用をそのベクトルとの内積で測ったもの<br>
 			行列の2次形式は行列の性質をベクトルの二乗量として表すもの<br>
 			ベクトル内積は要素同士を掛け合わせて足してスカラー値を表す操作<br>
 			A サクシード B<br>
 			A−Bは正定値(Positive Definite)<br>
 			正定値はすべての非ゼロベクトルに対して二次形式が正になる性質<br>
-			A−Bはゼロより大きい<br>
-		  	A−B ≻ 0<br>
+			A−B ≻ 0<br>
 		  </td>
 		  <td><img src="img17/equation (20).png" class="py-4 pr-4"></td>
 		</tr>
@@ -152,25 +66,106 @@
 		  <td>&succeq;</td>
 		  <td>\succeq</td>
 		  <td>
-			AはBより大きいまたは等しい<br>
-			AはBを順序で上回るまたは等しい<br>
+			行列の順序（Loewner順序）で A が B を上回るまたは等しい<br>
 			AはBを2次形式で上回るまたは等しい<br>
+			要素ごとの大小比較とは別物<br>
 			行列の2次形式は行列がベクトルに与える作用をそのベクトルとの内積で測ったもの<br>
 			行列の2次形式は行列の性質をベクトルの二乗量として表すもの<br>
 			ベクトル内積は要素同士を掛け合わせて足してスカラー値を表す操作<br>
 			A サクシードオアイコール B<br>
 			A−Bは半正定値(Positive SemiDefinite, PSD)<br>
 			半正定値は負にならずゼロも許される性質<br>
-		  	A−Bはゼロ以上<br>
-		  	A−B ≧ 0<br>
+		  	A−B ⪰ 0<br>
 		  </td>
 		  <td><img src="img17/equation (35).png" class="py-4 pr-4"></td>
 		</tr>
 	  </tbody>
 	</table>
 
-	
-  
+	<table class="w-full mb-4" >
+		<caption class="text-2xl font-extrabold">
+			演算の対象別一覧
+		</caption>
+		<tbody >
+			<tr>
+			<td width="10%">記号</td>
+			<td width="20%">LaTex</td>
+			<td width="40%">意味</td>
+			<td width="30%">例</td>
+			</tr>
+			<tr class="border-collapse border border-slate-400">
+			<td>+</td>
+			<td>+</td>
+			<td>加法 (Addition)<br />
+				同じサイズ・形状のもの同士で要素ごとの和</td>
+			<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
+			</tr>
+			<tr class="border-collapse border border-slate-400">
+			<td>∑aᵢvᵢ</td>
+			<td>\sum_{i} a_i v_i</td>
+			<td>線形結合 (Linear Combination)<br />
+				スカラー倍と加法の組み合わせ。いずれもベクトル空間を形成する</td>
+			<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
+			</tr>
+			<tr class="border-collapse border border-slate-400">
+			<td>⊕</td>
+			<td>\oplus</td>
+			<td>直和 (Direct Sum)<br />
+				空間の構造として定義される</td>
+			<td>ベクトル △ / 行列 ○ / テンソル △</td>
+			</tr>
+			<tr class="border-collapse border border-slate-400">
+			<td>T</td>
+			<td>T: V \to W</td>
+			<td>線形変換 (Linear Transformation)<br />
+				ベクトル空間間の写像</td>
+			<td>ベクトル ✕ / 行列 ○ / テンソル △</td>
+			</tr>
+			<tr class="border-collapse border border-slate-400">
+			<td>⋅</td>
+			<td>\cdot</td>
+			<td>内積 (Dot Product)<br />
+				ベクトル同士の対応をスカラー値で測る演算</td>
+			<td>ベクトル ◎ / 行列 ○ / テンソル ○</td>
+			</tr>
+			<tr class="border-collapse border border-slate-400">
+			<td>×</td>
+			<td>\times</td>
+			<td>外積 (Cross Product)<br />
+				3次元ベクトル専用の演算</td>
+			<td>ベクトル ○ / 行列 ✕ / テンソル ✕</td>
+			</tr>
+			<tr class="border-collapse border border-slate-400">
+			<td>⊗</td>
+			<td>u \otimes v</td>
+			<td>アウター積 (Outer Product)<br />
+				2つのベクトルから行列（または高階テンソル）を生成する演算</td>
+			<td>ベクトル ◎ / 行列 ○ / テンソル ○</td>
+			</tr>
+			<tr class="border-collapse border border-slate-400">
+			<td>⊗</td>
+			<td>\otimes</td>
+			<td>直積 (Direct Product)<br />
+				空間・群・テンソルの構造として定義される積</td>
+			<td>ベクトル △ / 行列 △ / テンソル △</td>
+			</tr>
+			<tr class="border-collapse border border-slate-400">
+			<td>⊙</td>
+			<td>\odot</td>
+			<td>アダマール積 (Hadamard Product)<br />
+				同じサイズの要素ごとの積</td>
+			<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
+			</tr>
+			<tr class="border-collapse border border-slate-400">
+			<td>×</td>
+			<td>\times</td>
+			<td>積 (Multiplication)<br />
+				対象によって定義が異なる積（スカラー倍・行列積・テンソル積など）</td>
+			<td>ベクトル ◎ / 行列 ◎ / テンソル ◎</td>
+			</tr>
+		</tbody>
+	</table>
+ 
 	<table class="w-full mb-4" >
 	  <caption class="text-2xl font-extrabold">
 		和と線形結合
@@ -265,7 +260,7 @@
 		  <td>H</td>
 		  <td>空間 ( H ) <br />
 		  ヒルベルト空間 ( H ) <br />
-		  バナッハ空間の内ノルムが内積によって定義される空間<br />
+		  バナッハ空間のうち、ノルムが内積によって定義される空間<br />
 		  ノルムはベクトルや関数（写像）の長さ・大きさ<br />
 		  ベクトル内積は要素同士を掛け合わせて足してスカラー値を表す操作<br>
 		  バナッハ空間はベクトルのノルムを持つ空間で完備性を持つ空間<br />
@@ -278,7 +273,9 @@
 		<tr class="border-collapse border border-slate-400">
 		  <td>V</td>
 		  <td>V</td>
-		  <td>ベクトル ( V ) <br />
+		  <td>ベクトル空間 ( V ) <br />
+		  Vector Space<br />
+		  個々のベクトルは通常 v, u などで表す<br />
 		  </td>
 		  <td><img src="img17/equation - 2024-11-08T233341.632.png" class="py-4 pr-4"></td>
 		</tr>
@@ -288,7 +285,7 @@
 		  <td>直交和（Orthogonal direct sum）<br />
 		  内積空間において、互いに直交する部分空間の直和<br />
 		  二つの空間が互いに直交していて、それらが重ならずに全体を構成する事<br />
-		  任意の部分空間のベクトル同士の内積がゼロになる直和<br />
+		  異なる部分空間から取った任意のベクトル同士の内積がゼロになる直和<br />
 		  </td>
 		  <td><img src="img17/equation - 2024-11-08T233341.632.png" class="py-4 pr-4"></td>
 		</tr>
@@ -593,10 +590,10 @@
 		  <td>固有値（Eigenvalues）<br />
 		  行列がどのような性質を持っているかを示す数<br />
 		  行列が方向を変えずにどう変化するかを示す数<br />
-		  
-スペクトルノルムは固有値の絶対値<br />
-フロベニウスノルムは固有値の二乗和の平方根<br />
-核ノルムは固有値の絶対値の総和<br />
+		  Av = λv を満たすスカラー λ（v は非ゼロベクトル）<br />
+		  <br />
+		  スペクトルノルム・フロベニウスノルム・核ノルムは一般に特異値で定義される（特異値の項を参照）<br />
+		  正規行列のとき特異値は固有値の絶対値と一致し、各ノルムを |λ| で書ける<br />
 		  </td>
 		  <td>
 			  <img src="img17/equation (8).png" class="py-4 pr-4">
@@ -768,7 +765,7 @@ RはRow<br />
 		  <td>Σ</td>
 		  <td>\Sigma</td>
 		  <td>対角行列（Diagonal Matrix）<br />
-		  正方行列で、対角成分が0以外、それ以外がすべて0<br />
+		  正方行列で、非対角成分がすべて0（対角成分は任意のスカラー、0を含む）<br />
 		  </td>
 		  <td>
 		  <img src="img17/equation_diagonal.png" class="py-4 pr-4">
@@ -840,7 +837,8 @@ RはRow<br />
 		  <td>A^*</td>
 		  <td>
 		  A^*は共役転置行列(Conjugate Transpose of a matrix)<br />
-		  A^*は随伴行列(Adjoint of a matrix)<br />
+		  A^*は随伴行列(Adjoint of a matrix)とも呼ぶ（現代的な線形代数での用法）<br />
+		  注意: 日本語の「随伴行列」は余因子転置（adjugate, 古典的随伴）を指す教科書もある<br />
 		  転置した上で複素共役をとった行列（実行列では転置と同じ）<br />
 		  A^*A や AA^* はエルミート行列となる<br />
 		  </td>
@@ -855,12 +853,13 @@ RはRow<br />
 		  <td>
 		  正規行列（Normal Matrix）<br />
 		  
-		  共役転置行列と可換な行列<br />
+		  共役転置行列と可換な行列（A^*A = AA^*）<br />
 		  随伴行列と可換な行列<br />
-		  対角化可能で固有値が直交基底を持つ行列<br />
+		  複素数体上ではユニタリ対角化可能（固有ベクトルが正規直交基底をなす）<br />
+		  単なる対角化可能性より強い条件<br />
 		  <br />
-		  対称行列 ⊂ 正規行列<br />
-		  歪対称行列 ⊂ 正規行列<br />
+		  対称行列 ⊂ 正規行列（実行列）<br />
+		  歪対称行列 ⊂ 正規行列（実行列）<br />
 		  エルミート行列 ⊂ 正規行列<br />
 		  ユニタリ行列 ⊂ 正規行列<br />
 		  </td>
@@ -879,7 +878,7 @@ RはRow<br />
 		  転置しても変わらない行列<br />
 		  必ず正方行列<br />
 		  A = A^T<br />
-		  対称行列 ⊂ 正規行列<br />
+		  実行列では対称行列 ⊂ 正規行列<br />
 		  </td>
 		  <td>
 			<img src="img17/equation (6).png" class="py-4 pr-4">
@@ -898,7 +897,8 @@ RはRow<br />
 		  対角成分は0<br />
 		  A^T = -A<br />
 		  A = -A^T<br />
-		  歪対称行列 ⊂ 正規行列
+		  実行列では歪対称行列 ⊂ 正規行列<br />
+		  複素では歪エルミート行列（A^* = -A）が正規
 		  </td>
 		  <td>
 			<img src="img17/equation (7).png" class="py-4 pr-4">
@@ -950,9 +950,9 @@ U=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\-1&1\end{pmatrix}
   <td>A \succ 0</td>
   <td>
     正定値行列（Positive Definite Matrix）<br />
-    すべての非ゼロベクトルに対して、対応する二次形式が正になる対称行列の事<br />
+    すべての非ゼロベクトル x に対して二次形式 x^*Ax が正になる対称（またはエルミート）行列<br />
     二次形式はベクトルを行列で測った広がりを表す<br />
-    固有値がすべて正になる行列<br />
+    実対称／エルミートのとき、固有値がすべて正になる行列<br />
     0以下の固有値を持たない行列<br />    
   </td>
   <td>
@@ -967,9 +967,10 @@ U=\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\-1&1\end{pmatrix}
   <td>
     半正定値行列（Positive Semi Definite Matrix, PSD）<br />
     半正定値は負にならずゼロも許される性質<br />
-    0を含むすべてのベクトルに対して、対応する二次形式が負にならない対称行列の事<br />
+    すべてのベクトル x に対して二次形式 x^*Ax ≥ 0 となる対称（またはエルミート）行列<br />
+    ゼロベクトルでは二次形式は常に0<br />
     二次形式はベクトルを行列で測った広がりを表す<br />
-    固有値がすべて0以上の行列<br />
+    実対称／エルミートのとき、固有値がすべて0以上の行列<br />
     負の固有値を持たない行列<br />
   </td>
   <td>
