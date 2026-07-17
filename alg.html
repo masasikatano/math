@@ -1043,6 +1043,64 @@ G=\begin{pmatrix}\langle v_1,v_1\rangle & \langle v_1,v_2\rangle\\
 ">
   </td>
 </tr>
+			<tr class="border-collapse border border-slate-400">
+	  <td>G</td>
+	  <td class="text-xs">
+	    G
+	  </td>
+	  <td>
+	    ガウス行列（Gaussian Matrix / Gaussian Random Matrix）<br />
+	    各成分が独立同分布の正規分布（ガウス分布）に従うランダム行列<br />
+	    標準正規分布 N(0,1) から生成されることが多い<br />
+	    ランダム行列理論で中心的に扱われる行列<br />
+	    実ガウス行列と複素ガウス行列の区別がある<br />
+	  </td>
+	  <td>
+	    <img src="img17/equation_gaussian.png" class="py-4 pr-4" alt="
+G \in \mathbb{R}^{n \times m},\; G_{ij} \sim \mathcal{N}(0,1)
+">
+	  </td>
+	</tr>
+			<tr class="border-collapse border border-slate-400">
+	  <td>H</td>
+	  <td class="text-xs">
+	    H
+	  </td>
+	  <td>
+	    アダマール行列（Hadamard Matrix）<br />
+		アダマールゲート（Hadamard Gate）<br />
+	    各成分が +1 または -1 となる正方行列<br />
+	    任意の異なる2行（または2列）の内積が 0 となる直交行列<br />
+	    H H^\top = nI（n は行列の次数）<br />
+	    サイズは 1, 2 または 4 の倍数<br />
+	    高速な変換（アダマール変換）に使用される<br />
+	    Jacques Hadamardの行列
+	  </td>
+	  <td>
+	    <img src="img17/equation_hadamard_matrix.png" class="py-4 pr-4" alt="
+H_2 = \begin{pmatrix}1&1\\1&-1\end{pmatrix}
+">
+	  </td>
+	</tr>
+			<tr class="border-collapse border border-slate-400">
+	  <td>W</td>
+	  <td class="text-xs">
+	    W
+	  </td>
+	  <td>
+	    Wigner行列（Wigner Matrix）<br />
+	    実対称行列またはエルミート行列として定義されるランダム行列<br />
+	    非対角成分は独立同分布の確率変数、対角成分も独立な確率変数<br />
+	    固有値分布が半円法則に従うことが知られている<br />
+	    ランダム行列理論の基礎となる行列<br />
+	    Eugene Wignerの行列
+	  </td>
+	  <td>
+	    <img src="img17/equation_wigner.png" class="py-4 pr-4" alt="
+W = W^\top,\; W_{ij} = W_{ji} \sim \mathcal{N}(0,1) \;(i \neq j)
+">
+	  </td>
+	</tr>
 	  </tbody>
 	</table>
 
