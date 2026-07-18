@@ -1101,6 +1101,27 @@ W = W^\top,\; W_{ij} = W_{ji} \sim \mathcal{N}(0,1) \;(i \neq j)
 ">
 	  </td>
 	</tr>
+			<tr class="border-collapse border border-slate-400">
+	  <td>ℐ(θ)</td>
+	  <td class="text-xs">
+	    \mathcal{I}(\theta)
+	  </td>
+	  <td>
+	    フィッシャー情報行列（Fisher Information Matrix）<br />
+	    確率モデル p(X;θ) のパラメータ θ に関する情報量を表す行列<br />
+	    対数尤度の勾配（スコア関数）の外積の期待値として定義される<br />
+	    スコア関数の分散共分散行列として解釈できる<br />
+	    対角成分は各パラメータに関する情報量に対応する<br />
+	    統計的推定の下限（クラメール・ラオの下限）を決める行列<br />
+	    行列の要素は対数尤度の2階微分の期待値の負符号と一致する場合がある<br />
+	    Ronald Fisherの行列
+	  </td>
+	  <td>
+	    <img src="img17/equation_fisher_info.png" class="py-4 pr-4" alt="
+\mathcal{I}(\theta) = \mathbb{E}\!\left[\bigl(\nabla_\theta \log p(X;\theta)\bigr)\bigl(\nabla_\theta \log p(X;\theta)\bigr)^{\!\top}\right]
+">
+	  </td>
+	</tr>
 	  </tbody>
 	</table>
 
