@@ -548,6 +548,34 @@
 		  </td>
 		</tr>
 		<tr class="border-collapse border border-slate-400">
+		  <td>A=QΛQ<sup>⊤</sup></td>
+		  <td class="text-xs">A = Q\Lambda Q^{\top}<br />A = Q\Lambda Q^{-1}</td>
+		  <td class="pr-4">
+			スペクトル分解（Spectral Decomposition）<br />
+			固有値分解（Eigen Decomposition, Eigendecomposition）<br />
+			固有値と固有ベクトルを使って正方行列を対角行列に変形する分解<br />
+			Q の列ベクトルは A の固有ベクトル<br />
+			Λ の対角成分は A の固有値<br />
+			対角化可能なら A = QΛQ<sup>-1</sup> と表せる<br />
+			実対称行列なら直交行列 Q を使って A = QΛQ<sup>⊤</sup> と表せる<br />
+			エルミート行列・正規行列ならユニタリ行列 U を使って A = UΛU<sup>*</sup> と表せる<br />
+			実対称行列・エルミート行列は必ずスペクトル分解できる（スペクトル定理）<br />
+			A = QΛQ<sup>⊤</sup> の形なら行列の累乗が簡単になる（A<sup>k</sup> = QΛ<sup>k</sup>Q<sup>⊤</sup>）<br />
+			行列関数も f(A) = Qf(Λ)Q<sup>⊤</sup> と計算できる<br />
+			主成分分析（PCA）の共分散行列の分解に使われる<br />
+			特異値分解（SVD）はスペクトル分解を任意行列に拡張したもの<br />
+		  </td>
+		  <td class="py-4 pr-4 text-xs">
+			<img src="img17/equation_spectral.png" class="py-4 pr-4" alt="
+\underbrace{\begin{pmatrix}2&1\\1&2\end{pmatrix}}_{A}
+=
+\underbrace{\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}}_{Q}
+\underbrace{\begin{pmatrix}3&0\\0&1\end{pmatrix}}_{\Lambda}
+\underbrace{\frac{1}{\sqrt{2}}\begin{pmatrix}1&1\\1&-1\end{pmatrix}^{\!\top}}_{Q^{\top}}
+" />
+		  </td>
+		</tr>
+		<tr class="border-collapse border border-slate-400">
       <td>σ<sub>i</sub>(A)</td>
       <td class="text-xs">\sigma_i(A)</td>
       <td class="pr-4">
