@@ -1,0 +1,4 @@
+.git/
+.kimi-code/
+*.log
+/tmp/
