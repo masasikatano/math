@@ -20,7 +20,7 @@
 
 - ビルド・テスト・Lint は存在しない。変更後はブラウザで開くか、`verify-html` スキルで画像参照・マークアップの整合を確認する
 - 新しい分布・記号・公式の行追加は `add-table-row` スキルに従う（`/add-distribution`, `/add-symbol` コマンドもこのスキルを参照する）
-- 数式画像・グラフ画像が必要なら matplotlib で生成し `img9/` 等に置く。システム Python に matplotlib が無い場合は一時 venv を使う
+- 数式画像・グラフ画像が必要なら matplotlib で生成し `img9/` 等に置く。matplotlib はユーザーの Python 環境にインストール済み（`pip3 install --user --break-system-packages matplotlib numpy`、2026-10 時点で matplotlib 3.11.2 / numpy 2.5.4）なのでそのまま使える
 - 画像 `<img>` には LaTeX ソースを `alt` 属性に入れる（既存の慣習）
 - 説明文は日本語で、既存の行と同じ粒度（別名・英名・定義・利用例・名前の由来）で書く
 - HTML のインデントはタブとスペースが混在している。Edit する前に必ず Read で対象箇所の正確な空白を確認する

@@ -22,7 +22,7 @@ description: このサイトの各 HTML ページ（prob.html, alg.html, anal.ht
 - `img*/` 内の既存画像は他ページから参照されていることがある。削除・リネームしない
 - ファイル名は既存の命名規則（`equation*.png` など）に合わせ、既存ファイルを上書きしない
 - matplotlib で生成する:
-  - システム Python に matplotlib が無い場合は `python3 -m venv` で一時 venv を作り、用が済んだら明示する
+  - matplotlib はユーザーの Python 環境にインストール済み（`pip3 install --user --break-system-packages`）なのでそのまま `python3` で使える。使えない環境では `python3 -m venv` で一時 venv を作り、用が済んだら明示する
   - 数式画像は `fig.text` + mathtext で透明背景 PNG、グラフは 150dpi 程度
 
 ## 説明文の粒度（分野別）
